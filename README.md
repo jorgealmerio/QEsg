@@ -52,8 +52,8 @@
 <p class="western"><br/>
 
 </p>
-			</span><span lang="pt-BR">2</span><b><span lang="pt-BR"> - </span>Janela
-			do Botão 00<img src="icons/00config.png" width="350"/> - Configuração</b></font></p>
+			</span><span lang="pt-BR">2</span><span lang="pt-BR"> - </span>Janela
+			do Botão 00![config](icons/00config.png?raw=true "Config") - Configuração</font></p>
 		</td>
 		<td width="50%" style="border: 1px solid #000000; padding: 0.1cm">
 			<p style="font-style: normal"><img src="data:image/png"/>
