@@ -6,7 +6,7 @@
 
 <p class=Heading1 style='margin-left:0cm;text-indent:0cm'>1<span
 style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span><b>EXEMPLO DE APLICAÇÃO</b<</p>
+</span><b>EXEMPLO DE APLICAÇÃO</b></p>
 
 <p class=Heading1>&nbsp;</p>
 
