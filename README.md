@@ -322,8 +322,8 @@ mso-bidi-language:AR-SA;mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Figura
  visibility:visible;mso-wrap-style:square'>
  <v:imagedata src="Tutorial_arquivos/image015.png" o:title=""/>
 </v:shape><![endif]--><![if !vml]><img width=30 height=30
-src="Tutorial_arquivos/image016.png" v:shapes="Figura11"><![endif]></span>BOTÃO
-02 NUMERAR REDE</p>
+src="Tutorial_arquivos/image016.png" v:shapes="Figura11"><![endif]></span><b>BOTÃO
+02 NUMERAR REDE</b></p>
 
 <p class=Textbody><o:p>&nbsp;</o:p></p>
 
@@ -474,8 +474,8 @@ mso-bidi-language:AR-SA;mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Figura
  visibility:visible;mso-wrap-style:square'>
  <v:imagedata src="Tutorial_arquivos/image021.png" o:title=""/>
 </v:shape><![endif]--><![if !vml]><img width=30 height=30
-src="Tutorial_arquivos/image022.png" v:shapes="Figura12"><![endif]></span>BOTÃO
-03 CRIAR LAYER DE NÓS</p>
+src="Tutorial_arquivos/image022.png" v:shapes="Figura12"><![endif]></span><b>BOTÃO
+03 CRIAR LAYER DE NÓS</b></p>
 
 <p class=Textbody><o:p>&nbsp;</o:p></p>
 
@@ -527,8 +527,8 @@ mso-bidi-language:AR-SA;mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Figura
  visibility:visible;mso-wrap-style:square'>
  <v:imagedata src="Tutorial_arquivos/image023.png" o:title=""/>
 </v:shape><![endif]--><![if !vml]><img width=30 height=30
-src="Tutorial_arquivos/image024.png" v:shapes="Figura1"><![endif]></span>BOTÃO
-04 PreenchE OS CAMPOS</p>
+src="Tutorial_arquivos/image024.png" v:shapes="Figura1"><![endif]></span><b>BOTÃO
+04 PREENCHE OS CAMPOS</b></p>
 
 <p class=Textbody><o:p>&nbsp;</o:p></p>
 
@@ -566,7 +566,7 @@ edição.</p>
 <p class=Heading1 style='margin-left:0cm;text-indent:0cm'><![if !supportLists]><span
 style='mso-fareast-font-family:Calibri;mso-bidi-font-family:Calibri'><span
 style='mso-list:Ignore'>8<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]>PONTA SECA</p>
+</span></span></span><![endif]><b>PONTA SECA</b></p>
 
 <p class=Textbody><o:p>&nbsp;</o:p></p>
 
@@ -597,8 +597,8 @@ mso-bidi-language:AR-SA;mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Figura
  visibility:visible;mso-wrap-style:square'>
  <v:imagedata src="Tutorial_arquivos/image025.png" o:title=""/>
 </v:shape><![endif]--><![if !vml]><img width=30 height=30
-src="Tutorial_arquivos/image026.png" v:shapes="Figura13"><![endif]></span>BOTÃO
-5 CALCULA VAZÃO</p>
+src="Tutorial_arquivos/image026.png" v:shapes="Figura13"><![endif]></span><b>BOTÃO
+5 CALCULA VAZÃO</b></p>
 
 <p class=Textbody><o:p>&nbsp;</o:p></p>
 
@@ -621,8 +621,8 @@ mso-bidi-language:AR-SA;mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Figura
  visibility:visible;mso-wrap-style:square'>
  <v:imagedata src="Tutorial_arquivos/image027.png" o:title=""/>
 </v:shape><![endif]--><![if !vml]><img width=30 height=30
-src="Tutorial_arquivos/image028.png" v:shapes="Figura14"><![endif]></span>BOTÃO
-6 DIMENSIONA</p>
+src="Tutorial_arquivos/image028.png" v:shapes="Figura14"><![endif]></span><b>BOTÃO
+6 DIMENSIONA</b></p>
 
 <p class=Textbody><o:p>&nbsp;</o:p></p>
 
@@ -640,7 +640,7 @@ selecione todos os campos, copie e cole dentro de uma planilha eletrônica
 <p class=Heading1 style='margin-left:0cm;text-indent:0cm'><![if !supportLists]><span
 style='mso-fareast-font-family:Calibri;mso-bidi-font-family:Calibri'><span
 style='mso-list:Ignore'>11<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]>UNIDADES DAS TABELAS</p>
+</span></span></span><![endif]><b>ESTRUTURA DAS TABELAS</b></p>
 
 <p class=Textbody><o:p>&nbsp;</o:p></p>
 
