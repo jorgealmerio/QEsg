@@ -141,8 +141,9 @@ AR-SA;mso-no-proof:yes'><!--[if gte vml 1]><v:shapetype id="_x0000_t75"
  style='width:453.75pt;height:320.25pt;visibility:visible;mso-wrap-style:square'>
  <v:imagedata src="Tutorial_arquivos/image001.png" o:title=""/>
 </v:shape><![endif]--><![if !vml]><img width=605 height=427
-src="Tutorial_arquivos/image002.png" v:shapes="Figura2"><![endif]></span>
-Figura 1 - Aparência inicial do projeto, após carregar ou traçar a rede de esgotos.</p>
+src="Tutorial_arquivos/image002.png" v:shapes="Figura2"><![endif]></span></p>
+<p class=Illustration>Figura 1 - Aparência inicial do projeto, após carregar ou traçar a rede de esgotos.</p>
+
 
 <p class=Textbody><o:p>&nbsp;</o:p></p>
 
