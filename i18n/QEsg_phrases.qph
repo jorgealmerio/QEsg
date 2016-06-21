@@ -1,0 +1,15 @@
+<!DOCTYPE QPH>
+<QPH sourcelanguage="pt" language="en">
+<phrase>
+    <source>Montante para Jusante</source>
+    <target>Upstream</target>
+</phrase>
+<phrase>
+    <source>Montante para Jusante</source>
+    <target>Upstream to Downstream</target>
+</phrase>
+<phrase>
+    <source>N.° PV Inicial</source>
+    <target>Manhole initial number</target>
+</phrase>
+</QPH>
