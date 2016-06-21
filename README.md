@@ -141,8 +141,8 @@ AR-SA;mso-no-proof:yes'><!--[if gte vml 1]><v:shapetype id="_x0000_t75"
  style='width:453.75pt;height:320.25pt;visibility:visible;mso-wrap-style:square'>
  <v:imagedata src="Tutorial_arquivos/image001.png" o:title=""/>
 </v:shape><![endif]--><![if !vml]><img width=605 height=427
-src="Tutorial_arquivos/image002.png" v:shapes="Figura2"><![endif]></span>Figura
-1 - Aparência inicial do projeto, após carregar ou traçar a rede de esgotos.</p>
+src="Tutorial_arquivos/image002.png" v:shapes="Figura2"><![endif]></span>
+Figura 1 - Aparência inicial do projeto, após carregar ou traçar a rede de esgotos.</p>
 
 <p class=Textbody><o:p>&nbsp;</o:p></p>
 
@@ -780,7 +780,7 @@ style='mso-list:Ignore'>11.1<span style='font:7.0pt "Times New Roman"'>&nbsp;&nb
 <p class=Heading2 style='margin-left:0cm;text-indent:0cm'><![if !supportLists]><span
 style='mso-fareast-font-family:Calibri;mso-bidi-font-family:Calibri'><span
 style='mso-list:Ignore'>11.2<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]>SHAPE trecho</p>
+</span></span></span><![endif]>SHAPE TRECHOS</p>
 
 <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=605
  style='margin-left:2.25pt;border-collapse:collapse;mso-table-layout-alt:fixed;
