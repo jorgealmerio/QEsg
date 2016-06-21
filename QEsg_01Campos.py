@@ -104,7 +104,7 @@ class QEsg_01Campos:
                 feicoes=vLayer.selectedFeatures()
             else:
                 feicoes=vLayer.getFeatures()
-        #camposPadroes=['DIAMETER','DN_FIXO','MANNING','Q_CONC_INI','Q_CONC_FIM', 'REC_MIN']# No futuro usar: QEsgModel.COLUMNS[aForma]
+        #camposPadroes=['DIAMETER','MANNING','Q_CONC_INI','Q_CONC_FIM', 'REC_MIN']# No futuro usar: QEsgModel.COLUMNS[aForma]
         proj = QgsProject.instance()
         dn_min=float(proj.readEntry("QEsg", "DN_MIN","150")[0])
         tubosMat=proj.readEntry("QEsg", "TUBOS_MAT","0")[0]
@@ -130,7 +130,7 @@ class QEsg_01Campos:
                 #Looping nas junctions
                 for Nodefeat in Nodefeats:
                     NodeCotas[Nodefeat[Fld_id]]=Nodefeat[Fld_Cota]
-        camposPadroes={'LENGTH':'CALCULA','DIAMETER':diam_min,'DN_FIXO':'N','MANNING':manning,
+        camposPadroes={'LENGTH':'CALCULA','DIAMETER':diam_min,'MANNING':manning,
                        'Q_CONC_INI':0.0,'Q_CONC_FIM':0.0, 'REC_MIN': rec_min, 'LAM_MAX': lam_max,
                        'CONTR_LADO':2,'ETAPA':1,'PONTA_SECA':'N'}## No futuro usar direto do modelo
         if bool(NodeCotas): #se o dicionario nao estiver nulo
