@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/plugins/QEsg" >
+		<file>icons/00rename.png</file>
+        <file>icons/00config.png</file>
+		<file>icons/01campos.png</file>
+		<file>icons/02campos_preenche.png</file>
+		<file>icons/03vazao.png</file>
+		<file>icons/04crianos.png</file>
+		<file>icons/05dimens.png</file>
+        <file>icons/06profile.svg</file>
+        <file>icons/buttons/add.png</file>
+        <file>icons/buttons/minus.png</file>
+    </qresource>
+</RCC>
