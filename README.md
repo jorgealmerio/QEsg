@@ -3,7 +3,10 @@
 <body lang=PT-BR>
 
 <div class=WordSection1>
-
+<img width=457 height=64 id=Logo src="Tutorial_1_R0_arquivos/QEsg_logo.png">
+<br>
+<br>
+<img width=1590 height=602 id=tela src="Tutorial_1_R0_arquivos/qgis_QEsg.png">
 <p class=Heading1 style='margin-left:0cm;text-indent:0cm'>1<span
 style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span><b>EXEMPLO DE APLICAÇÃO</b></p>
