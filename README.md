@@ -29,7 +29,7 @@ xmlns="http://www.w3.org/TR/REC-html40">
 <p class=Heading1 style='margin-left:0cm;text-indent:0cm'><![if !supportLists]><span
 style='mso-fareast-font-family:Calibri;mso-bidi-font-family:Calibri'><span
 style='mso-list:Ignore'>1<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span>CONCEITUAÇÃO</p>
+</span></span></span><b>CONCEITUAÇÃO</b></p>
 
 <p class=Textbody><o:p>&nbsp;</o:p></p>
 
@@ -64,7 +64,7 @@ Os exemplos comentados nesse tutorial estão disponíveis na pasta 'sample' do p
 <p class=Heading1 style='margin-left:0cm;text-indent:0cm'><![if !supportLists]><span
 style='mso-fareast-font-family:Calibri;mso-bidi-font-family:Calibri'><span
 style='mso-list:Ignore'>2<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]>EXEMPLO DE APLICAÇÃO</p>
+</span></span></span><![endif]><b>EXEMPLO DE APLICAÇÃO</b></p>
 
 <p class=Standard><o:p>&nbsp;</o:p></p>
 
@@ -157,8 +157,8 @@ mso-bidi-language:AR-SA;mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Figura
  visibility:visible;mso-wrap-style:square'>
  <v:imagedata src="Tutorial_arquivos/image003.png" o:title=""/>
 </v:shape><![endif]--><![if !vml]><img width=30 height=30
-src="Tutorial_arquivos/image004.png" v:shapes="Figura9"><![endif]></span>Botão
-00 Configuração</p>
+src="Tutorial_arquivos/image004.png" v:shapes="Figura9"><![endif]></span><b>BOTÃO
+00 CONFIGURAÇÃO</b></p>
 
 <p class=Textbody><o:p>&nbsp;</o:p></p>
 
@@ -259,8 +259,7 @@ mso-bidi-language:AR-SA;mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Figura
  visibility:visible;mso-wrap-style:square'>
  <v:imagedata src="Tutorial_arquivos/image009.png" o:title=""/>
 </v:shape><![endif]--><![if !vml]><img width=30 height=30
-src="Tutorial_arquivos/image010.png" v:shapes="Figura10"><![endif]></span>Botão
-01 verifica/cria campos</p>
+src="Tutorial_arquivos/image010.png" v:shapes="Figura10"><![endif]></span><b>BOTÃO 01 VERIFICA/CRIA CAMPOS</b></p>
 
 <p class=Textbody><o:p>&nbsp;</o:p></p>
 
