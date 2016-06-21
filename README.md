@@ -64,7 +64,7 @@ Os exemplos comentados nesse tutorial estão disponíveis na pasta 'sample' do p
 <p class=Heading1 style='margin-left:0cm;text-indent:0cm'><![if !supportLists]><span
 style='mso-fareast-font-family:Calibri;mso-bidi-font-family:Calibri'><span
 style='mso-list:Ignore'>2<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]>Exemplo de aplicação</p>
+</span></span></span><![endif]>EXEMPLO DE APLICAÇÃO</p>
 
 <p class=Standard><o:p>&nbsp;</o:p></p>
 
