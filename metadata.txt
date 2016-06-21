@@ -1,0 +1,40 @@
+# This file contains metadata for your plugin. Since 
+# version 2.0 of QGIS this is the proper way to supply 
+# information about a plugin. The old method of 
+# embedding metadata in __init__.py will 
+# is no longer supported since version 2.0.
+
+# This file should be included when you package your plugin.# Mandatory items:
+
+[general]
+name=QEsg
+qgisMinimumVersion=2.0
+description=Sanitary Sewage System Networks Design
+version=1
+author=Jorge Almerio
+email=jorgealmerio@yahoo.com.br
+credits=Icons based on Freepik at www.flaticon.com 
+
+about=Sanitary Sewage system networks design
+
+tracker=https://github.com/jorgealmerio/QEsg
+repository=https://github.com/jorgealmerio/QEsg
+# End of mandatory metadata
+
+# Recommended items:
+
+# Uncomment the following line and add your changelog:
+changelog=0.1 Alfa version
+
+# Tags are comma separated with spaces allowed
+tags=network, network design, flow, hydraulics, sewer, sewage, sewerage, sanitary, waste water
+
+homepage=https://github.com/jorgealmerio/QEsg
+category=Plugins
+icon=qesg_icon.png
+# experimental flag
+experimental=True
+
+# deprecated flag (applies to the whole plugin, not just a single version)
+deprecated=False
+
