@@ -58,6 +58,8 @@ trechos.</p>
 <p class=Textbody>Outros detalhes básicos são apresentados no exemplo de
 aplicação a seguir.</p>
 
+Os exemplos comentados nesse tutorial estão disponíveis na pasta 'sample' do próprio plugin.
+
 <p class=Textbody><o:p>&nbsp;</o:p></p>
 
 <p class=Heading1 style='margin-left:0cm;text-indent:0cm'><![if !supportLists]><span
