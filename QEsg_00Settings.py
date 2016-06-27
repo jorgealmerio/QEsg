@@ -79,10 +79,10 @@ class QEsg:
         
         # Declare instance attributes
         self.actions = []
-        self.menu = QCoreApplication.translate('QEsg',u"&QEsg")
+        self.menu = '&QEsg'
         # TODO: We are going to let the user set this up in a future iteration
-        self.toolbar = self.iface.addToolBar(self.tr(u'&QEsg'))
-        self.toolbar.setObjectName(self.tr(u'&QEsg'))
+        self.toolbar = self.iface.addToolBar('&QEsg')
+        self.toolbar.setObjectName('&QEsg')
         
         #Cria instancias das Classes utilizadas
         self.RenameClasse=Rename_Tools(self.iface)
@@ -229,7 +229,24 @@ class QEsg:
         return action
 
     def initGui(self):
-        """Create the menu entries and toolbar icons inside the QGIS GUI."""
+        # submenu
+        self.sub_menu = QMenu(self.tr('&Exemplos'))
+
+        itemTxt=self.tr('Inicial')
+        self.sampleAction = QAction(QIcon(':/python/plugins/QEsg/icons/buttons/add.png'), itemTxt, self.iface.mainWindow())
+        QObject.connect(self.sampleAction, SIGNAL('triggered()'), self.openCleanSample)
+        self.sub_menu.addAction(self.sampleAction)
+
+        itemTxt=self.tr('Pronto')
+        self.sampleAction = QAction(QIcon(':/python/plugins/QEsg/icons/buttons/add.png'), itemTxt, self.iface.mainWindow())
+        QObject.connect(self.sampleAction, SIGNAL('triggered()'), self.openFinishedSample)
+        self.sub_menu.addAction(self.sampleAction)
+
+        # Back in main menu
+        self.iface.addPluginToMenu('&QEsg', self.sub_menu.menuAction())
+        
+        
+	"""Create the menu entries and toolbar icons inside the QGIS GUI."""
 
         icon_path = ':/plugins/QEsg/icons/00config.png'
         self.add_action(
@@ -332,17 +349,27 @@ class QEsg:
     def unload(self):
         """Removes the plugin menu item and icon from QGIS GUI."""
         self.iface.removePluginMenu(
-                self.tr(u'&QEsg'),
+                self.tr('&QEsg'),
                 self.separator)
         for action in self.actions:
             self.iface.removePluginMenu(
-                self.tr(u'&QEsg'),
+                self.tr('&QEsg'),
                 action)
             self.iface.removeToolBarIcon(action)
         # remove the toolbar
+        self.iface.removePluginMenu('&QEsg', self.sub_menu.menuAction())
         del self.toolbar
+    # Open CMD sample project
+    
+    def openCleanSample(self):
+        Nome='clean'
+        self.iface.addProject(os.path.dirname(__file__)+'/sample/{}/{}.qgs'.format(Nome,Nome))
 
+    def openFinishedSample(self):
+        Nome='finished'
+        self.iface.addProject(os.path.dirname(__file__)+'/sample/{}/{}.qgs'.format(Nome,Nome))
 
+        
     def run(self):
         """Run method that performs all the real work"""
         self.limpaTudo()

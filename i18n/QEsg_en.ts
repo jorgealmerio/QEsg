@@ -4,32 +4,32 @@
 <context>
     <name>QEsg</name>
     <message>
-        <location filename="../QEsg_00Settings.py" line="338"/>
+        <location filename="../QEsg_00Settings.py" line="355"/>
         <source>&amp;QEsg</source>
         <translation>&amp;QEsg</translation>
     </message>
     <message>
-        <location filename="../QEsg_00Settings.py" line="235"/>
+        <location filename="../QEsg_00Settings.py" line="252"/>
         <source>00 Configurações</source>
         <translation>00 Settings</translation>
     </message>
     <message>
-        <location filename="../QEsg_00Settings.py" line="242"/>
+        <location filename="../QEsg_00Settings.py" line="259"/>
         <source>01 Verifica os Campos</source>
         <translation>01 Check Fields</translation>
     </message>
     <message>
-        <location filename="../QEsg_00Settings.py" line="249"/>
+        <location filename="../QEsg_00Settings.py" line="266"/>
         <source>02 Numerar Rede</source>
         <translation>02 Number Network</translation>
     </message>
     <message>
-        <location filename="../QEsg_00Settings.py" line="277"/>
+        <location filename="../QEsg_00Settings.py" line="294"/>
         <source>06 Dimensiona</source>
         <translation>06 Calculate Network</translation>
     </message>
     <message>
-        <location filename="../QEsg_00Settings.py" line="321"/>
+        <location filename="../QEsg_00Settings.py" line="338"/>
         <source>Importa Sancad DXF</source>
         <translation>Import Sancad DXF</translation>
     </message>
@@ -119,7 +119,7 @@
         <translation>Fill only selected records?</translation>
     </message>
     <message>
-        <location filename="../QEsg_00Settings.py" line="449"/>
+        <location filename="../QEsg_00Settings.py" line="476"/>
         <source>As configurações do Plugin foram removidas do Projeto</source>
         <translation>The Plugin settings was removed from Project</translation>
     </message>
@@ -139,7 +139,7 @@
         <translation>Manhole names sucessfully udated!</translation>
     </message>
     <message>
-        <location filename="../QEsg_00Settings.py" line="303"/>
+        <location filename="../QEsg_00Settings.py" line="320"/>
         <source>Atualiza Nome dos PVs a partir dos nós</source>
         <translation>Update Manholes names from node Layer</translation>
     </message>
@@ -164,17 +164,17 @@
         <translation>There are elements with {:d} vertices.</translation>
     </message>
     <message>
-        <location filename="../QEsg_00Settings.py" line="256"/>
+        <location filename="../QEsg_00Settings.py" line="273"/>
         <source>03 Criar Layer de Nós</source>
         <translation>03 Create Node Layer</translation>
     </message>
     <message>
-        <location filename="../QEsg_00Settings.py" line="263"/>
+        <location filename="../QEsg_00Settings.py" line="280"/>
         <source>04 Preenche os Campos</source>
         <translation>04 Fill Fields</translation>
     </message>
     <message>
-        <location filename="../QEsg_00Settings.py" line="270"/>
+        <location filename="../QEsg_00Settings.py" line="287"/>
         <source>05 Calcula Vazão</source>
         <translation>05 Calculate Flow</translation>
     </message>
@@ -184,12 +184,12 @@
         <translation>&apos;{}&apos; with Null value! Use Number or Fill tool</translation>
     </message>
     <message>
-        <location filename="../QEsg_00Settings.py" line="389"/>
+        <location filename="../QEsg_00Settings.py" line="416"/>
         <source>&lt;span style=&quot; color:#0000ff;&quot;&gt;Comprimento Geométrico:&lt;br&gt;Etapa 1 = {0:.2f} m&lt;br&gt;Etapa 2 = {1:.2f} m&lt;/span&gt;</source>
         <translation>&lt;span style=&quot; color:#0000ff;&quot;&gt;Geometric Length:&lt;br&gt;Stage 1 = {0:.2f} m&lt;br&gt;Stage 2 = {1:.2f} m&lt;/span&gt;</translation>
     </message>
     <message>
-        <location filename="../QEsg_00Settings.py" line="400"/>
+        <location filename="../QEsg_00Settings.py" line="427"/>
         <source>Comprimento Virtual:
 Etapa 1 = {} m
 Etapa 2 = {} m</source>
@@ -198,7 +198,7 @@ Stage 1 = {} m
 Stage 2 = {} m</translation>
     </message>
     <message>
-        <location filename="../QEsg_00Settings.py" line="394"/>
+        <location filename="../QEsg_00Settings.py" line="421"/>
         <source>Comprimento Atual:
 Etapa 1 = {} m
 Etapa 2 = {} m</source>
@@ -207,7 +207,7 @@ Stage 1 = {} m
 Stage 2 = {} m</translation>
     </message>
     <message>
-        <location filename="../QEsg_00Settings.py" line="312"/>
+        <location filename="../QEsg_00Settings.py" line="329"/>
         <source>Apaga Nome dos Coletores</source>
         <translation>Erase Manifold Numbers</translation>
     </message>
@@ -242,7 +242,7 @@ Stage 2 = {} m</translation>
         <translation>Forced conduit reach! Check your network</translation>
     </message>
     <message>
-        <location filename="../QEsg_00Settings.py" line="294"/>
+        <location filename="../QEsg_00Settings.py" line="311"/>
         <source>Desenha perfil</source>
         <translation>Draw Profile</translation>
     </message>
@@ -290,6 +290,21 @@ Stage 2 = {} m</translation>
         <location filename="../QEsg_05Perfil.py" line="44"/>
         <source>Layer Tipo &apos;PIPES&apos; indefinido ou não encontrado!</source>
         <translation>Layer type &apos;PIPES&apos; undefined or not found!</translation>
+    </message>
+    <message>
+        <location filename="../QEsg_00Settings.py" line="235"/>
+        <source>Inicial</source>
+        <translation>Initial</translation>
+    </message>
+    <message>
+        <location filename="../QEsg_00Settings.py" line="240"/>
+        <source>Pronto</source>
+        <translation>Finished</translation>
+    </message>
+    <message>
+        <location filename="../QEsg_00Settings.py" line="233"/>
+        <source>&amp;Exemplos</source>
+        <translation>&amp;Examples</translation>
     </message>
 </context>
 <context>
@@ -550,7 +565,7 @@ Stage 2 = {} m</translation>
     <message>
         <location filename="../QEsg_Settings_dialog_base.ui" line="497"/>
         <source>Per capita  (L/hab.dia)</source>
-        <translation>Per capita  (L/hab.day)</translation>
+        <translation>Per capita  (L/cap.day)</translation>
     </message>
     <message utf8="true">
         <location filename="../QEsg_Settings_dialog_base.ui" line="151"/>
@@ -572,7 +587,7 @@ Upper Edge</translation>
     <message>
         <location filename="../QEsg_Settings_dialog_base.ui" line="809"/>
         <source>Altura de degrau para ser desprezada (m)</source>
-        <translation>Step gap to be ignored (m)</translation>
+        <translation>Step to be ignored (m)</translation>
     </message>
     <message>
         <location filename="../QEsg_Settings_dialog_base.ui" line="825"/>
@@ -582,7 +597,7 @@ Upper Edge</translation>
     <message utf8="true">
         <location filename="../QEsg_Settings_dialog_base.ui" line="856"/>
         <source>Altura mínima para degrau (m)</source>
-        <translation>Minimum step gap (m)</translation>
+        <translation>Minimum step (m)</translation>
     </message>
 </context>
 <context>
