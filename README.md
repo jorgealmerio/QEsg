@@ -2403,8 +2403,6 @@ style='font-size:9.0pt'>: TN para terreno natural, qualquer outro valor
 </div>
 
 </body>
-Content-Type: application/octet-stream
-Content-Disposition: attachment
-filename=sample/clean/shapes/Trechos.zip
-<a href="sample/clean/shapes/Trechos.zip" target="_blank">Download do shapefile Trechos (Inicial)</a>
+<br>
+<a href="sample/clean/shapes/Trechos.zip?raw=True" target="_blank">Download do shapefile Trechos (Inicial)</a>
 </html>
