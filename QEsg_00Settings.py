@@ -39,6 +39,7 @@ from QEsg_01Campos import *
 from QEsg_02Vazao import *
 from QEsg_03Dimensionamento import *
 from QEsg_05Perfil import *
+from QEsg_06Export import *
 from QEsg_20Sancad import *
 
 class QEsg:
@@ -91,6 +92,7 @@ class QEsg:
         self.DimensClasse=QEsg_03Dimens()
         self.SancadClasse=QEsg_20Sancad()
         self.PerfilClasse=QEsg_05Perfil()
+        self.ExportaClasse=QEsg_06Export()
     # noinspection PyMethodMayBeStatic
     def btnDel_push(self):
         tableWidget=self.dlg.tableWidget
@@ -316,6 +318,16 @@ class QEsg:
             callback=self.DesenhaPerfil,
             parent=self.iface.mainWindow())
             
+        icon_path = ':/plugins/QEsg/icons/07dxfout.svg'
+        self.add_action(
+            icon_path,
+            add_to_menu=True,
+            add_to_toolbar=True,
+            text=self.tr(u'Exporta DXF'),
+            callback=self.ExportaDXF,
+            parent=self.iface.mainWindow())
+            
+
         icon_path = ''
         self.add_action(
             icon_path,
@@ -577,3 +589,5 @@ class QEsg:
         self.RenameClasse.LimpaNomesColetores()
     def DesenhaPerfil(self):
         self.PerfilClasse.run()
+    def ExportaDXF(self):
+        self.ExportaClasse.run()

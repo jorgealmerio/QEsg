@@ -10,7 +10,7 @@
 name=QEsg
 qgisMinimumVersion=2.0
 description=Sanitary Sewage System Networks Design
-version=1.0.1
+version=1.1.0
 author=Jorge Almerio
 email=jorgealmerio@yahoo.com.br
 credits=Icons based on Freepik at www.flaticon.com 
@@ -24,14 +24,16 @@ repository=https://github.com/jorgealmerio/QEsg
 # Recommended items:
 
 # Uncomment the following line and add your changelog:
-changelog=1.0.1 - 2016/06/22 - Improvements:
+changelog=1.1.0 - 2016/07/02 - Improvements:
+ - Added DXF Export option
+ <p>1.0.1 - 2016/06/22 - Improvements:
  - Added Examples Menu
  <p>1.0.0 - 2016/06/21 - Initial Release
 
 # Tags are comma separated with spaces allowed
 tags=network, network design, flow, hydraulics, sewer, sewage, sewerage, sanitary, waste water
 
-homepage=https://github.com/jorgealmerio/QEsg
+homepage=https://github.com/jorgealmerio/QEsg/blob/master/README.md
 category=Plugins
 icon=qesg_icon.png
 # experimental flag

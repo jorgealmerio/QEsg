@@ -4,32 +4,32 @@
 <context>
     <name>QEsg</name>
     <message>
-        <location filename="../QEsg_00Settings.py" line="355"/>
+        <location filename="../QEsg_00Settings.py" line="367"/>
         <source>&amp;QEsg</source>
         <translation>&amp;QEsg</translation>
     </message>
     <message>
-        <location filename="../QEsg_00Settings.py" line="252"/>
+        <location filename="../QEsg_00Settings.py" line="254"/>
         <source>00 Configurações</source>
         <translation>00 Settings</translation>
     </message>
     <message>
-        <location filename="../QEsg_00Settings.py" line="259"/>
+        <location filename="../QEsg_00Settings.py" line="261"/>
         <source>01 Verifica os Campos</source>
         <translation>01 Check Fields</translation>
     </message>
     <message>
-        <location filename="../QEsg_00Settings.py" line="266"/>
+        <location filename="../QEsg_00Settings.py" line="268"/>
         <source>02 Numerar Rede</source>
         <translation>02 Number Network</translation>
     </message>
     <message>
-        <location filename="../QEsg_00Settings.py" line="294"/>
+        <location filename="../QEsg_00Settings.py" line="296"/>
         <source>06 Dimensiona</source>
         <translation>06 Calculate Network</translation>
     </message>
     <message>
-        <location filename="../QEsg_00Settings.py" line="338"/>
+        <location filename="../QEsg_00Settings.py" line="350"/>
         <source>Importa Sancad DXF</source>
         <translation>Import Sancad DXF</translation>
     </message>
@@ -119,7 +119,7 @@
         <translation>Fill only selected records?</translation>
     </message>
     <message>
-        <location filename="../QEsg_00Settings.py" line="476"/>
+        <location filename="../QEsg_00Settings.py" line="488"/>
         <source>As configurações do Plugin foram removidas do Projeto</source>
         <translation>The Plugin settings was removed from Project</translation>
     </message>
@@ -139,7 +139,7 @@
         <translation>Manhole names sucessfully udated!</translation>
     </message>
     <message>
-        <location filename="../QEsg_00Settings.py" line="320"/>
+        <location filename="../QEsg_00Settings.py" line="332"/>
         <source>Atualiza Nome dos PVs a partir dos nós</source>
         <translation>Update Manholes names from node Layer</translation>
     </message>
@@ -164,17 +164,17 @@
         <translation>There are elements with {:d} vertices.</translation>
     </message>
     <message>
-        <location filename="../QEsg_00Settings.py" line="273"/>
+        <location filename="../QEsg_00Settings.py" line="275"/>
         <source>03 Criar Layer de Nós</source>
         <translation>03 Create Node Layer</translation>
     </message>
     <message>
-        <location filename="../QEsg_00Settings.py" line="280"/>
+        <location filename="../QEsg_00Settings.py" line="282"/>
         <source>04 Preenche os Campos</source>
         <translation>04 Fill Fields</translation>
     </message>
     <message>
-        <location filename="../QEsg_00Settings.py" line="287"/>
+        <location filename="../QEsg_00Settings.py" line="289"/>
         <source>05 Calcula Vazão</source>
         <translation>05 Calculate Flow</translation>
     </message>
@@ -184,12 +184,12 @@
         <translation>&apos;{}&apos; with Null value! Use Number or Fill tool</translation>
     </message>
     <message>
-        <location filename="../QEsg_00Settings.py" line="416"/>
+        <location filename="../QEsg_00Settings.py" line="428"/>
         <source>&lt;span style=&quot; color:#0000ff;&quot;&gt;Comprimento Geométrico:&lt;br&gt;Etapa 1 = {0:.2f} m&lt;br&gt;Etapa 2 = {1:.2f} m&lt;/span&gt;</source>
         <translation>&lt;span style=&quot; color:#0000ff;&quot;&gt;Geometric Length:&lt;br&gt;Stage 1 = {0:.2f} m&lt;br&gt;Stage 2 = {1:.2f} m&lt;/span&gt;</translation>
     </message>
     <message>
-        <location filename="../QEsg_00Settings.py" line="427"/>
+        <location filename="../QEsg_00Settings.py" line="439"/>
         <source>Comprimento Virtual:
 Etapa 1 = {} m
 Etapa 2 = {} m</source>
@@ -198,7 +198,7 @@ Stage 1 = {} m
 Stage 2 = {} m</translation>
     </message>
     <message>
-        <location filename="../QEsg_00Settings.py" line="421"/>
+        <location filename="../QEsg_00Settings.py" line="433"/>
         <source>Comprimento Atual:
 Etapa 1 = {} m
 Etapa 2 = {} m</source>
@@ -207,7 +207,7 @@ Stage 1 = {} m
 Stage 2 = {} m</translation>
     </message>
     <message>
-        <location filename="../QEsg_00Settings.py" line="329"/>
+        <location filename="../QEsg_00Settings.py" line="341"/>
         <source>Apaga Nome dos Coletores</source>
         <translation>Erase Manifold Numbers</translation>
     </message>
@@ -242,7 +242,7 @@ Stage 2 = {} m</translation>
         <translation>Forced conduit reach! Check your network</translation>
     </message>
     <message>
-        <location filename="../QEsg_00Settings.py" line="311"/>
+        <location filename="../QEsg_00Settings.py" line="313"/>
         <source>Desenha perfil</source>
         <translation>Draw Profile</translation>
     </message>
@@ -287,24 +287,40 @@ Stage 2 = {} m</translation>
         <translation>Manifold </translation>
     </message>
     <message>
-        <location filename="../QEsg_05Perfil.py" line="44"/>
+        <location filename="../QEsg_06Export.py" line="94"/>
         <source>Layer Tipo &apos;PIPES&apos; indefinido ou não encontrado!</source>
         <translation>Layer type &apos;PIPES&apos; undefined or not found!</translation>
     </message>
     <message>
-        <location filename="../QEsg_00Settings.py" line="235"/>
+        <location filename="../QEsg_00Settings.py" line="237"/>
         <source>Inicial</source>
         <translation>Initial</translation>
     </message>
     <message>
-        <location filename="../QEsg_00Settings.py" line="240"/>
+        <location filename="../QEsg_00Settings.py" line="242"/>
         <source>Pronto</source>
         <translation>Finished</translation>
     </message>
     <message>
-        <location filename="../QEsg_00Settings.py" line="233"/>
+        <location filename="../QEsg_00Settings.py" line="235"/>
         <source>&amp;Exemplos</source>
         <translation>&amp;Examples</translation>
+    </message>
+    <message>
+        <location filename="../QEsg_00Settings.py" line="322"/>
+        <source>Exporta DXF</source>
+        <translation>DXF Export</translation>
+    </message>
+    <message>
+        <location filename="../QEsg_06Export.py" line="87"/>
+        <source>Exportar DXF como:</source>
+        <translation>Export DXF as:</translation>
+    </message>
+    <message>
+        <location filename="../QEsg_06Export.py" line="221"/>
+        <source>Layer Tipo &apos;JUNCTIONS&apos; indefinido ou não encontrado!
+ Os PVs não foram criados!</source>
+        <translation>Layer type &apos;JUNCTIONS&apos; undefined or not found!</translation>
     </message>
 </context>
 <context>
@@ -332,7 +348,7 @@ Stage 2 = {} m</translation>
     <message utf8="true">
         <location filename="../QEsg_Rename_dialog.ui" line="206"/>
         <source>Somente trechos sem Identificação</source>
-        <translation>Only undefined reachs</translation>
+        <translation>Only undefined reaches</translation>
     </message>
     <message utf8="true">
         <location filename="../QEsg_Rename_dialog.ui" line="219"/>
@@ -611,6 +627,39 @@ Upper Edge</translation>
         <location filename="../QEsg_05ProfileDialog.ui" line="35"/>
         <source>Selecione o Coletor</source>
         <translation>Select Manifold</translation>
+    </message>
+</context>
+<context>
+    <name>dxfExport_Dialog</name>
+    <message>
+        <location filename="../QEsg_06Export_dialog.ui" line="26"/>
+        <source>Exporta DXF</source>
+        <translation>DXF Export</translation>
+    </message>
+    <message>
+        <location filename="../QEsg_06Export_dialog.ui" line="46"/>
+        <source>Arquivo</source>
+        <translation>Filename</translation>
+    </message>
+    <message>
+        <location filename="../QEsg_06Export_dialog.ui" line="59"/>
+        <source>...</source>
+        <translation>...</translation>
+    </message>
+    <message>
+        <location filename="../QEsg_06Export_dialog.ui" line="82"/>
+        <source>Escala 1:</source>
+        <translation>Scale 1:</translation>
+    </message>
+    <message>
+        <location filename="../QEsg_06Export_dialog.ui" line="145"/>
+        <source>Prefixo para os Layers</source>
+        <translation>Layer names prefix</translation>
+    </message>
+    <message>
+        <location filename="../QEsg_06Export_dialog.ui" line="155"/>
+        <source>A_</source>
+        <translation>A_</translation>
     </message>
 </context>
 </TS>
