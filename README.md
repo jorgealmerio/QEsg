@@ -50,23 +50,23 @@ apresenta&ccedil;&atilde;o final do projeto de uma rede esgoto.</span></p>
 	<p style="margin-bottom: 0.1cm; text-transform: uppercase; line-height: 100%; text-decoration: none">
 	<span style="background: transparent"><a class="western" href="#__RefHeading___Toc3061_1012792670">4.1CONCEITUA&Ccedil;&Atilde;O</a></span></p>
 	<p style="text-indent: 0.2cm; margin-bottom: 0.1cm; text-transform: uppercase; line-height: 100%; text-decoration: none">
-	<span style="background: transparent"><a class="western" href="#__RefHeading___Toc3063_1012792670">4.2arquivos
+	<span style="background: transparent"><a class="western" href="#__RefHeading___Toc3063_1012792670">4.2 ARQUIVOS
 	UTILIZADOS NESSE TUTORIAL</a></span></p>
 	<p style="text-indent: 0.2cm; margin-bottom: 0.1cm; text-transform: uppercase; line-height: 100%; text-decoration: none">
-	<span style="background: transparent"><a class="western" href="#__RefHeading___Toc3065_1012792670">4.3Exemplo
-	de aplica&ccedil;&atilde;o</a></span></p>
+	<span style="background: transparent"><a class="western" href="#__RefHeading___Toc3065_1012792670">4.3 EXEMPLO
+	DE APLICAÇÃO</a></span></p>
 	<p style="text-indent: 0.2cm; margin-bottom: 0.1cm; text-transform: uppercase; line-height: 100%; text-decoration: none">
 	<span style="background: transparent"><a class="western" href="#__RefHeading___Toc3067_1012792670">4.4
-	Bot&atilde;o 00 Configura&ccedil;&atilde;o</a></span></p>
+	BOTÃO 00 CONFIGURAÇÃO</a></span></p>
 	<p style="text-indent: 0.2cm; margin-bottom: 0.1cm; text-transform: uppercase; line-height: 100%; text-decoration: none">
 	<span style="background: transparent"><a class="western" href="#__RefHeading___Toc3069_1012792670">4.5
-	Bot&atilde;o 01 verifica/cria campos</a></span></p>
+	BOTÃO 01 VERIFICA/CRIA CAMPOS</a></span></p>
 	<p style="text-indent: 0.2cm; margin-bottom: 0.1cm; text-transform: uppercase; line-height: 100%; text-decoration: none">
 	<span style="background: transparent"><a class="western" href="#__RefHeading___Toc3071_1012792670">4.6
-	BOT&Atilde;O 02 NUMERAR REDE</a></span></p>
+	BOTÃO 02 NUMERAR REDE</a></span></p>
 	<p style="text-indent: 0.2cm; margin-bottom: 0.1cm; text-transform: uppercase; line-height: 100%; text-decoration: none">
 	<span style="background: transparent"><a class="western" href="#__RefHeading___Toc3073_1012792670">4.7
-	BOT&Atilde;O 03 CRIAR LAYER DE N&Oacute;S</a></span></p>
+	BOTÃO 03 CRIAR LAYER DE NÓS</a></span></p>
 	<p style="text-indent: 0.2cm; margin-bottom: 0.1cm; text-transform: uppercase; line-height: 100%; text-decoration: none">
 	<span style="background: transparent"><a class="western" href="#__RefHeading___Toc3075_1012792670">4.8
 	BOT&Atilde;O 04 PREENCHE OS CAMPOS</a></span></p>
@@ -182,13 +182,13 @@ apresentados no exemplo de aplica&ccedil;&atilde;o a seguir.</p>
 <p class="western"><br/>
 
 </p>
-<h2 class="western"><a name="__RefHeading___Toc3063_1012792670"></a>4.2arquivos
+<h2 class="western"><a name="__RefHeading___Toc3063_1012792670"></a>4.2 ARQUIVOS
 UTILIZADOS NESSE TUTORIAL</h2>
 <p class="western"><br/>
 
 </p>
 <p class="western"><span lang="pt-BR">Arquivos </span><span lang="pt-BR">utilizados
-n</span><span lang="pt-BR">o tutorial </span><span lang="pt-BR">para
+no tutorial </span><span lang="pt-BR">para
 download:</span></p>
 <ul>
 	<li/>
@@ -209,8 +209,7 @@ download:</span></p>
 <p class="western"><br/>
 
 </p>
-<h2 class="western"><a name="__RefHeading___Toc3065_1012792670"></a>4.3Exemplo
-de aplica&ccedil;&atilde;o</h2>
+<h2 class="western"><a name="__RefHeading___Toc3065_1012792670"></a>4.3 EXEMPLO DE APLICAÇÃO</h2>
 <p class="western" style="line-height: 100%"><br/>
 
 </p>
@@ -265,7 +264,7 @@ tra&ccedil;ar a rede de esgotos.</b></font></p>
 <h2 class="western" style="page-break-before: always"><a name="__RefHeading___Toc3067_1012792670"></a>
 4.4<img src="images\figfef4e818bfc6bf06.png" name="Figura9" align="middle" width="30" height="30" border="0"/>
 
-Bot&atilde;o 00 Configura&ccedil;&atilde;o</h2>
+BOTÃO 00 CONFIGURAÇÃO</h2>
 <p class="western"><br/>
 
 </p>
