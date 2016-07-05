@@ -1,4 +1,3 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <html>
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=windows-1252"/>
@@ -7,25 +6,7 @@
 	<meta name="author" content="Juan Ramseyer"/>
 	<meta name="created" content="2016-06-07T17:41:21.305062039"/>
 	<meta name="changed" content="2016-07-04T22:02:46.747000000"/>
-	<style type="text/css">
-		@page { margin-left: 3.5cm; margin-right: 1.5cm; margin-top: 1.3cm; margin-bottom: 0.47cm }
-		p { margin-bottom: 0cm; line-height: 120%; text-align: justify; page-break-before: auto }
-		p.western { font-family: "Calibri", sans-serif; font-size: 11pt }
-		p.cjk { font-size: 10pt }
-		td p { margin-bottom: 0cm; text-align: justify; page-break-before: auto }
-		td p.western { font-family: "Calibri", sans-serif; font-size: 11pt }
-		td p.cjk { font-size: 10pt }
-		h1 { margin-top: 0cm; margin-bottom: 0cm; text-transform: uppercase; text-align: center; page-break-before: auto; page-break-after: auto }
-		h1.western { font-family: "Calibri", sans-serif; font-size: 11pt }
-		h1.cjk { font-size: 36pt }
-		h1.ctl { font-size: 36pt }
-		h2 { margin-top: 0cm; margin-bottom: 0cm; text-transform: uppercase; text-align: center; page-break-before: auto; page-break-after: auto }
-		h2.western { font-family: "Calibri", sans-serif; font-size: 11pt; font-weight: normal }
-		h2.cjk { font-family: "Arial Unicode MS"; font-size: 32pt }
-		h2.ctl { font-family: "Arial Unicode MS"; font-size: 32pt }
-		a.cjk:link { so-language: zxx }
-		a.ctl:link { so-language: zxx }
-	</style>
+
 </head>
 <body lang="pt-BR" dir="ltr">
 <h1 class="western"><a name="__RefHeading___Toc3816_1012792670"></a><img src="images\figb6a402436fc68eb5.png" name="qesg_logo" align="bottom" width="605" height="85" border="0"/>
