@@ -48,7 +48,7 @@ apresenta&ccedil;&atilde;o final do projeto de uma rede esgoto.</span></p>
 	<p style="text-transform: uppercase; line-height: 100%"><b><a class="western" href="#__RefHeading___Toc3059_1012792670">4
 	TUTORIAL</a></b></p>
 	<p style="margin-bottom: 0.1cm; text-transform: uppercase; line-height: 100%; text-decoration: none">
-	<span style="background: transparent"><a class="western" href="#__RefHeading___Toc3061_1012792670">4.1CONCEITUA&Ccedil;&Atilde;O</a></span></p>
+	<span style="background: transparent"><a class="western" href="#__RefHeading___Toc3061_1012792670">4.1 CONCEITUA&Ccedil;&Atilde;O</a></span></p>
 	<p style="text-indent: 0.2cm; margin-bottom: 0.1cm; text-transform: uppercase; line-height: 100%; text-decoration: none">
 	<span style="background: transparent"><a class="western" href="#__RefHeading___Toc3063_1012792670">4.2 ARQUIVOS
 	UTILIZADOS NESSE TUTORIAL</a></span></p>
@@ -71,7 +71,7 @@ apresenta&ccedil;&atilde;o final do projeto de uma rede esgoto.</span></p>
 	<span style="background: transparent"><a class="western" href="#__RefHeading___Toc3075_1012792670">4.8
 	BOT&Atilde;O 04 PREENCHE OS CAMPOS</a></span></p>
 	<p style="text-indent: 0.2cm; margin-bottom: 0.1cm; text-transform: uppercase; line-height: 100%; text-decoration: none">
-	<span style="background: transparent"><a class="western" href="#__RefHeading___Toc3077_1012792670">4.9PONTA
+	<span style="background: transparent"><a class="western" href="#__RefHeading___Toc3077_1012792670">4.9 PONTA
 	SECA</a></span></p>
 	<p style="text-indent: 0.2cm; margin-bottom: 0.1cm; text-transform: uppercase; line-height: 100%; text-decoration: none">
 	<span style="background: transparent"><a class="western" href="#__RefHeading___Toc3079_1012792670">4.10
@@ -85,13 +85,13 @@ apresenta&ccedil;&atilde;o final do projeto de uma rede esgoto.</span></p>
 	<p style="text-transform: uppercase; line-height: 100%"><b><a class="western" href="#__RefHeading___Toc3085_1012792670">5
 	TABELAS</a></b></p>
 	<p style="text-indent: 0.2cm; margin-bottom: 0.1cm; text-transform: uppercase; line-height: 100%; text-decoration: none">
-	<span style="background: transparent"><a class="western" href="#__RefHeading___Toc3087_1012792670">5.1SHAPE
+	<span style="background: transparent"><a class="western" href="#__RefHeading___Toc3087_1012792670">5.1 SHAPE
 	N&Oacute;S</a></span></p>
 	<p style="text-indent: 0.2cm; margin-bottom: 0.1cm; text-transform: uppercase; line-height: 100%; text-decoration: none">
-	<span style="background: transparent"><a class="western" href="#__RefHeading___Toc3089_1012792670">5.2SHAPE
+	<span style="background: transparent"><a class="western" href="#__RefHeading___Toc3089_1012792670">5.2 SHAPE
 	TRECHO</a></span></p>
 	<p style="text-indent: 0.2cm; margin-bottom: 0.1cm; text-transform: uppercase; line-height: 100%; text-decoration: none">
-	<span style="background: transparent"><a class="western" href="#__RefHeading___Toc3091_1012792670">5.3SHAPE
+	<span style="background: transparent"><a class="western" href="#__RefHeading___Toc3091_1012792670">5.3 SHAPE
 	INTERFER&Ecirc;NCIAS</a></span></p>
 	<p style="text-transform: uppercase; line-height: 100%"><b><a class="western" href="#__RefHeading___Toc3820_1012792670">6
 	AUTOR</a></b></p>
@@ -155,7 +155,7 @@ partir da vers&atilde;o 1.1) em ambiente CAD.</b></font></p>
 <p class="western"><br/>
 
 </p>
-<h2 class="western"><a name="__RefHeading___Toc3061_1012792670"></a>4.1CONCEITUA&Ccedil;&Atilde;O</h2>
+<h2 class="western"><a name="__RefHeading___Toc3061_1012792670"></a>4.1 CONCEITUA&Ccedil;&Atilde;O</h2>
 <p class="western"><br/>
 
 </p>
@@ -262,7 +262,7 @@ tra&ccedil;ar a rede de esgotos.</b></font></p>
 
 </p>
 <h2 class="western" style="page-break-before: always"><a name="__RefHeading___Toc3067_1012792670"></a>
-4.4<img src="images\figfef4e818bfc6bf06.png" name="Figura9" align="middle" width="30" height="30" border="0"/>
+4.4 <img src="images\figfef4e818bfc6bf06.png" name="Figura9" align="middle" width="30" height="30" border="0"/>
 
 BOTÃO 00 CONFIGURAÇÃO</h2>
 <p class="western"><br/>
@@ -336,9 +336,9 @@ na janela aberta.
 <p class="western"><br/>
 
 </p>
-<h2 class="western"><a name="__RefHeading___Toc3069_1012792670"></a>4.5<img src="images\fig4382197c198bdabe.png" name="Figura10" align="middle" width="30" height="30" border="0"/>
+<h2 class="western"><a name="__RefHeading___Toc3069_1012792670"></a>4.5 <img src="images\fig4382197c198bdabe.png" name="Figura10" align="middle" width="30" height="30" border="0"/>
 
-Bot&atilde;o 01 verifica/cria campos</h2>
+BOTÃO 01 VERIFICA/CRIA CAMPOS</h2>
 <p class="western"><br/>
 
 </p>
@@ -384,9 +384,9 @@ ou zeros (sem informa&ccedil;&atilde;o ainda).</p>
 <p class="western"><br/>
 
 </p>
-<h2 class="western"><a name="__RefHeading___Toc3071_1012792670"></a>4.6<img src="images\fig96a608ce40392369.png" name="Figura11" align="middle" width="30" height="30" border="0"/>
+<h2 class="western"><a name="__RefHeading___Toc3071_1012792670"></a>4.6 <img src="images\fig96a608ce40392369.png" name="Figura11" align="middle" width="30" height="30" border="0"/>
 
-BOT&Atilde;O 02 NUMERAR REDE</h2>
+BOTÃO 02 NUMERAR REDE</h2>
 <p class="western"><br/>
 
 </p>
@@ -593,9 +593,9 @@ campos Coletor, Trecho, DC_ID, PVM e PVJ.</p>
 <p class="western" style="line-height: 100%"><br/>
 
 </p>
-<h2 class="western"><a name="__RefHeading___Toc3073_1012792670"></a>4.7<img src="images\fig30dc2cdc68e77050.png" name="Figura12" align="middle" width="30" height="30" border="0"/>
+<h2 class="western"><a name="__RefHeading___Toc3073_1012792670"></a>4.7 <img src="images\fig30dc2cdc68e77050.png" name="Figura12" align="middle" width="30" height="30" border="0"/>
 
-BOT&Atilde;O 03 CRIAR LAYER DE N&Oacute;S</h2>
+BOTÃO 03 CRIAR LAYER DE NÓS</h2>
 <p class="western"><br/>
 
 </p>
@@ -633,7 +633,7 @@ BOT&Atilde;O 03 CRIAR LAYER DE N&Oacute;S</h2>
 </p>
 <h2 class="western"><a name="__RefHeading___Toc3075_1012792670"></a>4.8<img src="images\fig85a4f30f64038587.png" name="Figura1" align="middle" width="30" height="30" border="0"/>
 
-BOT&Atilde;O 04 PreenchE OS CAMPOS</h2>
+BOTÃO 04 PREENCHE OS CAMPOS</h2>
 <p class="western"><br/>
 
 </p>
@@ -722,9 +722,9 @@ e saia do modo de edi&ccedil;&atilde;o. Salve o </span>projeto.
 
 </p>
 <h2 class="western" style="page-break-before: always"><a name="__RefHeading___Toc3079_1012792670"></a>
-4.10<img src="images\fig62bba675e061c761.png" name="Figura13" align="middle" width="30" height="30" border="0"/>
+4.10 <img src="images\fig62bba675e061c761.png" name="Figura13" align="middle" width="30" height="30" border="0"/>
 
-BOT&Atilde;O 5 CALCULA VAZ&Atilde;O</h2>
+BOTÃO 5 CALCULA VAZÃO</h2>
 <p class="western"><br/>
 
 </p>
