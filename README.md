@@ -1,2408 +1,1753 @@
-<html xmlns:v="urn:schemas-microsoft-com:vml"
-xmlns:o="urn:schemas-microsoft-com:office:office"
-xmlns:w="urn:schemas-microsoft-com:office:word"
-xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
-xmlns="http://www.w3.org/TR/REC-html40">
-
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
 <head>
-<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
-<meta name=ProgId content=Word.Document>
-<meta name=Generator content="Microsoft Word 12">
-<meta name=Originator content="Microsoft Word 12">
-<link rel=File-List href="Tutorial_arquivos/filelist.xml">
-<link rel=Edit-Time-Data href="Tutorial_arquivos/editdata.mso">
-
-
+	<meta http-equiv="content-type" content="text/html; charset=windows-1252"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 5.2.0.1 (Windows)"/>
+	<meta name="author" content="Juan Ramseyer"/>
+	<meta name="created" content="2016-06-07T17:41:21.305062039"/>
+	<meta name="changed" content="2016-07-04T22:02:46.747000000"/>
+	<style type="text/css">
+		@page { margin-left: 3.5cm; margin-right: 1.5cm; margin-top: 1.3cm; margin-bottom: 0.47cm }
+		p { margin-bottom: 0cm; line-height: 120%; text-align: justify; page-break-before: auto }
+		p.western { font-family: "Calibri", sans-serif; font-size: 11pt }
+		p.cjk { font-size: 10pt }
+		td p { margin-bottom: 0cm; text-align: justify; page-break-before: auto }
+		td p.western { font-family: "Calibri", sans-serif; font-size: 11pt }
+		td p.cjk { font-size: 10pt }
+		h1 { margin-top: 0cm; margin-bottom: 0cm; text-transform: uppercase; text-align: center; page-break-before: auto; page-break-after: auto }
+		h1.western { font-family: "Calibri", sans-serif; font-size: 11pt }
+		h1.cjk { font-size: 36pt }
+		h1.ctl { font-size: 36pt }
+		h2 { margin-top: 0cm; margin-bottom: 0cm; text-transform: uppercase; text-align: center; page-break-before: auto; page-break-after: auto }
+		h2.western { font-family: "Calibri", sans-serif; font-size: 11pt; font-weight: normal }
+		h2.cjk { font-family: "Arial Unicode MS"; font-size: 32pt }
+		h2.ctl { font-family: "Arial Unicode MS"; font-size: 32pt }
+		a.cjk:link { so-language: zxx }
+		a.ctl:link { so-language: zxx }
+	</style>
 </head>
-
-<img width=457 height=64 id=Logo src="Tutorial_arquivos/QEsg_logo.png">
-
-<br>
-<br>
-
-<img width=1590 height=602 id=tela src="Tutorial_arquivos/qgis_QEsg.png">
-
-<body lang=PT-BR style='tab-interval:36.0pt'>
-
-<div class=WordSection1>
-
-<p class=Heading1 style='margin-left:0cm;text-indent:0cm'><![if !supportLists]><span
-style='mso-fareast-font-family:Calibri;mso-bidi-font-family:Calibri'><span
-style='mso-list:Ignore'>1<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><b>CONCEITUAÇÃO</b></p>
-
-<p class=Textbody><o:p>&nbsp;</o:p></p>
-
-<p class=Textbody>A estrutura da rede atende aos seguintes princípios.</p>
-
-<p class=Textbody style='margin-left:0cm;text-indent:0cm;mso-list:l8 level1 lfo3'><![if !supportLists]><span
-style='font-family:OpenSymbol;mso-fareast-font-family:OpenSymbol;mso-bidi-font-family:
-OpenSymbol'><span style='mso-list:Ignore'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]>O plugin considera a rede formada por um ou mais
-coletores.</p>
-
-<p class=Textbody style='margin-left:0cm;text-indent:0cm;mso-list:l8 level1 lfo3'><![if !supportLists]><span
-style='font-family:OpenSymbol;mso-fareast-font-family:OpenSymbol;mso-bidi-font-family:
-OpenSymbol'><span style='mso-list:Ignore'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]>O coletor principal possui o PV final da rede.</p>
-
-<p class=Textbody style='margin-left:0cm;text-indent:0cm;mso-list:l8 level1 lfo3'><![if !supportLists]><span
-style='font-family:OpenSymbol;mso-fareast-font-family:OpenSymbol;mso-bidi-font-family:
-OpenSymbol'><span style='mso-list:Ignore'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]>Os coletores são divididos em um ou mais
-trechos.</p>
-
-<p class=Textbody><o:p>&nbsp;</o:p></p>
-
-<p class=Textbody>Outros detalhes básicos são apresentados no exemplo de
-aplicação a seguir.</p>
-
-Os exemplos comentados nesse tutorial estão disponíveis na pasta 'sample' do próprio plugin.
-
-<p class=Textbody><o:p>&nbsp;</o:p></p>
-
-<p class=Heading1 style='margin-left:0cm;text-indent:0cm'><![if !supportLists]><span
-style='mso-fareast-font-family:Calibri;mso-bidi-font-family:Calibri'><span
-style='mso-list:Ignore'>2<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]><b>EXEMPLO DE APLICAÇÃO</b></p>
-
-<p class=Standard><o:p>&nbsp;</o:p></p>
-
-<p class=Textbody style='margin-left:0cm;text-indent:0cm;mso-list:l3 level1 lfo4'><![if !supportLists]><span
-style='font-family:OpenSymbol;mso-fareast-font-family:OpenSymbol;mso-bidi-font-family:
-OpenSymbol'><span style='mso-list:Ignore'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]>Configure o projeto para as coordenadas UTM,
-conforme a faixa meridiana local.</p>
-
-<p class=Textbody style='margin-left:0cm;text-indent:0cm;mso-list:l3 level1 lfo4'><![if !supportLists]><span
-style='font-family:OpenSymbol;mso-fareast-font-family:OpenSymbol;mso-bidi-font-family:
-OpenSymbol'><span style='mso-list:Ignore'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]>Carregue um arquivo vetorial (shape) com a rede
-de esgoto. Como alternativa você pode criar um arquivo de linhas no formato
-shape e desenhar a rede de esgoto utilizando os recursos do QGIS, neste caso
-siga estritamente as recomendações seguintes para a criação de arquivo:</p>
-
-<p class=Textbody style='margin-left:0cm;text-indent:0cm;mso-list:l3 level2 lfo4'><![if !supportLists]><span
-style='font-family:OpenSymbol;mso-fareast-font-family:OpenSymbol;mso-bidi-font-family:
-OpenSymbol'><span style='mso-list:Ignore'>&#9702;<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]>Salve o arquivo (ex.: <b>Trechos)</b> utilizando
-um Sistema de Referência de Coordenadas (CRS) em Projeção UTM, para a faixa
-meridiana local.</p>
-
-<p class=Textbody style='margin-left:0cm;text-indent:0cm;mso-list:l3 level2 lfo4'><![if !supportLists]><span
-style='font-family:OpenSymbol;mso-fareast-font-family:OpenSymbol;mso-bidi-font-family:
-OpenSymbol'><span style='mso-list:Ignore'>&#9702;<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]>Desenhe sempre os trechos na direção do fluxo
-(de montante para jusante).</p>
-
-<p class=Textbody style='margin-left:0cm;text-indent:0cm;mso-list:l3 level2 lfo4'><![if !supportLists]><span
-style='font-family:OpenSymbol;mso-fareast-font-family:OpenSymbol;mso-bidi-font-family:
-OpenSymbol'><span style='mso-list:Ignore'>&#9702;<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]>Não é necessário criar nenhum campo específico
-no momento de salvar o shape <b>Trechos</b>.</p>
-
-<p class=Textbody style='margin-left:0cm;text-indent:0cm;mso-list:l3 level1 lfo4'><![if !supportLists]><span
-style='font-family:OpenSymbol;mso-fareast-font-family:OpenSymbol;mso-bidi-font-family:
-OpenSymbol'><span style='mso-list:Ignore'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]>Salve o projeto. Nesse momento a janela do
-projeto terá a aparência da <b>Figura 1</b>.</p>
-
-<p class=Textbody style='margin-left:0cm;text-indent:0cm;mso-list:l3 level1 lfo4'><![if !supportLists]><span
-style='font-family:OpenSymbol;mso-fareast-font-family:OpenSymbol;mso-bidi-font-family:
-OpenSymbol'><span style='mso-list:Ignore'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]>Abra a tabela de atributos do shape de rede,
-onde existirá uma linha para cada coletor traçado e somente um campo com
-valores nulos (vide <b>Figura 1</b>).</p>
-
-<p class=Textbody><o:p>&nbsp;</o:p></p>
-
-<p class=Illustration><span style='mso-fareast-language:PT-BR;mso-bidi-language:
-AR-SA;mso-no-proof:yes'><!--[if gte vml 1]><v:shapetype id="_x0000_t75"
- coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe"
- filled="f" stroked="f">
- <v:stroke joinstyle="miter"/>
- <v:formulas>
-  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
-  <v:f eqn="sum @0 1 0"/>
-  <v:f eqn="sum 0 0 @1"/>
-  <v:f eqn="prod @2 1 2"/>
-  <v:f eqn="prod @3 21600 pixelWidth"/>
-  <v:f eqn="prod @3 21600 pixelHeight"/>
-  <v:f eqn="sum @0 0 1"/>
-  <v:f eqn="prod @6 1 2"/>
-  <v:f eqn="prod @7 21600 pixelWidth"/>
-  <v:f eqn="sum @8 21600 0"/>
-  <v:f eqn="prod @7 21600 pixelHeight"/>
-  <v:f eqn="sum @10 21600 0"/>
- </v:formulas>
- <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
- <o:lock v:ext="edit" aspectratio="t"/>
-</v:shapetype><v:shape id="Figura2" o:spid="_x0000_i1036" type="#_x0000_t75"
- style='width:453.75pt;height:320.25pt;visibility:visible;mso-wrap-style:square'>
- <v:imagedata src="Tutorial_arquivos/image001.png" o:title=""/>
-</v:shape><![endif]--><![if !vml]><img width=605 height=427
-src="Tutorial_arquivos/image002.png" v:shapes="Figura2"><![endif]></span></p>
-<p class=Illustration>Figura 1 - Aparência inicial do projeto, após carregar ou traçar a rede de esgotos.</p>
-
-
-<p class=Textbody><o:p>&nbsp;</o:p></p>
-
-<p class=Textbody><o:p>&nbsp;</o:p></p>
-
-<p class=Heading1 style='margin-left:0cm;text-indent:0cm'><![if !supportLists]><span
-style='mso-fareast-font-family:Calibri;mso-bidi-font-family:Calibri'><span
-style='mso-list:Ignore'>3<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]><span style='mso-fareast-language:PT-BR;
-mso-bidi-language:AR-SA;mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Figura9"
- o:spid="_x0000_i1035" type="#_x0000_t75" style='width:22.5pt;height:22.5pt;
- visibility:visible;mso-wrap-style:square'>
- <v:imagedata src="Tutorial_arquivos/image003.png" o:title=""/>
-</v:shape><![endif]--><![if !vml]><img width=30 height=30
-src="Tutorial_arquivos/image004.png" v:shapes="Figura9"><![endif]></span><b>BOTÃO
-00 CONFIGURAÇÃO</b></p>
-
-<p class=Textbody><o:p>&nbsp;</o:p></p>
-
-<p class=Textbody>Ao clicar abre uma janela apresentada na <b>Figura 2</b>.</p>
-
-<p class=Textbody><o:p>&nbsp;</o:p></p>
-
-<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=605
- style='margin-left:2.25pt;border-collapse:collapse;mso-table-layout-alt:fixed;
- mso-padding-alt:0cm .5pt 0cm .5pt'>
- <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
-  <td width=302 valign=top style='width:8.0cm;border:solid black 1.0pt;
-  border-right:none;mso-border-top-alt:solid black .25pt;mso-border-left-alt:
-  solid black .25pt;mso-border-bottom-alt:solid black .25pt;padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=Illustration><!--[if gte vml 1]><v:shape id="Figura3" o:spid="_x0000_s1027"
-   type="#_x0000_t75" style='position:absolute;left:0;text-align:left;
-   margin-left:0;margin-top:0;width:221.3pt;height:201.4pt;z-index:1;
-   visibility:visible;mso-wrap-style:square;mso-wrap-distance-left:9pt;
-   mso-wrap-distance-top:0;mso-wrap-distance-right:9pt;
-   mso-wrap-distance-bottom:0;mso-position-horizontal:center;
-   mso-position-horizontal-relative:text;mso-position-vertical:top;
-   mso-position-vertical-relative:text'>
-   <v:imagedata src="Tutorial_arquivos/image005.png" o:title=""/>
-   <w:wrap type="square"/>
-  </v:shape><![endif]--><![if !vml]><img width=295 height=269
-  src="Tutorial_arquivos/image006.png" align=left hspace=12 v:shapes="Figura3"><![endif]>Figura
-  2 - Janela do Botão 00 - Configuração</p>
-  </td>
-  <td width=302 valign=top style='width:8.0cm;border:solid black 1.0pt;
-  mso-border-alt:solid black .25pt;padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=Illustration><!--[if gte vml 1]><v:shape id="Figura4" o:spid="_x0000_s1026"
-   type="#_x0000_t75" style='position:absolute;left:0;text-align:left;
-   margin-left:0;margin-top:0;width:221.3pt;height:201.4pt;z-index:2;
-   visibility:visible;mso-wrap-style:square;mso-wrap-distance-left:9pt;
-   mso-wrap-distance-top:0;mso-wrap-distance-right:9pt;
-   mso-wrap-distance-bottom:0;mso-position-horizontal:center;
-   mso-position-horizontal-relative:text;mso-position-vertical:top;
-   mso-position-vertical-relative:text'>
-   <v:imagedata src="Tutorial_arquivos/image007.png" o:title=""/>
-   <w:wrap type="square"/>
-  </v:shape><![endif]--><![if !vml]><img width=295 height=269
-  src="Tutorial_arquivos/image008.png" align=left hspace=12 v:shapes="Figura4"><![endif]>Figura
-  3 - Janela do Botão 00 – Configuração após preenchimento dos dados básicos</p>
-  </td>
- </tr>
-</table>
-
-<p class=Standard><o:p>&nbsp;</o:p></p>
-
-<p class=Textbody>Preencher as informações básicas na janela aberta.</p>
-
-<p class=Textbody style='margin-left:0cm;text-indent:0cm;mso-list:l5 level1 lfo5'><![if !supportLists]><span
-style='font-family:OpenSymbol;mso-fareast-font-family:OpenSymbol;mso-bidi-font-family:
-OpenSymbol'><span style='mso-list:Ignore'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]>No grupo Layers selecione o arquivo de linhas
-que você salvou com o nome <b>Trechos</b>, com o traçado da rede.<span
-style='mso-spacerun:yes'>  </span></p>
-
-<p class=Textbody style='margin-left:0cm;text-indent:0cm;mso-list:l5 level1 lfo5'><![if !supportLists]><span
-style='font-family:OpenSymbol;mso-fareast-font-family:OpenSymbol;mso-bidi-font-family:
-OpenSymbol'><span style='mso-list:Ignore'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]>Neste exemplo, somente incluiremos dois
-parâmetros de entrada da aba <b>Dados</b> (atenção: não digite separador de
-milhar, o ponto é separador de decimais):</p>
-
-<p class=Textbody style='margin-left:0cm;text-indent:0cm;mso-list:l1 level2 lfo6'><![if !supportLists]><span
-style='font-family:OpenSymbol;mso-fareast-font-family:OpenSymbol;mso-bidi-font-family:
-OpenSymbol'><span style='mso-list:Ignore'>&#9702;<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]>População inicial: (digite) 10000</p>
-
-<p class=Textbody style='margin-left:0cm;text-indent:0cm;mso-list:l1 level2 lfo6'><![if !supportLists]><span
-style='font-family:OpenSymbol;mso-fareast-font-family:OpenSymbol;mso-bidi-font-family:
-OpenSymbol'><span style='mso-list:Ignore'>&#9702;<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]>População de saturação: (digite) 13000</p>
-
-<p class=Textbody style='margin-left:0cm;text-indent:0cm;mso-list:l1 level1 lfo6'><![if !supportLists]><span
-style='font-family:OpenSymbol;mso-fareast-font-family:OpenSymbol;mso-bidi-font-family:
-OpenSymbol'><span style='mso-list:Ignore'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]>Mantenha os parâmetros padrões das abas <b>Tubos</b>
-e <b>Opções de cálculo</b>. A janela terá a aparência da <b>Figura 3</b>.</p>
-
-<p class=Textbody style='margin-left:0cm;text-indent:0cm;mso-list:l1 level1 lfo6'><![if !supportLists]><span
-style='font-family:OpenSymbol;mso-fareast-font-family:OpenSymbol;mso-bidi-font-family:
-OpenSymbol'><span style='mso-list:Ignore'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]>Clique no botão <b>OK</b> para salvar os
-parâmetros gerais do projeto.</p>
-
-<p class=Textbody><o:p>&nbsp;</o:p></p>
-
-<p class=Textbody><o:p>&nbsp;</o:p></p>
-
-<p class=Heading1 style='margin-left:0cm;text-indent:0cm'><![if !supportLists]><span
-style='mso-fareast-font-family:Calibri;mso-bidi-font-family:Calibri'><span
-style='mso-list:Ignore'>4<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]><span style='mso-fareast-language:PT-BR;
-mso-bidi-language:AR-SA;mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Figura10"
- o:spid="_x0000_i1034" type="#_x0000_t75" style='width:22.5pt;height:22.5pt;
- visibility:visible;mso-wrap-style:square'>
- <v:imagedata src="Tutorial_arquivos/image009.png" o:title=""/>
-</v:shape><![endif]--><![if !vml]><img width=30 height=30
-src="Tutorial_arquivos/image010.png" v:shapes="Figura10"><![endif]></span><b>BOTÃO 01 VERIFICA/CRIA CAMPOS</b></p>
-
-<p class=Textbody><o:p>&nbsp;</o:p></p>
-
-<p class=Textbody>Ao pressionar neste botão o plugin verifica se o shape <b>Trechos</b>
-com o traçado da rede contém os campos padrões. Se não existe oferece a
-possibilidade de criá-los automaticamente, como mostra a <b>Figura 4</b>.
-Aceite essa opção.</p>
-
-<p class=Textbody><o:p>&nbsp;</o:p></p>
-
-<p class=Textbody>Abra novamente a tabela de atributos do shape <b>Trechos</b>
-com a rede de esgoto (vide <b>Figura 5</b>). Você verá que foram criados um
-conjunto de campos para cada coletor traçado. Os valores contidos nesses campos
-serão nulos ou zeros (sem informação ainda).</p>
-
-<p class=Textbody><o:p>&nbsp;</o:p></p>
-
-<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=605
- style='margin-left:2.25pt;border-collapse:collapse;mso-table-layout-alt:fixed;
- mso-padding-alt:0cm .5pt 0cm .5pt'>
- <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
-  <td width=302 valign=top style='width:8.0cm;border:solid black 1.0pt;
-  border-right:none;mso-border-top-alt:solid black .25pt;mso-border-left-alt:
-  solid black .25pt;mso-border-bottom-alt:solid black .25pt;padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='mso-fareast-language:PT-BR;mso-bidi-language:AR-SA;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
-   id="Figura5" o:spid="_x0000_i1033" type="#_x0000_t75" style='width:141.75pt;
-   height:340.5pt;visibility:visible;mso-wrap-style:square'>
-   <v:imagedata src="Tutorial_arquivos/image011.png" o:title=""/>
-  </v:shape><![endif]--><![if !vml]><img width=189 height=454
-  src="Tutorial_arquivos/image012.png" v:shapes="Figura5"><![endif]></span></p>
-  <p class=Illustration>Figura 4 - Mensagem para criação dos campos padrões no
-  shape da rede de esgotos.</p>
-  </td>
-  <td width=302 valign=top style='width:8.0cm;border:solid black 1.0pt;
-  mso-border-alt:solid black .25pt;padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='mso-fareast-language:PT-BR;mso-bidi-language:AR-SA;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
-   id="Figura6" o:spid="_x0000_i1032" type="#_x0000_t75" style='width:100.5pt;
-   height:339.75pt;visibility:visible;mso-wrap-style:square'>
-   <v:imagedata src="Tutorial_arquivos/image013.png" o:title=""/>
-  </v:shape><![endif]--><![if !vml]><img width=134 height=453
-  src="Tutorial_arquivos/image014.png" v:shapes="Figura6"><![endif]></span></p>
-  <p class=Illustration>Figura 5 - Tabela da rede de esgotos, após a criação
-  dos campos padrões.</p>
-  </td>
- </tr>
-</table>
-
-<p class=Textbody><o:p>&nbsp;</o:p></p>
-
-<p class=Textbody><o:p>&nbsp;</o:p></p>
-
-<p class=Heading1 style='margin-left:0cm;text-indent:0cm'><![if !supportLists]><span
-style='mso-fareast-font-family:Calibri;mso-bidi-font-family:Calibri'><span
-style='mso-list:Ignore'>5<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]><span style='mso-fareast-language:PT-BR;
-mso-bidi-language:AR-SA;mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Figura11"
- o:spid="_x0000_i1031" type="#_x0000_t75" style='width:22.5pt;height:22.5pt;
- visibility:visible;mso-wrap-style:square'>
- <v:imagedata src="Tutorial_arquivos/image015.png" o:title=""/>
-</v:shape><![endif]--><![if !vml]><img width=30 height=30
-src="Tutorial_arquivos/image016.png" v:shapes="Figura11"><![endif]></span><b>BOTÃO
-02 NUMERAR REDE</b></p>
-
-<p class=Textbody><o:p>&nbsp;</o:p></p>
-
-<p class=Textbody>Ao clicar nesse botão é verificado se o traçado da rede de
-esgoto é composto por segmentos simples (segmentos de reta individuais entre
-vértices consecutivos). Caso exista algum elemento de rede com mais de dois
-vértices, será apresentada uma mensagem semelhante à da <b>Figura 6</b>.</p>
-
-<p class=Textbody><o:p>&nbsp;</o:p></p>
-
-<p class=Textbody align=center style='text-align:center'><span
-style='mso-fareast-language:PT-BR;mso-bidi-language:AR-SA;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
- id="Figura7" o:spid="_x0000_i1030" type="#_x0000_t75" style='width:219.75pt;
- height:57pt;visibility:visible;mso-wrap-style:square'>
- <v:imagedata src="Tutorial_arquivos/image017.png" o:title=""/>
-</v:shape><![endif]--><![if !vml]><img width=293 height=76
-src="Tutorial_arquivos/image018.png" v:shapes="Figura7"><![endif]></span></p>
-
-<p class=Illustration align=center style='text-align:center'>Figura 6 -
-Mensagem subdivisão de coletores em trechos.</p>
-
-<p class=Textbody><o:p>&nbsp;</o:p></p>
-
-<p class=Textbody>No nosso exemplo, antes de clicar pela primeira vez, o shape <b>Trechos</b>
-possui três coletores traçados de montante para jusante (vide <b>Figura 5</b>)
-definidos por poligonais abertas (um coletor com 5 vértices e dois coletores
-com 3). Na mensagem semelhante à da <b>Figura 6</b> clicar em <b>Sim</b>.</p>
-
-<p class=Textbody style='margin-left:0cm;text-indent:0cm;mso-list:l0 level1 lfo7'><![if !supportLists]><span
-style='font-family:OpenSymbol;mso-fareast-font-family:OpenSymbol;mso-bidi-font-family:
-OpenSymbol'><span style='mso-list:Ignore'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]><u>Mensagem para subdivisão de coletores em
-trechos</u>. Existem elementos com ( …). Deseja convertê-los para linhas
-simples? (vide ) <b>Figura 6</b>. Clique no botão Sim.</p>
-
-<p class=Textbody><o:p>&nbsp;</o:p></p>
-
-<p class=Illustration><span style='mso-fareast-language:PT-BR;mso-bidi-language:
-AR-SA;mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Figura8" o:spid="_x0000_i1029"
- type="#_x0000_t75" style='width:446.25pt;height:275.25pt;visibility:visible;
- mso-wrap-style:square'>
- <v:imagedata src="Tutorial_arquivos/image019.png" o:title="" croptop="604f"
-  cropbottom="718f" cropleft="519f" cropright="506f"/>
-</v:shape><![endif]--><![if !vml]><img width=595 height=367
-src="Tutorial_arquivos/image020.png" v:shapes="Figura8"><![endif]></span></p>
-
-<p class=Illustration>Figura 7 - Mensagem subdivisão de coletores em trechos.</p>
-
-<p class=Textbody><o:p>&nbsp;</o:p></p>
-
-<p class=Textbody>Será aberta uma janela, semelhante à <b>Figura 7</b>, a qual
-será fixada na lateral direita no ambiente QGIS. Nos passos a seguir, proceda
-com atenção.</p>
-
-<p class=Textbody style='margin-left:0cm;text-indent:0cm;mso-list:l7 level1 lfo8'><![if !supportLists]><span
-style='font-family:OpenSymbol;mso-fareast-font-family:OpenSymbol;mso-bidi-font-family:
-OpenSymbol'><span style='mso-list:Ignore'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]>Verifique que a caixa &lt;Coletor&gt; esteja
-preenchido com o valor 1. Senão digite o valor 1.</p>
-
-<p class=Textbody style='margin-left:0cm;text-indent:0cm;mso-list:l7 level1 lfo8'><![if !supportLists]><span
-style='font-family:OpenSymbol;mso-fareast-font-family:OpenSymbol;mso-bidi-font-family:
-OpenSymbol'><span style='mso-list:Ignore'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]>Verifique que a caixa &lt;Número de dígitos&gt;
-esteja preenchido com o valor 1. Senão digite o valor 1.</p>
-
-<p class=Textbody style='margin-left:0cm;text-indent:0cm;mso-list:l7 level1 lfo8'><![if !supportLists]><span
-style='font-family:OpenSymbol;mso-fareast-font-family:OpenSymbol;mso-bidi-font-family:
-OpenSymbol'><span style='mso-list:Ignore'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]>Verifique que a opção &lt;Somente trechos sem
-identificação&gt; esteja selecionada.</p>
-
-<p class=Textbody style='margin-left:0cm;text-indent:0cm;mso-list:l7 level1 lfo8'><![if !supportLists]><span
-style='font-family:OpenSymbol;mso-fareast-font-family:OpenSymbol;mso-bidi-font-family:
-OpenSymbol'><span style='mso-list:Ignore'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]>Clique no botão &lt;Selecionar Montante&gt;.</p>
-
-<p class=Textbody style='margin-left:0cm;text-indent:0cm;mso-list:l7 level1 lfo8'><![if !supportLists]><span
-style='font-family:OpenSymbol;mso-fareast-font-family:OpenSymbol;mso-bidi-font-family:
-OpenSymbol'><span style='mso-list:Ignore'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]>Movimente o cursor e faça clique com o botão
-esquerdo (primário) no meio do trecho mais a montante do coletor principal da
-rede. Todos os trechos do coletor mudarão para a cor amarela (padrão de seleção
-do QGIS)</p>
-
-<p class=Textbody style='margin-left:0cm;text-indent:0cm;mso-list:l7 level1 lfo8'><![if !supportLists]><span
-style='font-family:OpenSymbol;mso-fareast-font-family:OpenSymbol;mso-bidi-font-family:
-OpenSymbol'><span style='mso-list:Ignore'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]>Clique no botão &lt;Renomear&gt; da janela
-Renomear Rede. Na primeira vez, o estilo do shape <b>Trechos</b> é alterado,
-são representados os vértices e o sentido do fluxo. Para o coletor renomeado
-serão apresentadas as informações: nome do coletor-trecho e nomes dos PVs de
-montante e jusante.</p>
-
-<p class=Textbody style='margin-left:0cm;text-indent:0cm;mso-list:l7 level1 lfo8'><![if !supportLists]><span
-style='font-family:OpenSymbol;mso-fareast-font-family:OpenSymbol;mso-bidi-font-family:
-OpenSymbol'><span style='mso-list:Ignore'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]>Clique no botão &lt;Novo Coletor&gt;. O número
-da caixa Coletor mudará para 2 e o trecho anterior será deselecionado.</p>
-
-<p class=Textbody style='margin-left:0cm;text-indent:0cm;mso-list:l7 level1 lfo8'><![if !supportLists]><span
-style='font-family:OpenSymbol;mso-fareast-font-family:OpenSymbol;mso-bidi-font-family:
-OpenSymbol'><span style='mso-list:Ignore'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]>Verifique que a opção &lt;Somente trechos sem
-identificação&gt; continue selecionada.</p>
-
-<p class=Textbody style='margin-left:0cm;text-indent:0cm;mso-list:l7 level1 lfo8'><![if !supportLists]><span
-style='font-family:OpenSymbol;mso-fareast-font-family:OpenSymbol;mso-bidi-font-family:
-OpenSymbol'><span style='mso-list:Ignore'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]>Selecione o segundo coletor (no nosso exemplo, o
-coletor mais a jusante), cuja cor mudará para amarelo até o PV de interligação
-com o coletor anterior.</p>
-
-<p class=Textbody style='margin-left:0cm;text-indent:0cm;mso-list:l7 level1 lfo8'><![if !supportLists]><span
-style='font-family:OpenSymbol;mso-fareast-font-family:OpenSymbol;mso-bidi-font-family:
-OpenSymbol'><span style='mso-list:Ignore'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]>Clique em renomear o coletor selecionado. O
-coletor selecionado será renomeado e numerado, de forma análoga ao primeiro
-coletor.</p>
-
-<p class=Textbody style='margin-left:0cm;text-indent:0cm;mso-list:l7 level1 lfo8'><![if !supportLists]><span
-style='font-family:OpenSymbol;mso-fareast-font-family:OpenSymbol;mso-bidi-font-family:
-OpenSymbol'><span style='mso-list:Ignore'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]>Repita o processo (Novo coletor, clicar sobre o
-coletor, renomear) até concluir com a nomeação dos trechos da rede.</p>
-
-<p class=Textbody style='margin-left:0cm;text-indent:0cm;mso-list:l7 level1 lfo8'><![if !supportLists]><span
-style='font-family:OpenSymbol;mso-fareast-font-family:OpenSymbol;mso-bidi-font-family:
-OpenSymbol'><span style='mso-list:Ignore'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]>Salve o shape <b>Trechos</b> e encerre o
-processo de edição.</p>
-
-<p class=Textbody><o:p>&nbsp;</o:p></p>
-
-<p class=Textbody>No shape <b>Trechos</b> foram preenchidos os campos Coletor,
-Trecho, DC_ID, PVM e PVJ.</p>
-
-<p class=Textbody><o:p>&nbsp;</o:p></p>
-
-<p class=Textbody><o:p>&nbsp;</o:p></p>
-
-<p class=Heading1 style='margin-left:0cm;text-indent:0cm'><![if !supportLists]><span
-style='mso-fareast-font-family:Calibri;mso-bidi-font-family:Calibri'><span
-style='mso-list:Ignore'>6<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]><span style='mso-fareast-language:PT-BR;
-mso-bidi-language:AR-SA;mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Figura12"
- o:spid="_x0000_i1028" type="#_x0000_t75" style='width:22.5pt;height:22.5pt;
- visibility:visible;mso-wrap-style:square'>
- <v:imagedata src="Tutorial_arquivos/image021.png" o:title=""/>
-</v:shape><![endif]--><![if !vml]><img width=30 height=30
-src="Tutorial_arquivos/image022.png" v:shapes="Figura12"><![endif]></span><b>BOTÃO
-03 CRIAR LAYER DE NÓS</b></p>
-
-<p class=Textbody><o:p>&nbsp;</o:p></p>
-
-<p class=Textbody style='margin-left:0cm;text-indent:0cm;mso-list:l4 level1 lfo9'><![if !supportLists]><span
-style='font-family:OpenSymbol;mso-fareast-font-family:OpenSymbol;mso-bidi-font-family:
-OpenSymbol'><span style='mso-list:Ignore'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]>Ao clicar no botão é aberta a janela para
-atribuição do nome do shape de nós (formato de pontos). Selecione o local e
-nomes adequados a este layer, para este exemplo escolha como nome <b>Nos</b>.
-Clique no botão Salvar para concluir a gravação do layer. <u>Atenção</u>:
-quando elaborávamos este tutorial, no ambiente Linux, a biblioteca utilizada
-para salvar o shape de <b>Nos</b> apresentava um bug. Era necessário digitar a
-extensão “.shp” ao final do nome do arquivo para que ocorresse o carregamento
-automático do arquivo salvo.</p>
-
-<p class=Textbody style='margin-left:0cm;text-indent:0cm;mso-list:l4 level1 lfo9'><![if !supportLists]><span
-style='font-family:OpenSymbol;mso-fareast-font-family:OpenSymbol;mso-bidi-font-family:
-OpenSymbol'><span style='mso-list:Ignore'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]>Após fechar a janela o shape <b>Nos</b> é
-adicionado ao projeto.</p>
-
-<p class=Textbody style='margin-left:0cm;text-indent:0cm;mso-list:l4 level1 lfo9'><![if !supportLists]><span
-style='font-family:OpenSymbol;mso-fareast-font-family:OpenSymbol;mso-bidi-font-family:
-OpenSymbol'><span style='mso-list:Ignore'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]>Habilite o modo de edição do shape <b>Nos</b> e
-preencha todos os campos de cota do terreno de cada nó.</p>
-
-<p class=Textbody style='margin-left:0cm;text-indent:0cm;mso-list:l4 level1 lfo9'><![if !supportLists]><span
-style='font-family:OpenSymbol;mso-fareast-font-family:OpenSymbol;mso-bidi-font-family:
-OpenSymbol'><span style='mso-list:Ignore'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]>Salve o shape <b>Nos</b> e desabilite o modo de
-edição.</p>
-
-<p class=Textbody style='margin-left:0cm;text-indent:0cm;mso-list:l4 level1 lfo9'><![if !supportLists]><span
-style='font-family:OpenSymbol;mso-fareast-font-family:OpenSymbol;mso-bidi-font-family:
-OpenSymbol'><span style='mso-list:Ignore'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]>Salve o projeto.</p>
-
-<p class=Textbody><o:p>&nbsp;</o:p></p>
-
-<p class=Textbody><o:p>&nbsp;</o:p></p>
-
-<p class=Heading1 style='margin-left:0cm;text-indent:0cm'><![if !supportLists]><span
-style='mso-fareast-font-family:Calibri;mso-bidi-font-family:Calibri'><span
-style='mso-list:Ignore'>7<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]><span style='mso-fareast-language:PT-BR;
-mso-bidi-language:AR-SA;mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Figura1"
- o:spid="_x0000_i1027" type="#_x0000_t75" style='width:22.5pt;height:22.5pt;
- visibility:visible;mso-wrap-style:square'>
- <v:imagedata src="Tutorial_arquivos/image023.png" o:title=""/>
-</v:shape><![endif]--><![if !vml]><img width=30 height=30
-src="Tutorial_arquivos/image024.png" v:shapes="Figura1"><![endif]></span><b>BOTÃO
-04 PREENCHE OS CAMPOS</b></p>
-
-<p class=Textbody><o:p>&nbsp;</o:p></p>
-
-<p class=Textbody>Ao clicar no botão:</p>
-
-<p class=Textbody style='margin-left:0cm;text-indent:0cm;mso-list:l6 level1 lfo10'><![if !supportLists]><span
-style='font-family:OpenSymbol;mso-fareast-font-family:OpenSymbol;mso-bidi-font-family:
-OpenSymbol'><span style='mso-list:Ignore'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]>Todos os campos nulos do shape <b>Trechos</b>
-são preenchidos;</p>
-
-<p class=Textbody style='margin-left:0cm;text-indent:0cm;mso-list:l6 level1 lfo10'><![if !supportLists]><span
-style='font-family:OpenSymbol;mso-fareast-font-family:OpenSymbol;mso-bidi-font-family:
-OpenSymbol'><span style='mso-list:Ignore'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]>São sobrescritos todos os campos de cota dos PVs
-de montante, jusante e comprimento do trecho (calculado como comprimento real
-do trecho desenhado) do shape <b>Trechos;</b></p>
-
-<p class=Textbody style='margin-left:0cm;text-indent:0cm;mso-list:l6 level1 lfo10'><![if !supportLists]><span
-style='font-family:OpenSymbol;mso-fareast-font-family:OpenSymbol;mso-bidi-font-family:
-OpenSymbol'><span style='mso-list:Ignore'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]>São transferidos os valores do campo COTA_TN do
-shape <b>Nos </b>para os campos CTM e CTJ do shape <b>Trechos</b>.</p>
-
-<p class=Textbody style='margin-left:0cm;text-indent:0cm;mso-list:l6 level1 lfo10'><![if !supportLists]><span
-style='font-family:OpenSymbol;mso-fareast-font-family:OpenSymbol;mso-bidi-font-family:
-OpenSymbol'><span style='mso-list:Ignore'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]>Salve o shape <b>Trechos</b> e saia do modo de
-edição.</p>
-
-<p class=Textbody><o:p>&nbsp;</o:p></p>
-
-<p class=Textbody><o:p>&nbsp;</o:p></p>
-
-<p class=Heading1 style='margin-left:0cm;text-indent:0cm'><![if !supportLists]><span
-style='mso-fareast-font-family:Calibri;mso-bidi-font-family:Calibri'><span
-style='mso-list:Ignore'>8<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]><b>PONTA SECA</b></p>
-
-<p class=Textbody><o:p>&nbsp;</o:p></p>
-
-<p class=Textbody>Tem como objetivo identificar os trechos que não recebem
-contribuições através do PV de montante. Essa identificação é necessária em
-trechos cujos PVs de montante possam apresentar mais de uma saída, situação não
-permitida segundo as normas brasileiras. A ponta seca é informada manualmente
-na tabela do shape <b>Trechos</b>, campo (coluna) PONTA_SECA, trocando a letra
-N (não) pela letra S (sim). Após essa alteração a representação de montante dos
-trechos “Ponta Seca” será modificada.</p>
-
-<p class=Textbody><o:p>&nbsp;</o:p></p>
-
-<p class=Textbody>Salve as modificações introduzidas na tabela do shape <b>Trechos</b>
-e saia do modo de edição. Salve o projeto.</p>
-
-<p class=Textbody><o:p>&nbsp;</o:p></p>
-
-<p class=Textbody><o:p>&nbsp;</o:p></p>
-
-<p class=Heading1 style='margin-left:0cm;text-indent:0cm;page-break-before:
-always'><![if !supportLists]><span style='mso-fareast-font-family:Calibri;
-mso-bidi-font-family:Calibri'><span style='mso-list:Ignore'>9<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]><span style='mso-fareast-language:PT-BR;
-mso-bidi-language:AR-SA;mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Figura13"
- o:spid="_x0000_i1026" type="#_x0000_t75" style='width:22.5pt;height:22.5pt;
- visibility:visible;mso-wrap-style:square'>
- <v:imagedata src="Tutorial_arquivos/image025.png" o:title=""/>
-</v:shape><![endif]--><![if !vml]><img width=30 height=30
-src="Tutorial_arquivos/image026.png" v:shapes="Figura13"><![endif]></span><b>BOTÃO
-5 CALCULA VAZÃO</b></p>
-
-<p class=Textbody><o:p>&nbsp;</o:p></p>
-
-<p class=Textbody>Ao clicar neste botão, são calculadas as vazões acumuladas ao
-longo de cada um dos trechos que formam os coletores, os resultados são
-gravados no shape <b>Trechos</b>. O formato de apresentação dos trechos muda
-para mostrar os dados: nome do trecho; comprimento, diâmetro e vazão de cada
-trecho.</p>
-
-<p class=Textbody><o:p>&nbsp;</o:p></p>
-
-<p class=Textbody><o:p>&nbsp;</o:p></p>
-
-<p class=Heading1 style='margin-left:0cm;text-indent:0cm'><![if !supportLists]><span
-style='mso-fareast-font-family:Calibri;mso-bidi-font-family:Calibri'><span
-style='mso-list:Ignore'>10<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]><span style='mso-fareast-language:PT-BR;
-mso-bidi-language:AR-SA;mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Figura14"
- o:spid="_x0000_i1025" type="#_x0000_t75" style='width:22.5pt;height:22.5pt;
- visibility:visible;mso-wrap-style:square'>
- <v:imagedata src="Tutorial_arquivos/image027.png" o:title=""/>
-</v:shape><![endif]--><![if !vml]><img width=30 height=30
-src="Tutorial_arquivos/image028.png" v:shapes="Figura14"><![endif]></span><b>BOTÃO
-6 DIMENSIONA</b></p>
-
-<p class=Textbody><o:p>&nbsp;</o:p></p>
-
-<p class=Textbody>Ao clicar neste botão, são dimensionados todos os trechos que
-formam os coletores da rede. O formato de apresentação dos trechos muda para
-mostrar os dados: nome do trecho; comprimento; diâmetro nominal e declividade.</p>
-
-<p class=Textbody><o:p>&nbsp;</o:p></p>
-
-<p class=Textbody>Todos os dados do dimensionamento estão contidos na tabela do
-shape <b>Trechos</b>. Caso deseje, abra a tabela do shape <b>Trechos</b>,
-selecione todos os campos, copie e cole dentro de uma planilha eletrônica
-(MS-Excel, Libreoffice-Calc ou outra).</p>
-
-<p class=Heading1 style='margin-left:0cm;text-indent:0cm'><![if !supportLists]><span
-style='mso-fareast-font-family:Calibri;mso-bidi-font-family:Calibri'><span
-style='mso-list:Ignore'>11<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]><b>ESTRUTURA DAS TABELAS</b></p>
-
-<p class=Textbody><o:p>&nbsp;</o:p></p>
-
-<p class=Heading2 style='margin-left:0cm;text-indent:0cm'><![if !supportLists]><span
-style='mso-fareast-font-family:Calibri;mso-bidi-font-family:Calibri'><span
-style='mso-list:Ignore'>11.1<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]>SHAPE NÓS</p>
-
-<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=605
- style='margin-left:2.25pt;border-collapse:collapse;mso-table-layout-alt:fixed;
- mso-padding-alt:0cm .5pt 0cm .5pt'>
- <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
-  <td width=101 valign=top style='width:75.6pt;border:solid black 1.0pt;
-  border-right:none;mso-border-top-alt:solid black .25pt;mso-border-left-alt:
-  solid black .25pt;mso-border-bottom-alt:solid black .25pt;padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><b><span
-  style='font-size:10.0pt'>Ordem<o:p></o:p></span></b></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border:solid black 1.0pt;
-  border-right:none;mso-border-top-alt:solid black .25pt;mso-border-left-alt:
-  solid black .25pt;mso-border-bottom-alt:solid black .25pt;padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><b><span
-  style='font-size:10.0pt'>Nome<o:p></o:p></span></b></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border:solid black 1.0pt;
-  border-right:none;mso-border-top-alt:solid black .25pt;mso-border-left-alt:
-  solid black .25pt;mso-border-bottom-alt:solid black .25pt;padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><b><span
-  style='font-size:10.0pt'>Unidade<o:p></o:p></span></b></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border:solid black 1.0pt;
-  border-right:none;mso-border-top-alt:solid black .25pt;mso-border-left-alt:
-  solid black .25pt;mso-border-bottom-alt:solid black .25pt;padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><b><span
-  style='font-size:10.0pt'>Tipo<o:p></o:p></span></b></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border:solid black 1.0pt;
-  border-right:none;mso-border-top-alt:solid black .25pt;mso-border-left-alt:
-  solid black .25pt;mso-border-bottom-alt:solid black .25pt;padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><b><span
-  style='font-size:10.0pt'>Comprimento<o:p></o:p></span></b></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border:solid black 1.0pt;
-  mso-border-alt:solid black .25pt;padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><b><span
-  style='font-size:10.0pt'>Precisão<o:p></o:p></span></b></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:1'>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>1<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents><span style='font-size:10.0pt'>DC_ID<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>-<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>String<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>10<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border:solid black 1.0pt;
-  border-top:none;mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:
-  solid black .25pt;mso-border-right-alt:solid black .25pt;padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>-<o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:2;mso-yfti-lastrow:yes'>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>2<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents><span style='font-size:10.0pt'>COTA_TN<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>m<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>Real<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>10<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border:solid black 1.0pt;
-  border-top:none;mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:
-  solid black .25pt;mso-border-right-alt:solid black .25pt;padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>3<o:p></o:p></span></p>
-  </td>
- </tr>
-</table>
-
-<p class=Textbody><o:p>&nbsp;</o:p></p>
-
-<p class=Heading2 style='margin-left:0cm;text-indent:0cm'><![if !supportLists]><span
-style='mso-fareast-font-family:Calibri;mso-bidi-font-family:Calibri'><span
-style='mso-list:Ignore'>11.2<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]>SHAPE TRECHOS</p>
-
-<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=605
- style='margin-left:2.25pt;border-collapse:collapse;mso-table-layout-alt:fixed;
- mso-padding-alt:0cm .5pt 0cm .5pt'>
- <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
-  <td width=101 valign=top style='width:75.6pt;border:solid black 1.0pt;
-  border-right:none;mso-border-top-alt:solid black .25pt;mso-border-left-alt:
-  solid black .25pt;mso-border-bottom-alt:solid black .25pt;padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><b><span
-  style='font-size:10.0pt'>Ordem<o:p></o:p></span></b></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border:solid black 1.0pt;
-  border-right:none;mso-border-top-alt:solid black .25pt;mso-border-left-alt:
-  solid black .25pt;mso-border-bottom-alt:solid black .25pt;padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><b><span
-  style='font-size:10.0pt'>Nome<o:p></o:p></span></b></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border:solid black 1.0pt;
-  border-right:none;mso-border-top-alt:solid black .25pt;mso-border-left-alt:
-  solid black .25pt;mso-border-bottom-alt:solid black .25pt;padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><b><span
-  style='font-size:10.0pt'>Unidade<o:p></o:p></span></b></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border:solid black 1.0pt;
-  border-right:none;mso-border-top-alt:solid black .25pt;mso-border-left-alt:
-  solid black .25pt;mso-border-bottom-alt:solid black .25pt;padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><b><span
-  style='font-size:10.0pt'>Tipo<o:p></o:p></span></b></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border:solid black 1.0pt;
-  border-right:none;mso-border-top-alt:solid black .25pt;mso-border-left-alt:
-  solid black .25pt;mso-border-bottom-alt:solid black .25pt;padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><b><span
-  style='font-size:10.0pt'>Comprimento<o:p></o:p></span></b></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border:solid black 1.0pt;
-  mso-border-alt:solid black .25pt;padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><b><span
-  style='font-size:10.0pt'>Precisão<o:p></o:p></span></b></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:1'>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=Standard align=center style='text-align:center'><span
-  style='font-size:10.0pt'>1<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=Standard align=left style='text-align:left'><span style='font-size:
-  10.0pt'>DC_ID<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>-<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>QString<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>10<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border:solid black 1.0pt;
-  border-top:none;mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:
-  solid black .25pt;mso-border-right-alt:solid black .25pt;padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>-<o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:2'>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=Standard align=center style='text-align:center'><span
-  style='font-size:10.0pt'>2<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=Standard align=left style='text-align:left'><span style='font-size:
-  10.0pt'>PVM<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>-<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>QString<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>10<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border:solid black 1.0pt;
-  border-top:none;mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:
-  solid black .25pt;mso-border-right-alt:solid black .25pt;padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>-<o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:3'>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=Standard align=center style='text-align:center'><span
-  style='font-size:10.0pt'>3<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=Standard align=left style='text-align:left'><span style='font-size:
-  10.0pt'>PVJ<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>-<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>QString<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>10<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border:solid black 1.0pt;
-  border-top:none;mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:
-  solid black .25pt;mso-border-right-alt:solid black .25pt;padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>-<o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:4'>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=Standard align=center style='text-align:center'><span
-  style='font-size:10.0pt'>4<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=Standard align=left style='text-align:left'><span style='font-size:
-  10.0pt'>LENGTH<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>m<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>Real<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>10<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border:solid black 1.0pt;
-  border-top:none;mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:
-  solid black .25pt;mso-border-right-alt:solid black .25pt;padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>1<o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:5'>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=Standard align=center style='text-align:center'><span
-  style='font-size:10.0pt'>5<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=Standard align=left style='text-align:left'><span style='font-size:
-  10.0pt'>CTM<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>m<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>Real<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>10<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border:solid black 1.0pt;
-  border-top:none;mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:
-  solid black .25pt;mso-border-right-alt:solid black .25pt;padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>3<o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:6'>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=Standard align=center style='text-align:center'><span
-  style='font-size:10.0pt'>6<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=Standard align=left style='text-align:left'><span style='font-size:
-  10.0pt'>CTJ<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>m<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>Real<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>10<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border:solid black 1.0pt;
-  border-top:none;mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:
-  solid black .25pt;mso-border-right-alt:solid black .25pt;padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>3<o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:7'>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=Standard align=center style='text-align:center'><span
-  style='font-size:10.0pt'>7<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=Standard align=left style='text-align:left'><span style='font-size:
-  10.0pt'>CCM<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>m<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>Real<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>10<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border:solid black 1.0pt;
-  border-top:none;mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:
-  solid black .25pt;mso-border-right-alt:solid black .25pt;padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>3<o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:8'>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=Standard align=center style='text-align:center'><span
-  style='font-size:10.0pt'>8<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=Standard align=left style='text-align:left'><span style='font-size:
-  10.0pt'>CCJ<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>m<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>Real<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>10<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border:solid black 1.0pt;
-  border-top:none;mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:
-  solid black .25pt;mso-border-right-alt:solid black .25pt;padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>3<o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:9'>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=Standard align=center style='text-align:center'><span
-  style='font-size:10.0pt'>9<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=Standard align=left style='text-align:left'><span style='font-size:
-  10.0pt'>NA_MON<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>m<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>Real<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>10<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border:solid black 1.0pt;
-  border-top:none;mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:
-  solid black .25pt;mso-border-right-alt:solid black .25pt;padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>3<o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:10'>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=Standard align=center style='text-align:center'><span
-  style='font-size:10.0pt'>10<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=Standard align=left style='text-align:left'><span style='font-size:
-  10.0pt'>NA_JUS<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>m<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>Real<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>10<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border:solid black 1.0pt;
-  border-top:none;mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:
-  solid black .25pt;mso-border-right-alt:solid black .25pt;padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>3<o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:11'>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=Standard align=center style='text-align:center'><span
-  style='font-size:10.0pt'>11<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=Standard align=left style='text-align:left'><span style='font-size:
-  10.0pt'>PRFM<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>m<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>Real<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>10<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border:solid black 1.0pt;
-  border-top:none;mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:
-  solid black .25pt;mso-border-right-alt:solid black .25pt;padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>3<o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:12'>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=Standard align=center style='text-align:center'><span
-  style='font-size:10.0pt'>12<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=Standard align=left style='text-align:left'><span style='font-size:
-  10.0pt'>PRFJ<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>m<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>Real<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>10<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border:solid black 1.0pt;
-  border-top:none;mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:
-  solid black .25pt;mso-border-right-alt:solid black .25pt;padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>3<o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:13'>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=Standard align=center style='text-align:center'><span
-  style='font-size:10.0pt'>13<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=Standard align=left style='text-align:left'><span style='font-size:
-  10.0pt'>DIAMETER<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>mm<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>Real<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>10<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border:solid black 1.0pt;
-  border-top:none;mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:
-  solid black .25pt;mso-border-right-alt:solid black .25pt;padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>1<o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:14'>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=Standard align=center style='text-align:center'><span
-  style='font-size:10.0pt'>14<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=Standard align=left style='text-align:left'><span style='font-size:
-  10.0pt'>DECL<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>m<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>Real<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>10<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border:solid black 1.0pt;
-  border-top:none;mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:
-  solid black .25pt;mso-border-right-alt:solid black .25pt;padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>5<o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:15'>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=Standard align=center style='text-align:center'><span
-  style='font-size:10.0pt'>15<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=Standard align=left style='text-align:left'><span style='font-size:
-  10.0pt'>MANNING<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>m<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>Real<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>10<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border:solid black 1.0pt;
-  border-top:none;mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:
-  solid black .25pt;mso-border-right-alt:solid black .25pt;padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>3<o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:16'>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=Standard align=center style='text-align:center'><span
-  style='font-size:10.0pt'>16<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=Standard align=left style='text-align:left'><span style='font-size:
-  10.0pt'>Q_CONC_INI<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>m<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>Real<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>10<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border:solid black 1.0pt;
-  border-top:none;mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:
-  solid black .25pt;mso-border-right-alt:solid black .25pt;padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>3<o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:17'>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=Standard align=center style='text-align:center'><span
-  style='font-size:10.0pt'>17<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=Standard align=left style='text-align:left'><span style='font-size:
-  10.0pt'>Q_CONC_FIM<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>m<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>Real<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>10<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border:solid black 1.0pt;
-  border-top:none;mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:
-  solid black .25pt;mso-border-right-alt:solid black .25pt;padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>3<o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:18'>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=Standard align=center style='text-align:center'><span
-  style='font-size:10.0pt'>18<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=Standard align=left style='text-align:left'><span style='font-size:
-  10.0pt'>Q_INI<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>m<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>Real<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>10<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border:solid black 1.0pt;
-  border-top:none;mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:
-  solid black .25pt;mso-border-right-alt:solid black .25pt;padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>3<o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:19'>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=Standard align=center style='text-align:center'><span
-  style='font-size:10.0pt'>19<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=Standard align=left style='text-align:left'><span style='font-size:
-  10.0pt'>Q_FIM<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>m<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>Real<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>10<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border:solid black 1.0pt;
-  border-top:none;mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:
-  solid black .25pt;mso-border-right-alt:solid black .25pt;padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>3<o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:20'>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=Standard align=center style='text-align:center'><span
-  style='font-size:10.0pt'>20<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=Standard align=left style='text-align:left'><span style='font-size:
-  10.0pt'>VEL_INI<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>m<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>Real<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>10<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border:solid black 1.0pt;
-  border-top:none;mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:
-  solid black .25pt;mso-border-right-alt:solid black .25pt;padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>2<o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:21'>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=Standard align=center style='text-align:center'><span
-  style='font-size:10.0pt'>21<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=Standard align=left style='text-align:left'><span style='font-size:
-  10.0pt'>VEL_FIM<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>m<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>Real<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>10<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border:solid black 1.0pt;
-  border-top:none;mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:
-  solid black .25pt;mso-border-right-alt:solid black .25pt;padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>2<o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:22'>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=Standard align=center style='text-align:center'><span
-  style='font-size:10.0pt'>22<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=Standard align=left style='text-align:left'><span style='font-size:
-  10.0pt'>VEL_CRI<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>m<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>Real<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>10<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border:solid black 1.0pt;
-  border-top:none;mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:
-  solid black .25pt;mso-border-right-alt:solid black .25pt;padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>2<o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:23'>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=Standard align=center style='text-align:center'><span
-  style='font-size:10.0pt'>23<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=Standard align=left style='text-align:left'><span style='font-size:
-  10.0pt'>TRATIVA<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>m<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>Real<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>10<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border:solid black 1.0pt;
-  border-top:none;mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:
-  solid black .25pt;mso-border-right-alt:solid black .25pt;padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>3<o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:24'>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=Standard align=center style='text-align:center'><span
-  style='font-size:10.0pt'>24<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=Standard align=left style='text-align:left'><span style='font-size:
-  10.0pt'>LAM_INI<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>m<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>Real<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>10<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border:solid black 1.0pt;
-  border-top:none;mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:
-  solid black .25pt;mso-border-right-alt:solid black .25pt;padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>4<o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:25'>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=Standard align=center style='text-align:center'><span
-  style='font-size:10.0pt'>25<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=Standard align=left style='text-align:left'><span style='font-size:
-  10.0pt'>LAM_FIM<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>m<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>Real<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>10<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border:solid black 1.0pt;
-  border-top:none;mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:
-  solid black .25pt;mso-border-right-alt:solid black .25pt;padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>2<o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:26'>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=Standard align=center style='text-align:center'><span
-  style='font-size:10.0pt'>26<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=Standard align=left style='text-align:left'><span style='font-size:
-  10.0pt'>LAM_MAX<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>m<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>Real<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>10<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border:solid black 1.0pt;
-  border-top:none;mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:
-  solid black .25pt;mso-border-right-alt:solid black .25pt;padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>2<o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:27'>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=Standard align=center style='text-align:center'><span
-  style='font-size:10.0pt'>27<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=Standard align=left style='text-align:left'><span style='font-size:
-  10.0pt'>REC_MIN<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>m<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>Real<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>10<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border:solid black 1.0pt;
-  border-top:none;mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:
-  solid black .25pt;mso-border-right-alt:solid black .25pt;padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>2<o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:28'>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=Standard align=center style='text-align:center'><span
-  style='font-size:10.0pt'>28<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=Standard align=left style='text-align:left'><span style='font-size:
-  10.0pt'>CONTR_LADO<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>-<sup>(1)</sup><o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>Integer<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>1<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border:solid black 1.0pt;
-  border-top:none;mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:
-  solid black .25pt;mso-border-right-alt:solid black .25pt;padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>-<o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:29'>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=Standard align=center style='text-align:center'><span
-  style='font-size:10.0pt'>29<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=Standard align=left style='text-align:left'><span style='font-size:
-  10.0pt'>ETAPA<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>-<sup>(2)</sup><o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>Integer<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>1<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border:solid black 1.0pt;
-  border-top:none;mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:
-  solid black .25pt;mso-border-right-alt:solid black .25pt;padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>-<o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:30'>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=Standard align=center style='text-align:center'><span
-  style='font-size:10.0pt'>30<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=Standard align=left style='text-align:left'><span style='font-size:
-  10.0pt'>PONTA_SECA<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>-<sup>(3)</sup><o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>QString<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>1<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border:solid black 1.0pt;
-  border-top:none;mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:
-  solid black .25pt;mso-border-right-alt:solid black .25pt;padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>-<o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:31;mso-yfti-lastrow:yes'>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=Standard align=center style='text-align:center'><span
-  style='font-size:10.0pt'>31<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=Standard align=left style='text-align:left'><span style='font-size:
-  10.0pt'>OBS<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>-<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>QString<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>30<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border:solid black 1.0pt;
-  border-top:none;mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:
-  solid black .25pt;mso-border-right-alt:solid black .25pt;padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>-<o:p></o:p></span></p>
-  </td>
- </tr>
-</table>
-
-<p class=Standard><span style='font-size:9.0pt'>Valores permitidos<o:p></o:p></span></p>
-
-<p class=Standard><sup><span style='font-size:9.0pt'>(1)</span></sup><span
-style='font-size:9.0pt'>: Trecho sem contribuição = 0, contribuição unilateral
-= 1 e contribuição bilateral = 2<o:p></o:p></span></p>
-
-<p class=Standard><sup><span style='font-size:9.0pt'>(2)</span></sup><span
-style='font-size:9.0pt'>: Trecho existente = 0, a implantar na primeira etapa =
-1, a implantar na segunda etapa = 2<o:p></o:p></span></p>
-
-<p class=Standard><sup><span style='font-size:9.0pt'>(3)</span></sup><span
-style='font-size:9.0pt'>: É ponta seca = S, não é ponta seca = N<o:p></o:p></span></p>
-
-<p class=Standard><o:p>&nbsp;</o:p></p>
-
-<p class=Heading2 style='margin-left:0cm;text-indent:0cm'><![if !supportLists]><span
-style='mso-fareast-font-family:Calibri;mso-bidi-font-family:Calibri'><span
-style='mso-list:Ignore'>11.3<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]>SHAPE INTERFERÊNCIAS</p>
-
-<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=605
- style='margin-left:2.25pt;border-collapse:collapse;mso-table-layout-alt:fixed;
- mso-padding-alt:0cm .5pt 0cm .5pt'>
- <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
-  <td width=101 valign=top style='width:75.6pt;border:solid black 1.0pt;
-  border-right:none;mso-border-top-alt:solid black .25pt;mso-border-left-alt:
-  solid black .25pt;mso-border-bottom-alt:solid black .25pt;padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><b><span
-  style='font-size:10.0pt'>Ordem<o:p></o:p></span></b></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border:solid black 1.0pt;
-  border-right:none;mso-border-top-alt:solid black .25pt;mso-border-left-alt:
-  solid black .25pt;mso-border-bottom-alt:solid black .25pt;padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><b><span
-  style='font-size:10.0pt'>Nome<o:p></o:p></span></b></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border:solid black 1.0pt;
-  border-right:none;mso-border-top-alt:solid black .25pt;mso-border-left-alt:
-  solid black .25pt;mso-border-bottom-alt:solid black .25pt;padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><b><span
-  style='font-size:10.0pt'>Unidade<o:p></o:p></span></b></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border:solid black 1.0pt;
-  border-right:none;mso-border-top-alt:solid black .25pt;mso-border-left-alt:
-  solid black .25pt;mso-border-bottom-alt:solid black .25pt;padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><b><span
-  style='font-size:10.0pt'>Tipo<o:p></o:p></span></b></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border:solid black 1.0pt;
-  border-right:none;mso-border-top-alt:solid black .25pt;mso-border-left-alt:
-  solid black .25pt;mso-border-bottom-alt:solid black .25pt;padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><b><span
-  style='font-size:10.0pt'>Comprimento<o:p></o:p></span></b></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border:solid black 1.0pt;
-  mso-border-alt:solid black .25pt;padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><b><span
-  style='font-size:10.0pt'>Precisão<o:p></o:p></span></b></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:1'>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=Standard align=center style='text-align:center'><span
-  style='font-size:10.0pt'>1<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=Standard align=left style='text-align:left'><span style='font-size:
-  10.0pt'>DC_ID<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>-<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>31<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>10<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border:solid black 1.0pt;
-  border-top:none;mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:
-  solid black .25pt;mso-border-right-alt:solid black .25pt;padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>-<o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:2'>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=Standard align=center style='text-align:center'><span
-  style='font-size:10.0pt'>2<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=Standard align=left style='text-align:left'><span style='font-size:
-  10.0pt'>TIPO_INT<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>-<sup>(1)</sup><o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>QString<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>2<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border:solid black 1.0pt;
-  border-top:none;mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:
-  solid black .25pt;mso-border-right-alt:solid black .25pt;padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>-<o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:3'>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=Standard align=center style='text-align:center'><span
-  style='font-size:10.0pt'>3<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=Standard align=left style='text-align:left'><span style='font-size:
-  10.0pt'>CS<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>m<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>Real<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>10<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border:solid black 1.0pt;
-  border-top:none;mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:
-  solid black .25pt;mso-border-right-alt:solid black .25pt;padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>3<o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:4;mso-yfti-lastrow:yes'>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=Standard align=center style='text-align:center'><span
-  style='font-size:10.0pt'>4<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=Standard align=left style='text-align:left'><span style='font-size:
-  10.0pt'>CI<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>m<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>Real<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border-top:none;border-left:
-  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
-  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>10<o:p></o:p></span></p>
-  </td>
-  <td width=101 valign=top style='width:75.6pt;border:solid black 1.0pt;
-  border-top:none;mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:
-  solid black .25pt;mso-border-right-alt:solid black .25pt;padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=TableContents align=center style='text-align:center'><span
-  style='font-size:10.0pt'>3<o:p></o:p></span></p>
-  </td>
- </tr>
-</table>
-
-<p class=Standard><span style='font-size:9.0pt'>Valores permitidos<o:p></o:p></span></p>
-
-<p class=Standard><sup><span style='font-size:9.0pt'>(1)</span></sup><span
-style='font-size:9.0pt'>: TN para terreno natural, qualquer outro valor
-(inclusive nulo) é considerada uma interferência.<o:p></o:p></span></p>
-
-<p class=Standard><o:p>&nbsp;</o:p></p>
-
+<body lang="pt-BR" dir="ltr">
+<h1 class="western"><a name="__RefHeading___Toc3816_1012792670"></a><img src="images\figb6a402436fc68eb5.png" name="qesg_logo" align="bottom" width="605" height="85" border="0"/>
+</h1>
+<p class="western"><br/>
+
+</p>
+<h1 class="western"><a name="__RefHeading___Toc3818_1012792670"></a>1APRESENTA&Ccedil;&Atilde;O</h1>
+<p class="western"><br/>
+
+</p>
+<p class="western"><br/>
+
+</p>
+<p class="western"><span lang="pt-BR"><a class="western" href="https://plugins.qgis.org/plugins/QEsg/">QEsg</a>
+&eacute; um </span><span lang="pt-BR">complemento</span><span lang="pt-BR">
+desenvolvido para o software <a class="western" href="http://www.qgis.org/">Qgis</a>
+com o objetivo de auxiliar na projeto de redes de esgotamento
+sanit&aacute;rio.</span></p>
+<p class="western"><a name="__RefHeading___Toc3053_1012792670"></a><span lang="pt-BR">O
+plugin se utiliza das facilidades e recursos inerentes a um ambiente
+SIG (Sistema de Informa&ccedil;&otilde;es geogr&aacute;ficas) para
+apoiar a </span><span lang="pt-BR">organiza&ccedil;&atilde;o,</span><span lang="pt-BR">
+desenvolvimento, </span><span lang="pt-BR">dimensionamento e
+apresenta&ccedil;&atilde;o final do projeto de uma rede esgoto.</span></p>
+<p class="western"><br/>
+
+</p>
+<h1 class="western"><a name="__RefHeading___Toc3912_1012792670"></a>2<span lang="pt-BR">S</span><span lang="pt-BR">UM</span><span lang="pt-BR">&aacute;</span><span lang="pt-BR">RIO</span></h1>
+<p class="western"><br/>
+
+</p>
+<div id="Sum&aacute;rio1" dir="ltr">
+	<p style="text-transform: uppercase; line-height: 100%"><b><a class="western" href="#__RefHeading___Toc3818_1012792670">1
+	APRESENTA&Ccedil;&Atilde;O	1</a></b></p>
+	<p style="text-transform: uppercase; line-height: 100%"><b><a class="western" href="#__RefHeading___Toc3912_1012792670">2
+	SUM&aacute;RIO	1</a></b></p>
+	<p style="text-transform: uppercase; line-height: 100%"><b><a class="western" href="#__RefHeading___Toc3057_1012792670">3
+	SCREENSHOTS	1</a></b></p>
+	<p style="text-transform: uppercase; line-height: 100%"><b><a class="western" href="#__RefHeading___Toc3059_1012792670">4
+	TUTORIAL	1</a></b></p>
+	<p style="margin-bottom: 0.1cm; text-transform: uppercase; line-height: 100%; text-decoration: none">
+	<span style="background: transparent"><a class="western" href="#__RefHeading___Toc3061_1012792670">4.1CONCEITUA&Ccedil;&Atilde;O	1</a></span></p>
+	<p style="text-indent: 0.2cm; margin-bottom: 0.1cm; text-transform: uppercase; line-height: 100%; text-decoration: none">
+	<span style="background: transparent"><a class="western" href="#__RefHeading___Toc3063_1012792670">4.2arquivos
+	UTILIZADOS NESSE TUTORIAL	1</a></span></p>
+	<p style="text-indent: 0.2cm; margin-bottom: 0.1cm; text-transform: uppercase; line-height: 100%; text-decoration: none">
+	<span style="background: transparent"><a class="western" href="#__RefHeading___Toc3065_1012792670">4.3Exemplo
+	de aplica&ccedil;&atilde;o	1</a></span></p>
+	<p style="text-indent: 0.2cm; margin-bottom: 0.1cm; text-transform: uppercase; line-height: 100%; text-decoration: none">
+	<span style="background: transparent"><a class="western" href="#__RefHeading___Toc3067_1012792670">4.4
+	Bot&atilde;o 00 Configura&ccedil;&atilde;o	1</a></span></p>
+	<p style="text-indent: 0.2cm; margin-bottom: 0.1cm; text-transform: uppercase; line-height: 100%; text-decoration: none">
+	<span style="background: transparent"><a class="western" href="#__RefHeading___Toc3069_1012792670">4.5
+	Bot&atilde;o 01 verifica/cria campos	1</a></span></p>
+	<p style="text-indent: 0.2cm; margin-bottom: 0.1cm; text-transform: uppercase; line-height: 100%; text-decoration: none">
+	<span style="background: transparent"><a class="western" href="#__RefHeading___Toc3071_1012792670">4.6
+	BOT&Atilde;O 02 NUMERAR REDE	1</a></span></p>
+	<p style="text-indent: 0.2cm; margin-bottom: 0.1cm; text-transform: uppercase; line-height: 100%; text-decoration: none">
+	<span style="background: transparent"><a class="western" href="#__RefHeading___Toc3073_1012792670">4.7
+	BOT&Atilde;O 03 CRIAR LAYER DE N&Oacute;S	1</a></span></p>
+	<p style="text-indent: 0.2cm; margin-bottom: 0.1cm; text-transform: uppercase; line-height: 100%; text-decoration: none">
+	<span style="background: transparent"><a class="western" href="#__RefHeading___Toc3075_1012792670">4.8
+	BOT&Atilde;O 04 PreenchE OS CAMPOS	1</a></span></p>
+	<p style="text-indent: 0.2cm; margin-bottom: 0.1cm; text-transform: uppercase; line-height: 100%; text-decoration: none">
+	<span style="background: transparent"><a class="western" href="#__RefHeading___Toc3077_1012792670">4.9PONTA
+	SECA	1</a></span></p>
+	<p style="text-indent: 0.2cm; margin-bottom: 0.1cm; text-transform: uppercase; line-height: 100%; text-decoration: none">
+	<span style="background: transparent"><a class="western" href="#__RefHeading___Toc3079_1012792670">4.10
+	BOT&Atilde;O 5 CALCULA VAZ&Atilde;O	1</a></span></p>
+	<p style="text-indent: 0.2cm; margin-bottom: 0.1cm; text-transform: uppercase; line-height: 100%; text-decoration: none">
+	<span style="background: transparent"><a class="western" href="#__RefHeading___Toc3081_1012792670">4.11
+	BOT&Atilde;O 6 DIMENSIONA	1</a></span></p>
+	<p style="text-indent: 0.2cm; margin-bottom: 0.1cm; text-transform: uppercase; line-height: 100%; text-decoration: none">
+	<span style="background: transparent"><a class="western" href="#__RefHeading___Toc3083_1012792670">4.12
+	BOT&Atilde;O 7 DESENHA PERFIL	1</a></span></p>
+	<p style="text-transform: uppercase; line-height: 100%"><b><a class="western" href="#__RefHeading___Toc3085_1012792670">5
+	UNIDADES DAS TABELAS	1</a></b></p>
+	<p style="text-indent: 0.2cm; margin-bottom: 0.1cm; text-transform: uppercase; line-height: 100%; text-decoration: none">
+	<span style="background: transparent"><a class="western" href="#__RefHeading___Toc3087_1012792670">5.1SHAPE
+	N&Oacute;S	1</a></span></p>
+	<p style="text-indent: 0.2cm; margin-bottom: 0.1cm; text-transform: uppercase; line-height: 100%; text-decoration: none">
+	<span style="background: transparent"><a class="western" href="#__RefHeading___Toc3089_1012792670">5.2SHAPE
+	trecho	1</a></span></p>
+	<p style="text-indent: 0.2cm; margin-bottom: 0.1cm; text-transform: uppercase; line-height: 100%; text-decoration: none">
+	<span style="background: transparent"><a class="western" href="#__RefHeading___Toc3091_1012792670">5.3SHAPE
+	INTERFER&Ecirc;NCIAS	1</a></span></p>
+	<p style="text-transform: uppercase; line-height: 100%"><b><a class="western" href="#__RefHeading___Toc3820_1012792670">6
+	AUTOR	1</a></b></p>
+	<p style="text-transform: uppercase; line-height: 100%"><b><a class="western" href="#__RefHeading___Toc3822_1012792670">7
+	COLABORADOR	1</a></b></p>
+	<p style="text-transform: uppercase; line-height: 100%"><b><a class="western" href="#__RefHeading___Toc3093_1012792670">8
+	Nota de responsabilidade de uso	1</a></b></p>
 </div>
+<p class="western"><br/>
 
+</p>
+<h1 class="western"></h1>
+<h1 class="western" align="center"><br/>
+
+</h1>
+<h1 class="western" style="page-break-before: always"><a name="__RefHeading___Toc3057_1012792670"></a>
+3SCREENSHOTS</h1>
+<p class="western"><br/>
+
+</p>
+<p align="center" style="font-style: normal; line-height: 100%"><font size="2" style="font-size: 10pt"><b>Figura
+1 - Tela t&iacute;pica de uma rede de esgoto com plugin QEsg.</b></font></p>
+<p class="western" align="center"><img src="images\figfe88cdc51ed7216e.png" name="figura01" align="bottom" width="602" height="342" border="0"/>
+</p>
+<p class="western" align="center"><br/>
+
+</p>
+<p class="western" align="center"><br/>
+
+</p>
+<p align="center" style="font-style: normal; line-height: 100%"><font size="2" style="font-size: 10pt"><b>Figura
+2 - Rede de esgoto com multiplas bacias em Ambiente Qgis.</b></font></p>
+<p class="western" align="center"><img src="images\figefc3987574fdab19.png" name="figura02" align="bottom" width="610" height="343" border="0"/>
+</p>
+<p class="western" align="center"><br/>
+
+</p>
+<p class="western" align="center"><br/>
+
+</p>
+<p align="center" style="font-style: normal; line-height: 100%"><font size="2" style="font-size: 10pt"><b>Figura
+3 - Resultado de um arquivo DXF exportado atrav&eacute;s do Plugin (a
+partir da vers&atilde;o 1.1) em ambiente CAD.</b></font></p>
+<p align="center" style="font-style: normal; line-height: 100%"><img src="images\fig151e7a02dd465305.png" name="figura03" align="bottom" width="605" height="345" border="0"/>
+</p>
+<p align="center" style="font-style: normal; line-height: 100%"><br/>
+
+</p>
+<p align="center" style="font-style: normal; line-height: 100%"><br/>
+
+</p>
+<p align="center" style="font-style: normal; line-height: 100%"><font size="2" style="font-size: 10pt"><b>Figura
+4 - Detalhe do arquivo DXF exportado pelo Plugin (a partir da vers&atilde;o
+1.1) em ambiente CAD.</b></font></p>
+<p align="center" style="font-style: normal; line-height: 100%"><img src="images\fig55333ec8aaf3fe92.png" name="figura04" align="bottom" width="600" height="320" border="0"/>
+</p>
+<p class="western"><br/>
+
+</p>
+<h1 class="western"><a name="__RefHeading___Toc3059_1012792670"></a>4TUTORIAL</h1>
+<p class="western"><br/>
+
+</p>
+<h2 class="western"><a name="__RefHeading___Toc3061_1012792670"></a>4.1CONCEITUA&Ccedil;&Atilde;O</h2>
+<p class="western"><br/>
+
+</p>
+<p class="western">A estrutura da rede atende aos seguintes
+princ&iacute;pios.</p>
+<ul>
+	<li/>
+<p class="western">O plugin considera a rede formada por um ou
+	mais coletores. 
+	</p>
+	<li/>
+<p class="western">O coletor principal possui o PV final da
+	rede. 
+	</p>
+	<li/>
+<p class="western">Os <span style="background: transparent">coletores</span><span style="background: transparent">
+	</span>s&atilde;o divididos em um ou mais trechos.</p>
+</ul>
+<p class="western"><br/>
+
+</p>
+<p class="western">Outros detalhes b&aacute;sicos s&atilde;o
+apresentados no exemplo de aplica&ccedil;&atilde;o a seguir.</p>
+<p class="western"><br/>
+
+</p>
+<h2 class="western"><a name="__RefHeading___Toc3063_1012792670"></a>4.2arquivos
+UTILIZADOS NESSE TUTORIAL</h2>
+<p class="western"><br/>
+
+</p>
+<p class="western"><span lang="pt-BR">Arquivos </span><span lang="pt-BR">utilizados
+n</span><span lang="pt-BR">o tutorial </span><span lang="pt-BR">para
+download:</span></p>
+<ul>
+	<li/>
+<p class="western"><a class="western" href="../../../.qgis2/python/plugins/QEsg/sample/sample/clean/shapes/Trechos.zip%3Fraw=True" target="_blank">Arquivo</a><a class="western" href="../../../.qgis2/python/plugins/QEsg/sample/sample/clean/shapes/Trechos.zip%3Fraw=True" target="_blank">s</a><a class="western" href="../../../.qgis2/python/plugins/QEsg/sample/sample/clean/shapes/Trechos.zip%3Fraw=True" target="_blank">
+	bruto</a><a class="western" href="../../../.qgis2/python/plugins/QEsg/sample/sample/clean/shapes/Trechos.zip%3Fraw=True" target="_blank">s</a><a class="western" href="../../../.qgis2/python/plugins/QEsg/sample/sample/clean/shapes/Trechos.zip%3Fraw=True" target="_blank">
+	</a><a class="western" href="../../../.qgis2/python/plugins/QEsg/sample/sample/clean/shapes/Trechos.zip%3Fraw=True" target="_blank">(</a><a class="western" href="../../../.qgis2/python/plugins/QEsg/sample/sample/clean/shapes/Trechos.zip%3Fraw=True" target="_blank">inicia</a><a class="western" href="../../../.qgis2/python/plugins/QEsg/sample/sample/clean/shapes/Trechos.zip%3Fraw=True" target="_blank">l)</a>,
+	cont&eacute;m o shapefile da rede, composta por tr&ecirc;s
+	coletores.</p>
+	<li/>
+<p class="western"><a class="western" href="../../../.qgis2/python/plugins/QEsg/sample/sample/finished/shapes/finished_shapes.zip%3Fraw=True" target="_blank">Arquivo</a><a class="western" href="../../../.qgis2/python/plugins/QEsg/sample/sample/finished/shapes/finished_shapes.zip%3Fraw=True" target="_blank">s</a><a class="western" href="../../../.qgis2/python/plugins/QEsg/sample/sample/finished/shapes/finished_shapes.zip%3Fraw=True" target="_blank">
+	</a><a class="western" href="../../../.qgis2/python/plugins/QEsg/sample/sample/finished/shapes/finished_shapes.zip%3Fraw=True" target="_blank">finalizados</a>,
+	cont&eacute;m os shapefile com os trechos da rede e e n&oacute;s,
+	calculados e dimensionados com a utiliza&ccedil;&atilde;o do Plugin.</p>
+</ul>
+<p class="western"><br/>
+
+</p>
+<p class="western"><br/>
+
+</p>
+<h2 class="western"><a name="__RefHeading___Toc3065_1012792670"></a>4.3Exemplo
+de aplica&ccedil;&atilde;o</h2>
+<p class="western" style="line-height: 100%"><br/>
+
+</p>
+<ul>
+	<li/>
+<p class="western">Configure o projeto para as coordenadas
+	UTM, conforme a faixa meridiana local.</p>
+	<li/>
+<p class="western">Carregue um arquivo vetorial (shape) com a
+	rede de esgoto. Como alternativa voc&ecirc; pode criar um arquivo de
+	linhas no formato shape e desenhar a rede de esgoto utilizando os
+	recursos do QGIS, neste caso siga estritamente as recomenda&ccedil;&otilde;es
+	seguintes para a cria&ccedil;&atilde;o de arquivo:</p>
+	<ul>
+		<li/>
+<p class="western">Salve o arquivo <span style="background: transparent">(ex.:
+		</span><b><span style="background: transparent">Trechos</span></b><b><span style="background: transparent">)</span></b>
+		utilizando um Sistema de Refer&ecirc;ncia de Coordenadas (CRS) em
+		Proje&ccedil;&atilde;o UTM, para a faixa meridiana local. 
+		</p>
+		<li/>
+<p class="western">Desenhe sempre os trechos na dire&ccedil;&atilde;o
+		do fluxo (de montante para jusante).</p>
+		<li/>
+<p class="western">N&atilde;o &eacute; necess&aacute;rio
+		criar nenhum campo espec&iacute;fico no momento de salvar o shape
+		<b>Trechos</b>.</p>
+	</ul>
+	<li/>
+<p class="western">Salve o projeto. Nesse momento a janela do
+	projeto ter&aacute; a apar&ecirc;ncia da <b>Figura 5</b>.</p>
+	<li/>
+<p class="western">Abra a tabela de atributos do shape de
+	rede, onde existir&aacute; uma linha para cada coletor tra&ccedil;ado
+	e somente um campo com valores nulos (vide <b>Figura 5</b>). 
+	</p>
+</ul>
+<p class="western"><br/>
+
+</p>
+<p align="center" style="font-style: normal; line-height: 100%"><font size="2" style="font-size: 10pt"><b>Figura
+5 - Apar&ecirc;ncia inicial do projeto, ap&oacute;s carregar ou
+tra&ccedil;ar a rede de esgotos.</b></font></p>
+<p align="center" style="font-style: normal; line-height: 100%"><img src="images\fig99e68e04b169121.png" name="figura05" align="bottom" width="605" height="427" border="0"/>
+</p>
+<p class="western" style="line-height: 100%"><br/>
+
+</p>
+<p class="western"><br/>
+
+</p>
+<h2 class="western" style="page-break-before: always"><a name="__RefHeading___Toc3067_1012792670"></a>
+4.4<img src="images\figfef4e818bfc6bf06.png" name="Figura9" align="middle" width="30" height="30" border="0"/>
+
+Bot&atilde;o 00 Configura&ccedil;&atilde;o</h2>
+<p class="western"><br/>
+
+</p>
+<p class="western">Ao clicar abre uma janela apresentada na <b>Figura 6</b>.</p>
+<p class="western"><br/>
+
+</p>
+<p class="western" style="page-break-before: auto; page-break-after: auto">
+<br/>
+
+</p>
+<table width="100%" cellpadding="4" cellspacing="0">
+	<col width="128*">
+	<col width="128*">
+	<tr valign="top">
+		<td width="50%" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0.1cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p align="center" style="font-style: normal"><font size="2" style="font-size: 10pt"><b>Figura
+			6 - Janela do Bot&atilde;o 00 &ndash; Configura&ccedil;&atilde;o</b></font></p>
+			<p class="western" align="center"><img src="images\fig7a42f593322f7f8d.png" name="figura06" align="bottom" width="295" height="269" border="0"/>
+</p>
+		</td>
+		<td width="50%" style="border: 1px solid #000000; padding: 0.1cm">
+			<p align="center" style="font-style: normal"><font size="2" style="font-size: 10pt"><b>Figura
+			7 - Janela do Bot&atilde;o 00 &ndash; Configura&ccedil;&atilde;o
+			ap&oacute;s preenchimento dos dados b&aacute;sicos</b></font></p>
+			<p class="western" align="center"><img src="images\fig3ae901ea0d41096a.png" name="figura07" align="bottom" width="295" height="269" border="0"/>
+</p>
+		</td>
+	</tr>
+</table>
+<p class="western" style="line-height: 100%"><br/>
+
+</p>
+<p class="western">Preencher as informa&ccedil;&otilde;es b&aacute;sicas
+na janela aberta. 
+</p>
+<ul>
+	<li/>
+<p class="western">No grupo Layers selecione o arquivo de
+	linhas que voc&ecirc; salvou com o nome <b>Trechos</b>, com o
+	tra&ccedil;ado da rede.  
+	</p>
+	<li/>
+<p class="western">Neste exemplo, somente incluiremos dois
+	par&acirc;metros de entrada da aba <b>Dados</b><span style="font-weight: normal">
+	(aten&ccedil;&atilde;o: n&atilde;o digite separador de milhar, o
+	ponto &eacute; separador de decimais)</span>:</p>
+</ul>
+<ul>
+	<ul>
+		<li/>
+<p class="western">Popula&ccedil;&atilde;o inicial: (digite)
+		10000</p>
+		<li/>
+<p class="western">Popula&ccedil;&atilde;o de satura&ccedil;&atilde;o:
+		(digite) 13000</p>
+	</ul>
+	<li/>
+<p class="western">Mantenha os par&acirc;metros padr&otilde;es
+	das abas <b>Tubos</b> e <b>Op&ccedil;&otilde;es de c&aacute;lculo</b>.
+	A janela ter&aacute; a apar&ecirc;ncia da <b>Figura 7</b>.</p>
+	<li/>
+<p class="western">Clique no bot&atilde;o <b>OK</b> para
+	salvar os par&acirc;metros gerais do projeto.</p>
+</ul>
+<p class="western"><br/>
+
+</p>
+<p class="western"><br/>
+
+</p>
+<h2 class="western"><a name="__RefHeading___Toc3069_1012792670"></a>4.5<img src="images\fig4382197c198bdabe.png" name="Figura10" align="middle" width="30" height="30" border="0"/>
+
+Bot&atilde;o 01 verifica/cria campos</h2>
+<p class="western"><br/>
+
+</p>
+<p class="western">Ao pressionar neste bot&atilde;o o plugin verifica
+se o shape <b>Trechos</b> com o tra&ccedil;ado da rede cont&eacute;m
+os campos padr&otilde;es. Se n&atilde;o existe oferece a
+possibilidade de cri&aacute;-los automaticamente, como mostra a <b>Figura 8</b>.
+Aceite essa op&ccedil;&atilde;o.</p>
+<p class="western"><br/>
+
+</p>
+<p class="western">Abra novamente a tabela de atributos do shape
+<b>Trechos</b> com a rede de esgoto (vide <b>Figura 9</b>). Voc&ecirc;
+ver&aacute; que foram criados um conjunto de campos para cada coletor
+tra&ccedil;ado. Os valores contidos nesses campos ser&atilde;o nulos
+ou zeros (sem informa&ccedil;&atilde;o ainda).</p>
+<p class="western"><br/>
+
+</p>
+<table width="100%" cellpadding="4" cellspacing="0">
+	<col width="128*">
+	<col width="128*">
+	<tr valign="top">
+		<td width="50%" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0.1cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p align="center" style="font-style: normal"><font size="2" style="font-size: 10pt"><b>Figura
+			8 - Mensagem para cria&ccedil;&atilde;o dos campos padr&otilde;es
+			no shape da rede de esgotos.</b></font></p>
+			<p class="western" align="center"><img src="images\fige9af7918483dbddc.png" name="figura08" align="bottom" width="189" height="454" border="0"/>
+</p>
+		</td>
+		<td width="50%" style="border: 1px solid #000000; padding: 0.1cm">
+			<p align="center" style="font-style: normal"><font size="2" style="font-size: 10pt"><b>Figura
+			9 - Tabela da rede de esgotos, ap&oacute;s a cria&ccedil;&atilde;o
+			dos campos padr&otilde;es.</b></font></p>
+			<p class="western" align="center"><img src="images\fig9a568b01d89ce8f3.png" name="figura09" align="bottom" width="134" height="454" border="0"/>
+</p>
+		</td>
+	</tr>
+</table>
+<p class="western"><br/>
+
+</p>
+<p class="western"><br/>
+
+</p>
+<h2 class="western"><a name="__RefHeading___Toc3071_1012792670"></a>4.6<img src="images\fig96a608ce40392369.png" name="Figura11" align="middle" width="30" height="30" border="0"/>
+
+BOT&Atilde;O 02 NUMERAR REDE</h2>
+<p class="western"><br/>
+
+</p>
+<p class="western">Ao clicar nesse bot&atilde;o &eacute; verificado
+se o tra&ccedil;ado da rede de esgoto &eacute; composto por segmentos
+simples (segmentos de reta individuais entre v&eacute;rtices
+consecutivos). Caso exista algum elemento de rede com mais de dois
+v&eacute;rtices, ser&aacute; apresentada uma mensagem semelhante &agrave;
+da <b>Figura 10</b>.</p>
+<p class="western"><br/>
+
+</p>
+<p align="center" style="font-style: normal; line-height: 100%"><font size="2" style="font-size: 10pt"><b>Figura
+10 - Mensagem subdivis&atilde;o de coletores em trechos.</b></font></p>
+<p class="western" align="center" style="page-break-before: auto; page-break-after: auto">
+<img src="images\fige520154b13736a0b.png" name="figura10" align="bottom" width="293" height="76" border="0"/>
+</p>
+<p class="western" style="line-height: 100%"><br/>
+
+</p>
+<p class="western"><br/>
+
+</p>
+<p class="western">No nosso exemplo, antes de clicar pela primeira
+vez, o shape <b>Trechos</b> possui tr&ecirc;s coletores tra&ccedil;ados
+de montante para jusante (vide <b>Figura 9</b>) definidos por
+poligonais abertas (um coletor com 5 v&eacute;rtices e dois coletores
+com 3). Na mensagem semelhante &agrave; da <b>Figura 10</b><span style="font-weight: normal">
+clicar em </span><b>Sim</b>.</p>
+<ul>
+	<li/>
+<p class="western"><u>Mensagem para subdivis&atilde;o de
+	coletores em trechos</u>. Existem elementos com ( &hellip;). Deseja
+	convert&ecirc;-los para linhas simples? (vide ) <b>Figura 10</b>.
+	Clique no bot&atilde;o Sim.</p>
+</ul>
+<p class="western"><br/>
+
+</p>
+<p class="western"><br/>
+
+</p>
+<p align="center" style="font-style: normal; line-height: 100%"><font size="2" style="font-size: 10pt"><b>Figura
+11 - Mensagem subdivis&atilde;o de coletores em trechos.</b></font></p>
+<p align="center" style="font-style: normal; line-height: 100%"><img src="images\fig497bb7c3ae5f5870.png" name="figura11" align="middle" width="595" height="367" border="0"/>
+</p>
+<p class="western" style="line-height: 100%"><br/>
+
+</p>
+<p class="western" style="line-height: 100%"><br/>
+
+</p>
+<p class="western">Ser&aacute; aberta uma janela, semelhante &agrave;
+<b>Figura 11</b>, a qual ser&aacute; fixada na lateral direita no
+ambiente QGIS. Nos passos a seguir, proceda com aten&ccedil;&atilde;o.</p>
+<ul>
+	<li/>
+<p class="western">Verifique que a caixa &lt;Coletor&gt;
+	esteja preenchido com o valor 1. Sen&atilde;o digite o valor 1.</p>
+	<li/>
+<p class="western">Verifique que a caixa &lt;N&uacute;mero de
+	d&iacute;gitos&gt; esteja preenchido com o valor 1. Sen&atilde;o
+	digite o valor 1.</p>
+	<li/>
+<p class="western">Verifique que a op&ccedil;&atilde;o
+	&lt;Somente trechos sem identifica&ccedil;&atilde;o&gt; esteja
+	selecionada.</p>
+	<li/>
+<p class="western">Clique no bot&atilde;o &lt;Selecionar
+	Montante&gt;.</p>
+	<li/>
+<p class="western">Movimente o cursor e fa&ccedil;a clique com
+	o bot&atilde;o esquerdo (prim&aacute;rio) no meio do trecho mais a
+	montante do coletor principal da rede. Todos os trechos do coletor
+	mudar&atilde;o para a cor amarela (padr&atilde;o de sele&ccedil;&atilde;o
+	do QGIS), como mostra a <b>Figura 12</b>.</p>
+</ul>
+<p class="western"><br/>
+
+</p>
+<p class="western"><br/>
+
+</p>
+<p align="center" style="font-style: normal; line-height: 100%"><font size="2" style="font-size: 10pt"><b>Figura
+12 - Sele&ccedil;&atilde;o do trecho de montante do coletor
+principal.</b></font></p>
+<p align="center" style="font-style: normal; line-height: 100%"><img src="images\figa0b8312aef0b4b0c.png" name="figura12" align="bottom" width="605" height="362" border="0"/>
+</p>
+<p class="western"><br/>
+
+</p>
+<ul>
+	<li/>
+<p class="western">Clique no bot&atilde;o &lt;Renomear&gt; da
+	janela Renomear Rede. Na primeira vez, o estilo do shape <b>Trechos</b>
+	&eacute; alterado, s&atilde;o representados os v&eacute;rtices e o
+	sentido do fluxo, como ilustra a Figura 13. Para o <span style="background: transparent">coletor</span>
+	renomeado ser&atilde;o apresentadas as informa&ccedil;&otilde;es:
+	nome do coletor-trecho e nomes dos PVs de montante e jusante.</p>
+</ul>
+<p class="western"><br/>
+
+</p>
+<p align="center" style="font-style: normal; line-height: 100%"><font size="2" style="font-size: 10pt"><b>Figura
+13 - Coletor principal renumerado</b></font></p>
+<p align="center" style="font-style: normal; line-height: 100%"><img src="images\figa9093071ca21db05.png" name="figura13" align="bottom" width="605" height="341" border="0"/>
+</p>
+<p class="western"><br/>
+
+</p>
+<ul>
+	<li/>
+<p class="western"><span style="background: transparent">Clique
+	no bot&atilde;o &lt;Novo Coletor&gt;. O n&uacute;mero da caixa
+	Coletor mudar&aacute; para 2 e o trecho anterior ser&aacute;
+	deselecionado.</span></p>
+	<li/>
+<p class="western"><span style="background: transparent">Verifique
+	que a op&ccedil;&atilde;o &lt;Soment</span>e trechos sem
+	identifica&ccedil;&atilde;o&gt; continue selecionada.</p>
+	<li/>
+<p class="western">Selecione o trecho de montante do segundo
+	coletor (no nosso exemplo, o coletor mais a jusante), como ilustra a
+	Figura 14. A cor do coletor mudar&aacute; para amarelo at&eacute; o
+	PV de interliga&ccedil;&atilde;o com o coletor anterior.</p>
+</ul>
+<p class="western"><br/>
+
+</p>
+<p align="center" style="font-style: normal; line-height: 100%"><font size="2" style="font-size: 10pt"><b>Figura
+14 - Sele&ccedil;&atilde;o do trecho de montante do segundo coletor</b></font></p>
+<p class="western" align="center"><img src="images\fige462dd58418f2ff6.png" name="figura14" align="middle" width="642" height="385" border="0"/>
+</p>
+<p class="western"><br/>
+
+</p>
+<p class="western"><br/>
+
+</p>
+<ul>
+	<li/>
+<p class="western">Clique em renomear o coletor selecionado. O
+	coletor selecionado ser&aacute; renomeado e numerado, de forma
+	an&aacute;loga ao primeiro coletor, como ilustra a Figura 15.</p>
+</ul>
+<p class="western"><br/>
+
+</p>
+<p class="western"><br/>
+
+</p>
+<p align="center" style="font-style: normal; line-height: 100%"><font size="2" style="font-size: 10pt"><b>Figura
+15 - Segundo coletor renumerado.</b></font></p>
+<p align="center" style="font-style: normal; line-height: 100%"><img src="images\fige94a0e31ed3f3ca4.png" name="figura15" align="bottom" width="605" height="343" border="0"/>
+</p>
+<p class="western" style="line-height: 100%"><br/>
+
+</p>
+<ul>
+	<li/>
+<p class="western">Repita o processo para o terceiro coletor,
+	que consiste em: clicar no bot&atilde;o Novo coletor, clicar sobre o
+	trecho de montante do coletor (como mostra a Figura 16), clicar no
+	bot&atilde;o Renomear (como mostra a Figura 17). O processo de
+	nomea&ccedil;&atilde;o de trechos da rede estar&aacute; conclu&iacute;do.</p>
+</ul>
+<p class="western"><br/>
+
+</p>
+<p class="western"><br/>
+
+</p>
+<p align="center" style="font-style: normal; line-height: 100%"><font size="2" style="font-size: 10pt"><b>Figura
+16 - Clique no trecho de montante para a sele&ccedil;&atilde;o do
+terceiro coletor.</b></font></p>
+<p align="center" style="font-style: normal; line-height: 100%"><img src="images\figcf390edf76df8f0d.png" name="figura16" align="bottom" width="605" height="344" border="0"/>
+</p>
+<p class="western" style="line-height: 100%"><br/>
+
+</p>
+<p class="western" style="line-height: 100%"><br/>
+
+</p>
+<p align="center" style="font-style: normal; line-height: 100%"><font size="2" style="font-size: 10pt"><b>Figura
+17 - Todos os trechos dos tr&ecirc;s coletores renumerados</b></font></p>
+<p align="center" style="font-style: normal; line-height: 100%"><img src="images\fig9984ce4666d03153.png" name="figura17" align="bottom" width="605" height="342" border="0"/>
+</p>
+<p class="western"><br/>
+
+</p>
+<ul>
+	<li/>
+<p class="western">Salve o shape <b>Trechos</b> e encerre o
+	processo de edi&ccedil;&atilde;o.</p>
+</ul>
+<p class="western"><br/>
+
+</p>
+<p class="western">No shape <b>Trechos</b> foram preenchidos os
+campos Coletor, Trecho, DC_ID, PVM e PVJ.</p>
+<p class="western"><br/>
+
+</p>
+<p class="western" style="line-height: 100%"><br/>
+
+</p>
+<h2 class="western"><a name="__RefHeading___Toc3073_1012792670"></a>4.7<img src="images\fig30dc2cdc68e77050.png" name="Figura12" align="middle" width="30" height="30" border="0"/>
+
+BOT&Atilde;O 03 CRIAR LAYER DE N&Oacute;S</h2>
+<p class="western"><br/>
+
+</p>
+<ul>
+	<li/>
+<p class="western">Ao clicar no bot&atilde;o &eacute; aberta a
+	janela para atribui&ccedil;&atilde;o do nome do shape de n&oacute;s
+	(formato de pontos). Selecione o local e nomes adequados a este
+	shape, para este exemplo escolha como nome <b>Nos</b>. Clique no
+	bot&atilde;o Salvar para concluir a grava&ccedil;&atilde;o do layer.
+	<u>Aten&ccedil;&atilde;o</u>: quando elabor&aacute;vamos este
+	tutorial, no ambiente Linux, a biblioteca utilizada para salvar o
+	shape de <b>Nos</b> apresentava um bug. Era necess&aacute;rio
+	digitar a extens&atilde;o &ldquo;.shp&rdquo; ao final do nome do
+	arquivo para que ocorresse o carregamento autom&aacute;tico do
+	arquivo salvo.</p>
+	<li/>
+<p class="western">Ap&oacute;s fechar a janela o shape <b>Nos</b>
+	&eacute; adicionado ao projeto.</p>
+	<li/>
+<p class="western">Habilite o modo de edi&ccedil;&atilde;o do
+	shape <b>Nos</b> e preencha todos os campos de cota do terreno de
+	cada n&oacute;.</p>
+	<li/>
+<p class="western">Salve o shape <b>Nos</b> e desabilite o
+	modo de edi&ccedil;&atilde;o.</p>
+	<li/>
+<p class="western">Salve o projeto.</p>
+</ul>
+<p class="western"><br/>
+
+</p>
+<p class="western"><br/>
+
+</p>
+<h2 class="western"><a name="__RefHeading___Toc3075_1012792670"></a>4.8<img src="images\fig85a4f30f64038587.png" name="Figura1" align="middle" width="30" height="30" border="0"/>
+
+BOT&Atilde;O 04 PreenchE OS CAMPOS</h2>
+<p class="western"><br/>
+
+</p>
+<p class="western">Ao clicar no bot&atilde;o:</p>
+<ul>
+	<li/>
+<p class="western">Todos os campos nulos do shape <b>Trechos</b>
+	s&atilde;o preenchidos;</p>
+	<li/>
+<p class="western">S&atilde;o sobrescritos todos os campos de
+	cota dos PVs de montante, jusante e comprimento do trecho (calculado
+	como comprimento real do trecho desenhado) do shape <b>Trechos;</b></p>
+	<li/>
+<p class="western">S&atilde;o transferidos os valores do campo
+	COTA_TN do shape <b>Nos </b><span style="font-weight: normal">para
+	os campos CTM e CTJ do shape </span><b>Trechos</b>.</p>
+	<li/>
+<p class="western">Salve o shape <span style="font-style: normal"><b>Trechos</b></span>
+	e saia do modo de edi&ccedil;&atilde;o.</p>
+</ul>
+<p class="western"><br/>
+
+</p>
+<p class="western"><br/>
+
+</p>
+<h2 class="western"><a name="__RefHeading___Toc3077_1012792670"></a>4.9PONTA
+SECA</h2>
+<p class="western"><br/>
+
+</p>
+<p class="western">Tem como objetivo identificar os trechos que n&atilde;o
+recebem contribui&ccedil;&otilde;es atrav&eacute;s do PV de montante.
+Essa identifica&ccedil;&atilde;o &eacute; necess&aacute;ria em
+trechos cujos PVs de montante possam apresentar mais de uma sa&iacute;da,
+situa&ccedil;&atilde;o <font face="Calibri, sans-serif"><font size="2" style="font-size: 11pt">n&atilde;o</font></font>
+permitida segundo as normas brasileiras. A &ldquo;ponta seca&rdquo; &eacute;
+informada manualmente na tabela do shape <b>Trechos</b>, campo
+(coluna) PONTA_SECA, trocando a letra N (n&atilde;o) pela letra S
+(sim), como ilustra a <b>Figura 18</b>. 
+</p>
+<p class="western"><br/>
+
+</p>
+<p class="western"><br/>
+
+</p>
+<p align="center" style="font-style: normal; line-height: 100%"><font size="2" style="font-size: 10pt"><b>Figura
+18 - Altera&ccedil;&atilde;o da condi&ccedil;&atilde;o de montante
+para &ldquo;ponta seca&rdquo;</b></font></p>
+<p align="center" style="font-style: normal; line-height: 100%"><img src="images\fig5acf898bdc82b29c.png" name="figura18" align="bottom" width="602" height="321" border="0"/>
+</p>
+<p class="western" align="center"><br/>
+
+</p>
+<p class="western"><br/>
+
+</p>
+<p class="western" style="line-height: 100%"><span lang="pt-BR">Ap&oacute;s
+essa </span>altera&ccedil;&atilde;o<span lang="pt-BR"> a
+representa&ccedil;&atilde;o de montante dos trechos &ldquo;</span>p<span lang="pt-BR">onta
+</span>s<span lang="pt-BR">eca&rdquo; ser&aacute; modificada </span><span lang="pt-BR">como
+ilustra a </span><span lang="pt-BR"><b>Figura 19</b></span><span lang="pt-BR">.</span></p>
+<p class="western"><br/>
+
+</p>
+<p class="western"><br/>
+
+</p>
+<p align="center" style="font-style: normal; line-height: 100%"><font size="2" style="font-size: 10pt"><b>Figura
+19 - Altera&ccedil;&atilde;o da condi&ccedil;&atilde;o hidr&aacute;ulica
+de montante dos trechos iniciais para &ldquo;ponta seca&rdquo;</b></font></p>
+<p class="western" align="center"><img src="images\fig87942741b4df8b51.png" name="figura19" align="bottom" width="605" height="362" border="0"/>
+</p>
+<p class="western"><br/>
+
+</p>
+<p class="western" style="line-height: 100%">Salve as modifica&ccedil;&otilde;es
+introduzidas na tabela do shape <b>Trechos</b><span style="font-weight: normal">
+e saia do modo de edi&ccedil;&atilde;o. Salve o </span>projeto. 
+</p>
+<p class="western" style="line-height: 100%"><br/>
+
+</p>
+<p class="western"><br/>
+
+</p>
+<h2 class="western" style="page-break-before: always"><a name="__RefHeading___Toc3079_1012792670"></a>
+4.10<img src="images\fig62bba675e061c761.png" name="Figura13" align="middle" width="30" height="30" border="0"/>
+
+BOT&Atilde;O 5 CALCULA VAZ&Atilde;O</h2>
+<p class="western"><br/>
+
+</p>
+<p class="western">Ao clicar neste bot&atilde;o, s&atilde;o
+calculadas as vaz&otilde;es acumuladas ao longo de cada um dos
+trechos que formam os coletores, os resultados s&atilde;o gravados no
+shape <b>Trechos</b>. O formato de apresenta&ccedil;&atilde;o dos
+trechos muda para mostrar os dados: nome do trecho; comprimento,
+di&acirc;metro e vaz&atilde;o de cada trecho.</p>
+<p class="western"><br/>
+
+</p>
+<p align="center" style="font-style: normal; line-height: 100%"><font size="2" style="font-size: 10pt"><b>Figura
+20 - Todos os trechos dos tr&ecirc;s coletores com as vaz&otilde;es
+de projeto calculadas.</b></font></p>
+<p class="western" align="center" style="line-height: 100%"><img src="images\figa457ae216bd4057d.png" name="figura20" align="bottom" width="605" height="362" border="0"/>
+</p>
+<p class="western"><br/>
+
+</p>
+<p class="western"><br/>
+
+</p>
+<h2 class="western"><a name="__RefHeading___Toc3081_1012792670"></a>4.11<img src="images\fige74254464005de07.png" name="Figura14" align="middle" width="30" height="30" border="0"/>
+
+BOT&Atilde;O 6 DIMENSIONA</h2>
+<p class="western"><br/>
+
+</p>
+<p class="western">Ao clicar neste bot&atilde;o, s&atilde;o
+dimensionados todos os trechos que formam os coletores da rede. O
+formato de apresenta&ccedil;&atilde;o dos trechos muda para mostrar
+os dados: nome do trecho; comprimento; di&acirc;metro nominal e
+declividade, como mostra a <b>Figura 21</b>.</p>
+<p class="western"><br/>
+
+</p>
+<p align="center" style="font-style: normal; line-height: 100%"><font size="2" style="font-size: 10pt"><b>Figura
+21 - Clique no trecho de montante para a sele&ccedil;&atilde;o do
+terceiro coletor.</b></font></p>
+<p class="western" align="center"><img src="images\figb238c0e89bad54f6.png" name="figura21" align="bottom" width="605" height="362" border="0"/>
+</p>
+<p class="western"><br/>
+
+</p>
+<p class="western">Todos os dados do dimensionamento est&atilde;o
+contidos na tabela do shape <b>Trechos</b>. Caso deseje, abra a
+tabela do shape <b>Trechos</b><span style="font-weight: normal">,
+selecione todos os campos, copie e cole dentro de uma planilha
+eletr&ocirc;nica (MS-Excel, Libreoffice-Calc ou outra)</span>. 
+</p>
+<p class="western" style="line-height: 100%"><br/>
+
+</p>
+<p class="western" style="line-height: 100%"><br/>
+
+</p>
+<h2 class="western"><a name="__RefHeading___Toc3083_1012792670"></a>4.12<img src="images\figfe786608f4b2d9f7.png" name="Figura25" width="30" height="30" border="0"/>
+
+BOT&Atilde;O 7 DESENHA PERFIL</h2>
+<p class="western" style="line-height: 100%"> 
+</p>
+<p class="western" style="line-height: 100%">Trata-se de uma
+ferramenta de confer&ecirc;ncia r&aacute;pida que o projetista pode
+usar para an&aacute;lise dos coletores projetados.  Ao clicar no
+bot&atilde;o &eacute; apresentado um menu flutuante como o da <b>Figura 22</b>.
+Selecione o coletor a desenhar e clique no bot&atilde;o <b>OK</b>. 
+</p>
+<p class="western"><br/>
+
+</p>
+<p align="center" style="font-style: normal; line-height: 100%"><font size="2" style="font-size: 10pt"><b>Figura
+22 - Menu flutuante para sele&ccedil;&atilde;o do coletor a desenhar</b></font></p>
+<p class="western" align="center"><img src="images\figbe5d64e5199146fc.png" name="figura22" align="bottom" width="189" height="125" border="0"/>
+</p>
+<p class="western"><br/>
+
+</p>
+<p class="western"><br/>
+
+</p>
+<p class="western">Uma janela semelhante ao da <b>Figura 23</b><span style="font-weight: normal">
+</span>ser&aacute; apresentada (neste exemplo foi selecionado o
+Coletor 1).</p>
+<p class="western"><br/>
+
+</p>
+<p align="center" style="font-style: normal; line-height: 100%"><font size="2" style="font-size: 10pt"><b>Figura
+23 - Perfil do coletor selecionado</b></font></p>
+<p class="western" align="center"><img src="images\figb56f4bb5c449c1b9.png" name="figura23" align="bottom" width="454" height="451" border="0"/>
+</p>
+<p class="western"><br/>
+
+</p>
+<p class="western"><br/>
+
+</p>
+<p class="western"><br/>
+
+</p>
+<p class="western"><br/>
+
+</p>
+<h1 class="western" style="page-break-before: always"><a name="__RefHeading___Toc3085_1012792670"></a>
+5UNIDADES DAS TABELAS</h1>
+<p class="western"><br/>
+
+</p>
+<h2 class="western"><a name="__RefHeading___Toc3087_1012792670"></a>5.1SHAPE
+N&Oacute;S</h2>
+<table width="100%" cellpadding="4" cellspacing="0">
+	<col width="43*">
+	<col width="43*">
+	<col width="43*">
+	<col width="43*">
+	<col width="43*">
+	<col width="43*">
+	<tr valign="top">
+		<td width="17%" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0.1cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt"><b>Ordem</b></font></p>
+		</td>
+		<td width="17%" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0.1cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt"><b>Nome</b></font></p>
+		</td>
+		<td width="17%" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0.1cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt"><b>Unidade</b></font></p>
+		</td>
+		<td width="17%" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0.1cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt"><b>Tipo</b></font></p>
+		</td>
+		<td width="17%" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0.1cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt"><b>Comprimento</b></font></p>
+		</td>
+		<td width="17%" style="border: 1px solid #000000; padding: 0.1cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt"><b>Precis&atilde;o</b></font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">1</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western"><font size="2" style="font-size: 10pt">DC_ID</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">-</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">String</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">10</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">-</font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">2</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western"><font size="2" style="font-size: 10pt">COTA_TN</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">m</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">Real</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">10</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">3</font></p>
+		</td>
+	</tr>
+</table>
+<p class="western"><br/>
+
+</p>
+<h2 class="western"><a name="__RefHeading___Toc3089_1012792670"></a>5.2SHAPE
+trecho</h2>
+<table width="100%" cellpadding="4" cellspacing="0">
+	<col width="43*">
+	<col width="43*">
+	<col width="43*">
+	<col width="43*">
+	<col width="43*">
+	<col width="43*">
+	<tr valign="top">
+		<td width="17%" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0.1cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt"><b>Ordem</b></font></p>
+		</td>
+		<td width="17%" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0.1cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt"><b>Nome</b></font></p>
+		</td>
+		<td width="17%" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0.1cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt"><b>Unidade</b></font></p>
+		</td>
+		<td width="17%" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0.1cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt"><b>Tipo</b></font></p>
+		</td>
+		<td width="17%" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0.1cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt"><b>Comprimento</b></font></p>
+		</td>
+		<td width="17%" style="border: 1px solid #000000; padding: 0.1cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt"><b>Precis&atilde;o</b></font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">1</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="left"><font size="2" style="font-size: 10pt">DC_ID</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">-</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">QString</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">10</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">-</font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">2</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="left"><font size="2" style="font-size: 10pt">PVM</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">-</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">QString</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">10</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">-</font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">3</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="left"><font size="2" style="font-size: 10pt">PVJ</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">-</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">QString</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">10</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">-</font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">4</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="left"><font size="2" style="font-size: 10pt">LENGTH</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">m</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">Real</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">10</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">1</font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">5</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="left"><font size="2" style="font-size: 10pt">CTM</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">m</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">Real</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">10</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">3</font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">6</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="left"><font size="2" style="font-size: 10pt">CTJ</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">m</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">Real</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">10</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">3</font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">7</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="left"><font size="2" style="font-size: 10pt">CCM</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">m</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">Real</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">10</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">3</font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">8</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="left"><font size="2" style="font-size: 10pt">CCJ</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">m</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">Real</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">10</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">3</font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">9</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="left"><font size="2" style="font-size: 10pt">NA_MON</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">m</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">Real</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">10</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">3</font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">10</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="left"><font size="2" style="font-size: 10pt">NA_JUS</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">m</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">Real</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">10</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">3</font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">11</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="left"><font size="2" style="font-size: 10pt">PRFM</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">m</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">Real</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">10</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">3</font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">12</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="left"><font size="2" style="font-size: 10pt">PRFJ</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">m</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">Real</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">10</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">3</font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">13</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="left"><font size="2" style="font-size: 10pt">DIAMETER</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">mm</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">Real</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">10</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">1</font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm" sdval="14" sdnum="1046;">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">14</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="left"><font size="2" style="font-size: 10pt">DECL</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">m</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">Real</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">10</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">5</font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm" sdval="15" sdnum="1046;">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">15</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="left"><font size="2" style="font-size: 10pt">MANNING</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">m</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">Real</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">10</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">3</font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm" sdval="16" sdnum="1046;">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">16</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="left"><font size="2" style="font-size: 10pt">Q_CONC_INI</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">m</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">Real</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">10</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">3</font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm" sdval="17" sdnum="1046;">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">17</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="left"><font size="2" style="font-size: 10pt">Q_CONC_FIM</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">m</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">Real</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">10</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">3</font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm" sdval="18" sdnum="1046;">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">18</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="left"><font size="2" style="font-size: 10pt">Q_INI</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">m</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">Real</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">10</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">3</font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm" sdval="19" sdnum="1046;">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">19</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="left"><font size="2" style="font-size: 10pt">Q_FIM</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">m</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">Real</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">10</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">3</font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm" sdval="20" sdnum="1046;">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">20</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="left"><font size="2" style="font-size: 10pt">VEL_INI</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">m</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">Real</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">10</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">2</font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm" sdval="21" sdnum="1046;">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">21</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="left"><font size="2" style="font-size: 10pt">VEL_FIM</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">m</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">Real</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">10</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">2</font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm" sdval="22" sdnum="1046;">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">22</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="left"><font size="2" style="font-size: 10pt">VEL_CRI</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">m</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">Real</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">10</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">2</font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm" sdval="23" sdnum="1046;">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">23</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="left"><font size="2" style="font-size: 10pt">TRATIVA</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">m</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">Real</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">10</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">3</font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm" sdval="24" sdnum="1046;">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">24</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="left"><font size="2" style="font-size: 10pt">LAM_INI</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">m</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">Real</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">10</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">4</font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm" sdval="25" sdnum="1046;">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">25</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="left"><font size="2" style="font-size: 10pt">LAM_FIM</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">m</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">Real</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">10</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">2</font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm" sdval="26" sdnum="1046;">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">26</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="left"><font size="2" style="font-size: 10pt">LAM_MAX</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">m</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">Real</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">10</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">2</font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm" sdval="27" sdnum="1046;">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">27</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="left"><font size="2" style="font-size: 10pt">REC_MIN</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">m</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">Real</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">10</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">2</font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm" sdval="28" sdnum="1046;">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">28</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="left"><font size="2" style="font-size: 10pt">CONTR_LADO</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">-<sup>(1)</sup></font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">Integer</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">1</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">-</font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm" sdval="29" sdnum="1046;">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">29</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="left"><font size="2" style="font-size: 10pt">ETAPA</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">-<sup>(2)</sup></font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">Integer</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">1</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">-</font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm" sdval="30" sdnum="1046;">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">30</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="left"><font size="2" style="font-size: 10pt">PONTA_SECA</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">-<sup>(3)</sup></font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">QString</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">1</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">-</font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm" sdval="31" sdnum="1046;">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">31</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="left"><font size="2" style="font-size: 10pt">OBS</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">-</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">QString</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">30</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">-</font></p>
+		</td>
+	</tr>
+</table>
+<p class="western" style="line-height: 100%"><font size="2" style="font-size: 9pt">Valores
+permitidos</font></p>
+<p class="western" style="line-height: 100%"><font size="2" style="font-size: 9pt"><sup>(1)</sup>:
+Trecho sem contribui&ccedil;&atilde;o = 0, contribui&ccedil;&atilde;o
+unilateral = 1 e contribui&ccedil;&atilde;o bilateral = 2</font></p>
+<p class="western" style="line-height: 100%"><font size="2" style="font-size: 9pt"><sup>(2)</sup>:
+Trecho existente = 0, a implantar na primeira etapa = 1, a implantar
+na segunda etapa = 2</font></p>
+<p class="western" style="line-height: 100%"><font size="2" style="font-size: 9pt"><sup>(3)</sup>:
+&Eacute; ponta seca = S, n&atilde;o &eacute; ponta seca = N</font></p>
+<p class="western" style="line-height: 100%"><br/>
+
+</p>
+<h2 class="western"><a name="__RefHeading___Toc3091_1012792670"></a>5.3SHAPE
+INTERFER&Ecirc;NCIAS</h2>
+<table width="100%" cellpadding="4" cellspacing="0">
+	<col width="43*">
+	<col width="43*">
+	<col width="43*">
+	<col width="43*">
+	<col width="43*">
+	<col width="43*">
+	<tr valign="top">
+		<td width="17%" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0.1cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt"><b>Ordem</b></font></p>
+		</td>
+		<td width="17%" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0.1cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt"><b>Nome</b></font></p>
+		</td>
+		<td width="17%" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0.1cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt"><b>Unidade</b></font></p>
+		</td>
+		<td width="17%" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0.1cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt"><b>Tipo</b></font></p>
+		</td>
+		<td width="17%" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0.1cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt"><b>Comprimento</b></font></p>
+		</td>
+		<td width="17%" style="border: 1px solid #000000; padding: 0.1cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt"><b>Precis&atilde;o</b></font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">1</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="left"><font size="2" style="font-size: 10pt">DC_ID</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">-</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm" sdval="31" sdnum="1046;">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">31</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">10</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">-</font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">2</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="left"><font size="2" style="font-size: 10pt">TIPO_INT</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">-<sup>(1)</sup></font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">QString</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm" sdval="2" sdnum="1046;">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">2</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">-</font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">3</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="left"><font size="2" style="font-size: 10pt">CS</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">m</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">Real</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">10</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm" sdval="3" sdnum="1046;">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">3</font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">4</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="left"><font size="2" style="font-size: 10pt">CI</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">m</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">Real</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">10</font></p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm" sdval="3" sdnum="1046;">
+			<p class="western" align="center"><font size="2" style="font-size: 10pt">3</font></p>
+		</td>
+	</tr>
+</table>
+<p class="western" style="line-height: 100%"><font size="2" style="font-size: 9pt">Valores
+permitidos</font></p>
+<p class="western" style="line-height: 100%"><font size="2" style="font-size: 9pt"><sup>(1)</sup>:
+TN para terreno natural, qualquer outro valor (inclusive nulo) &eacute;
+considerada uma interfer&ecirc;ncia.</font></p>
+<p class="western" style="line-height: 100%"><br/>
+
+</p>
+<h1 class="western"><a name="__RefHeading___Toc3820_1012792670"></a>6AUTOR</h1>
+<p class="western"><br/>
+
+</p>
+<p class="western">Plugin desenvolvido por Jorge Alm&eacute;rio Sousa
+Moreira, Engenheiro Civil. 
+</p>
+<p class="western">D&uacute;vidas, cr&iacute;ticas e sugest&otilde;es
+s&atilde;o bem vindas. 
+</p>
+<p class="western">Email: <a class="western" href="mailto:jorgealmerio@yahoo.com.br">jorgealmerio@yahoo.com.br</a></p>
+<p class="western">Plugin Site: <a class="western" href="https://github.com/jorgealmerio/QEsg/blob/master/README.md">github.com/jorgealmerio/QEsg</a></p>
+<p class="western">Bugs, Falhas e solicita&ccedil;&otilde;es:
+<a class="western" href="https://github.com/jorgealmerio/QEsg/issues">github.com/jorgealmerio/QEsg/issues</a></p>
+<p class="western" style="line-height: 100%"><br/>
+
+</p>
+<h1 class="western"><a name="__RefHeading___Toc3822_1012792670"></a>7COLABORADOR</h1>
+<p class="western"><br/>
+
+</p>
+<p class="western">Juan Santiago Ramseyer 
+</p>
+<p class="western" style="line-height: 100%"><br/>
+
+</p>
+<h1 class="western"><a name="__RefHeading___Toc3093_1012792670"></a>8Nota
+de responsabilidade de uso</h1>
+<p class="western" style="line-height: 100%"><br/>
+
+</p>
+<p class="western" style="line-height: 100%">Esse plugin est&aacute;
+sujeito aos termos da licen&ccedil;a &ldquo;<a class="western" href="https://www.gnu.org/licenses/gpl-3.0.html"><i>GNU
+GENERAL PUBLIC LICENSE, Version 3, 29 June 2007</i></a>&rdquo;,
+portanto os danos ou consequ&ecirc;ncias da utiliza&ccedil;&atilde;o
+do plugin e/ou dos seus resultados, em qualquer ordem &eacute; de
+inteira responsabilidade do usu&aacute;rio final, ficando os
+desenvolvedores isentos de qualquer responsabilidade t&eacute;cnica
+ou jur&iacute;dica inerente da utiliza&ccedil;&atilde;o com ou sem
+inabilidade no uso do mesmo, inclusive no caso de eventual falha
+comprovada do plugin.</p>
 </body>
-<br>
-<a href="sample/clean/shapes/Trechos.zip?raw=True" target="_blank">Download do shapefile Trechos (Inicial)</a>
 </html>
