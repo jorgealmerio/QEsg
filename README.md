@@ -13,7 +13,7 @@
 <p class="western"><br/>
 
 </p>
-<h1 class="western"><a name="__RefHeading___Toc3818_1012792670"></a>1APRESENTA&Ccedil;&Atilde;O</h1>
+<h1 class="western"><a name="__RefHeading___Toc3818_1012792670"></a>1 APRESENTA&Ccedil;&Atilde;O</h1>
 <p class="western"><br/>
 
 </p>
@@ -34,7 +34,7 @@ apresenta&ccedil;&atilde;o final do projeto de uma rede esgoto.</span></p>
 <p class="western"><br/>
 
 </p>
-<h1 class="western"><a name="__RefHeading___Toc3912_1012792670"></a>2<span lang="pt-BR">S</span><span lang="pt-BR">UM</span><span lang="pt-BR">&aacute;</span><span lang="pt-BR">RIO</span></h1>
+<h1 class="western"><a name="__RefHeading___Toc3912_1012792670"></a>2 SUMÁRIO</h1>
 <p class="western"><br/>
 
 </p>
