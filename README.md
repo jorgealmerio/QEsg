@@ -40,9 +40,9 @@ apresenta&ccedil;&atilde;o final do projeto de uma rede esgoto.</span></p>
 </p>
 <div id="Sum&aacute;rio1" dir="ltr">
 	<p style="text-transform: uppercase; line-height: 100%"><b><a class="western" href="#__RefHeading___Toc3818_1012792670">1
-	APRESENTA&Ccedil;&Atilde;O	1</a></b></p>
+	APRESENTAÇÃO	1</a></b></p>
 	<p style="text-transform: uppercase; line-height: 100%"><b><a class="western" href="#__RefHeading___Toc3912_1012792670">2
-	SUM&aacute;RIO	1</a></b></p>
+	SUMÁRIO	1</a></b></p>
 	<p style="text-transform: uppercase; line-height: 100%"><b><a class="western" href="#__RefHeading___Toc3057_1012792670">3
 	SCREENSHOTS	1</a></b></p>
 	<p style="text-transform: uppercase; line-height: 100%"><b><a class="western" href="#__RefHeading___Toc3059_1012792670">4
