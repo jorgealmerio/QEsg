@@ -8,7 +8,6 @@
 	<meta name="created" content="2016-06-07T17:41:21.305062039"/>
 	<meta name="changed" content="2016-07-04T22:02:46.747000000"/>
 	<style type="text/css">
-		@page { margin-left: 3.5cm; margin-right: 1.5cm; margin-top: 1.3cm; margin-bottom: 0.47cm }
 		p { margin-bottom: 0cm; line-height: 120%; text-align: justify; page-break-before: auto }
 		p.western { font-family: "Calibri", sans-serif; font-size: 11pt }
 		p.cjk { font-size: 10pt }
