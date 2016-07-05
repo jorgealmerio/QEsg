@@ -660,7 +660,7 @@ BOTÃO 04 PREENCHE OS CAMPOS</h2>
 <p class="western"><br/>
 
 </p>
-<h2 class="western"><a name="__RefHeading___Toc3077_1012792670"></a>4.9PONTA
+<h2 class="western"><a name="__RefHeading___Toc3077_1012792670"></a>4.9 PONTA
 SECA</h2>
 <p class="western"><br/>
 
@@ -833,7 +833,7 @@ Coletor 1).</p>
 <p class="western"><br/>
 
 </p>
-<h2 class="western"><a name="__RefHeading___Toc3087_1012792670"></a>5.1SHAPE
+<h2 class="western"><a name="__RefHeading___Toc3087_1012792670"></a>5.1 SHAPE
 N&Oacute;S</h2>
 <table width="100%" cellpadding="4" cellspacing="0">
 	<col width="43*">
@@ -906,7 +906,7 @@ N&Oacute;S</h2>
 <p class="western"><br/>
 
 </p>
-<h2 class="western"><a name="__RefHeading___Toc3089_1012792670"></a>5.2SHAPE
+<h2 class="western"><a name="__RefHeading___Toc3089_1012792670"></a>5.2 SHAPE
 trecho</h2>
 <table width="100%" cellpadding="4" cellspacing="0">
 	<col width="43*">
@@ -1569,7 +1569,7 @@ na segunda etapa = 2</font></p>
 <p class="western" style="line-height: 100%"><br/>
 
 </p>
-<h2 class="western"><a name="__RefHeading___Toc3091_1012792670"></a>5.3SHAPE
+<h2 class="western"><a name="__RefHeading___Toc3091_1012792670"></a>5.3 SHAPE
 INTERFER&Ecirc;NCIAS</h2>
 <table width="100%" cellpadding="4" cellspacing="0">
 	<col width="43*">
