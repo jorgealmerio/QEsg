@@ -89,7 +89,7 @@ apresenta&ccedil;&atilde;o final do projeto de uma rede esgoto.</span></p>
 	NÓS</a></span></p>
 	<p style="text-indent: 0.2cm; margin-bottom: 0.1cm; text-transform: uppercase; line-height: 100%; text-decoration: none">
 	<span style="background: transparent"><a class="western" href="#__RefHeading___Toc3089_1012792670">5.2 SHAPE
-	TRECHO</a></span></p>
+	TRECHOS</a></span></p>
 	<p style="text-indent: 0.2cm; margin-bottom: 0.1cm; text-transform: uppercase; line-height: 100%; text-decoration: none">
 	<span style="background: transparent"><a class="western" href="#__RefHeading___Toc3091_1012792670">5.3 SHAPE
 	INTERFERÊNCIAS</a></span></p>
