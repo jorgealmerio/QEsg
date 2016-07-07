@@ -86,13 +86,13 @@ apresenta&ccedil;&atilde;o final do projeto de uma rede esgoto.</span></p>
 	TABELAS</a></b></p>
 	<p style="text-indent: 0.2cm; margin-bottom: 0.1cm; text-transform: uppercase; line-height: 100%; text-decoration: none">
 	<span style="background: transparent"><a class="western" href="#__RefHeading___Toc3087_1012792670">5.1 SHAPE
-	N&Oacute;S</a></span></p>
+	NÓS</a></span></p>
 	<p style="text-indent: 0.2cm; margin-bottom: 0.1cm; text-transform: uppercase; line-height: 100%; text-decoration: none">
 	<span style="background: transparent"><a class="western" href="#__RefHeading___Toc3089_1012792670">5.2 SHAPE
 	TRECHO</a></span></p>
 	<p style="text-indent: 0.2cm; margin-bottom: 0.1cm; text-transform: uppercase; line-height: 100%; text-decoration: none">
 	<span style="background: transparent"><a class="western" href="#__RefHeading___Toc3091_1012792670">5.3 SHAPE
-	INTERFER&Ecirc;NCIAS</a></span></p>
+	INTERFERÊNCIAS</a></span></p>
 	<p style="text-transform: uppercase; line-height: 100%"><b><a class="western" href="#__RefHeading___Toc3820_1012792670">6
 	AUTOR</a></b></p>
 	<p style="text-transform: uppercase; line-height: 100%"><b><a class="western" href="#__RefHeading___Toc3822_1012792670">7
@@ -907,7 +907,7 @@ N&Oacute;S</h2>
 
 </p>
 <h2 class="western"><a name="__RefHeading___Toc3089_1012792670"></a>5.2 SHAPE
-trecho</h2>
+TRECHO</h2>
 <table width="100%" cellpadding="4" cellspacing="0">
 	<col width="43*">
 	<col width="43*">
@@ -1570,7 +1570,7 @@ na segunda etapa = 2</font></p>
 
 </p>
 <h2 class="western"><a name="__RefHeading___Toc3091_1012792670"></a>5.3 SHAPE
-INTERFER&Ecirc;NCIAS</h2>
+INTERFERÊNCIAS</h2>
 <table width="100%" cellpadding="4" cellspacing="0">
 	<col width="43*">
 	<col width="43*">
