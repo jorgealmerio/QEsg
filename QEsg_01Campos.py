@@ -119,6 +119,7 @@ class QEsg_01Campos:
         rec_min=float(proj.readEntry("QEsg", "REC_MIN","0.90")[0])
         lam_max=float(proj.readEntry("QEsg", "LAM_MAX","0.75")[0])
         ProjNode=proj.readEntry("QEsg", "JUNCTIONS")[0]
+        PrecSancad=proj.readNumEntry("QEsg", "PREC_SANCAD",0)[0]#diametros progressivos
         NodeCotas={}
         if ProjNode!='':
             vLayerLst=QgsMapLayerRegistry.instance().mapLayersByName(ProjNode)
@@ -141,7 +142,9 @@ class QEsg_01Campos:
                 featVal=feicao[campo]
                 if campo=='LENGTH':
                     ext=feicao.geometry().length()
-                    feicao[campo]=round(ext,0)
+                    if PrecSancad:
+                        ext=round(ext,0)
+                    feicao[campo]=ext
                 elif campo=='CTM':
                     feicao[campo]=NodeCotas[feicao['PVM']]
                 elif campo=='CTJ':

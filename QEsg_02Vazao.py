@@ -42,8 +42,14 @@ class QEsg_02Vazao:
             self.Ordena(vLayer)
         Lini,Lfim = self.CompVirtualRede(vLayer)#Extensao da rede 1a e 2a etapas
         QiniTot,QfimTot = self.Vazoes()#Vazao total inicio e fim de plano
-        QdisIni=QiniTot/Lini
-        QdisFim=QfimTot/Lfim
+        if Lini==0:#Caso de Interceptor
+            QdisIni=0
+        else:
+            QdisIni=QiniTot/Lini
+        if Lfim==0:#Caso de Interceptor
+            QdisFim=0
+        else:
+            QdisFim=QfimTot/Lfim
         Qinfilt=float(proj.readEntry("QEsg", 'COEF_INF')[0])
         vLayer.startEditing()
         for feat in vLayer.getFeatures():

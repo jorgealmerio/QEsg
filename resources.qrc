@@ -1,5 +1,6 @@
 <RCC>
     <qresource prefix="/plugins/QEsg" >
+		<file>icons/00help.svg</file>
 		<file>icons/00rename.png</file>
         <file>icons/00config.png</file>
 		<file>icons/01campos.png</file>

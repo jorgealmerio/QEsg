@@ -208,7 +208,21 @@ class Rename_Tools:
         self.iface.mapCanvas().refresh()
         if self.dock.buttonSelectSourceId.isChecked():
             self.dock.buttonSelectSourceId.click()
-
+    def VerificaPVMont_Duplicado(self, layer):
+        features = layer.getFeatures()
+        valueLst=[]
+        AchouDuplic=False
+        for feature in features:
+            pvm=feature['PVM']
+            if pvm not in valueLst:
+                valueLst.append(pvm)
+            else:
+                AchouDuplic=True
+                self.dock.textEditLog.append("PVM duplicated: "+pvm)
+        if AchouDuplic:
+            msgTxt=QCoreApplication.translate('QEsg',u'Existem trechos com identificação de PV de montante duplicada')
+            QMessageBox.warning(None,'QEsg',msgTxt)
+    #Verifica Se ja tem um trecho saindo do mesmo PV de Montante
     def VerificaPVMont_comun_comID(self, layer, feat):
         tol = self.dock.spinBoxTol.value()
         # get list of nodes
@@ -328,7 +342,9 @@ class Rename_Tools:
             QMessageBox.warning(None,'QEsg',msgTxt)
             return
         layer = QgsMapLayerRegistry.instance().mapLayersByName(ProjVar)[0]
-        self.CheckPolylines(layer)
+        LinesOK=self.CheckPolylines(layer)
+        if LinesOK:
+            self.VerificaPVMont_Duplicado(layer)
 
     def CheckPolylines(self, layer,SilentRun=False):
         for feature in layer.getFeatures():
@@ -360,7 +376,8 @@ class Rename_Tools:
                         return True
                     return False
         if not SilentRun:
-            QMessageBox.information(None,'QEsg','Os elementos foram verificados com sucesso!')
+            msgTxt=QCoreApplication.translate('QEsg',u'As feições foram verificadas com sucesso!')
+            QMessageBox.information(None,'QEsg',msgTxt)
             return True
     def run_segmenter(self, layer):
         #Routine from Networks Plugin from CEREMA Nord-Picardie

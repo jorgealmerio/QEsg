@@ -76,7 +76,7 @@ class QEsgModel:
                     'COEF_INF': [QVariant.Double,'Real',10,5],
                     'PVM': [QVariant.String,'String',10,0],
                     'PVJ': [QVariant.String,'String',10,0],
-                    'LENGTH': [QVariant.Double,'Real',10,1],
+                    'LENGTH': [QVariant.Double,'Real',10,3],
                     'CTM': [QVariant.Double,'Real',10,3],
                     'CTJ': [QVariant.Double,'Real',10,3],
                     'CCM': [QVariant.Double,'Real',10,3],

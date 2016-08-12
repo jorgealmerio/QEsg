@@ -355,28 +355,48 @@ class QEsg:
             callback=self.ImportaSancadDXF,
             parent=self.iface.mainWindow())
 
+#         icon_path = ''
+#         self.add_action(
+#             icon_path,
+#             add_to_menu=True,
+#             add_to_toolbar=False,
+#             text='',
+# #            callback=self.fazNada,
+#             parent=self.iface.mainWindow(),
+#             separator=True)
+
+        icon_path = ':/plugins/QEsg/icons/00help.svg'
+        self.add_action(
+            icon_path,
+            add_to_menu=True,
+            add_to_toolbar=False,
+            text=self.tr(u'Ajuda'),
+            callback=self.CallSite,
+            parent=self.iface.mainWindow())
 
         QObject.connect(self.dlg.btnLimpaSettings, SIGNAL("clicked()"), self.LimpaSettings)
 
     def unload(self):
-        """Removes the plugin menu item and icon from QGIS GUI."""
         self.iface.removePluginMenu(
                 self.tr('&QEsg'),
                 self.separator)
+
+        """Removes the plugin menu item and icon from QGIS GUI."""
         for action in self.actions:
-            self.iface.removePluginMenu(
-                self.tr('&QEsg'),
-                action)
+            self.iface.removePluginMenu(self.tr('&QEsg'), action)
             self.iface.removeToolBarIcon(action)
-        # remove the toolbar
+
         self.iface.removePluginMenu('&QEsg', self.sub_menu.menuAction())
+
+        # remove the toolbar
         del self.toolbar
-    # Open CMD sample project
-    
+
+    def CallSite(self):
+        link='https://github.com/jorgealmerio/QEsg/blob/master/README.md'
+        QDesktopServices.openUrl(QUrl(link))
     def openCleanSample(self):
         Nome='clean'
         self.iface.addProject(os.path.dirname(__file__)+'/sample/{}/{}.qgs'.format(Nome,Nome))
-
     def openFinishedSample(self):
         Nome='finished'
         self.iface.addProject(os.path.dirname(__file__)+'/sample/{}/{}.qgs'.format(Nome,Nome))
@@ -435,7 +455,7 @@ class QEsg:
                 msgTxt=''
     
                 Lini,Lfim = self.VazaoClasse.CompVirtualRede(myLayer)
-                if Lini>0 or Lfim>0:
+                if Lini>=0 or Lfim>=0:
                     msgTxt=self.tr(u'Comprimento Virtual:\nEtapa 1 = {} m\nEtapa 2 = {} m').format(Lini,Lfim)
                 self.dlg.lbl_extVirtual.setText(msgTxt)
             except: 
@@ -526,6 +546,7 @@ class QEsg:
         self.dlg.Txt_popfim.setText(proj.readEntry("QEsg", "POPFIM","0")[0])
 
         self.dlg.chkDiamProgressivo.setChecked(proj.readNumEntry("QEsg", "DIAM_PROGRESS",1)[0])
+        self.dlg.chkPrecSancad.setChecked(proj.readNumEntry("QEsg", "PREC_SANCAD",0)[0])
 
         tubosMat=proj.readEntry("QEsg", "TUBOS_MAT","0")[0]
         if tubosMat=='0':#se nao tiver lista de materiais definidas carrega o padrao do modelo
@@ -567,6 +588,7 @@ class QEsg:
         proj.writeEntry("QEsg", "POPFIM", self.dlg.Txt_popfim.text())
 
         proj.writeEntry("QEsg", "DIAM_PROGRESS", self.dlg.chkDiamProgressivo.isChecked())
+        proj.writeEntry("QEsg", "PREC_SANCAD", self.dlg.chkPrecSancad.isChecked())
 
         proj.writeEntry("QEsg", "TUBOS_MAT", str(self.tableToArray()))
     def VerificaCampos(self):

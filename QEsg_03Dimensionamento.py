@@ -118,17 +118,31 @@ class QEsg_03Dimens:
                                 #Se for verdadeiro, é possivel resolver aprofundando em ate 'max_forcar' a jusante sem mudar diametro
                                 #calcular a declividade minima que passa sem precisar aumentar o diametro
                                 #Pega o primeiro diametro maior ou igual ao calculado
-                                diam,n=[[d,n] for d,n in tubos if d >= diam_calc][0]
+                                diam,n=[[d,n] for d,n in tubos if d >= diam_calc and d>=diam_min][0]
                                 Iajust=self.CalcDecl(qfim, n, diam, lam_max)
                                 Io=Iajust
                             else:
-                                #Pega o proximo diametro maior que o anterior
-                                diam,n=[[d,n] for d,n in tubos if d > diam][0]
-                    else:
+                                if diam_calc>tubos[-1][0]:#Verifica se o maior tubo é insuficiente
+                                    diam=tubos[-1][0]
+                                    n=tubos[-1][1]
+                                    obs=u'DIAM É INSUFICIENTE '
+                                    diam_calc=0 #para sair do looping
+                                else:
+                                    #Pega o proximo diametro maior que o anterior e calcula o diametro com a declividade minima
+                                    diam,n=[[d,n] for d,n in tubos if d > diam][0]
+                                    Io=Imin
+                                    diam_calc=self.CalcDiametro(qfim, n, Io, lam_max)
+                    else: #nao vai tentar rebaixar jusante
                         while diam<diam_calc:
-                            #Pega o primeiro diametro maior ou igual ao calculado
-                            diam,n=[[d,n] for d,n in tubos if d >= diam_calc][0]
-                            diam_calc=self.CalcDiametro(qfim, n, Io, lam_max)
+                            if diam_calc>tubos[-1][0]:#Verifica se o maior tubo é insuficiente
+                                diam=tubos[-1][0]
+                                n=tubos[-1][1]
+                                obs=u'DIAM É INSUFICIENTE '
+                                diam_calc=0
+                            else:
+                                #Pega o primeiro diametro maior ou igual ao calculado
+                                diam,n=[[d,n] for d,n in tubos if d >= diam_calc][0]
+                                diam_calc=self.CalcDiametro(qfim, n, Io, lam_max)
                 ccj=ccm-ext*Io
                 diam_m=diam/1000.
 
@@ -144,55 +158,34 @@ class QEsg_03Dimens:
                     ccGI_inter=ccm_p-Ip*distMont
                     ccGS_inter=ccGI_inter+diam_m
                     if (ci<ccGS_inter<cs) or (ci<ccGI_inter<cs): #verifica se ha choque com a interferencia
-                        QgsMessageLog.logMessage('Interf com choque em '+trecho['DC_ID'], 'QEsg_03Dimensionamento',
+                        QgsMessageLog.logMessage('Interf em choque tr:'+trecho['DC_ID']+
+                                                 ' distMont:{0:.2f}'.format(distMont), 'QEsg_03Dimensionamento',
                                                   QgsMessageLog.INFO)
-                        if distMont<(ext/2.) or True:#se a interferencia esta mais proxima de montante; forcei aqui para sempre modificar montante
-                            if Ip==Imin:
+                        #if distMont<(ext/2.) or True:#se a interferencia esta mais proxima de montante; forcei aqui para sempre modificar montante
+                        if Ip==Imin:
+                            #aprofundar ccm e ccj igualmente
+                            degInt=ccGS_inter-ci
+                            ccm_p=ccm_p-degInt
+                            ccj_p=ccj_p-degInt
+                        else:
+                            #fixa jusante e calcula declividade (menor) entre ci-diam_m e ccj
+                            Ip=((ci-diam_m)-ccj_p)/(ext-distMont)
+                            Ip=max(Ip,Imin)
+                            diam_calc=self.CalcDiametro(qfim, n, Ip, lam_max)
+                            if diam_calc<diam:
+                                if Ip>Imin:
+                                    ccm_p=ccj_p+Ip*ext
+                                else:#Ip=Imin
+                                    ccGS_inter2=ci
+                                    ccGI_inter2=ccGS_inter2-diam_m
+                                    ccm_p=ccGI_inter2+Ip*distMont
+                                    ccj_p=ccm_p-ext*Ip
+                            else:
+                                Ip=Io
                                 #aprofundar ccm e ccj igualmente
                                 degInt=ccGS_inter-ci
                                 ccm_p=ccm_p-degInt
                                 ccj_p=ccj_p-degInt
-                            else:
-                                #fixa jusante e calcula declividade (menor) entre ci-diam_m e ccj
-                                Ip=((ci-diam_m)-ccj_p)/(ext-distMont)
-                                Ip=max(Ip,Imin)
-                                diam_calc=self.CalcDiametro(qfim, n, Ip, lam_max)
-                                if diam_calc<diam:
-                                    ccGI_inter2=ccm_p-Ip*distMont
-                                    ccGS_inter2=ccGI_inter2+diam_m
-                                    degInt=ccGS_inter2-ci
-                                    ccm_p=ccm_p-degInt
-                                    ccj_p=ccj_p-degInt
-                                else:
-                                    Ip=Io
-                                    #aprofundar ccm e ccj igualmente
-                                    degInt=ccGS_inter-ci
-                                    ccm_p=ccm_p-degInt
-                                    ccj_p=ccj_p-degInt
-                        else:#se a interferencia esta mais proxima de jusante
-                            print "Não deveria aparecer essa mensagem!"
-                            if Ip==Imax:
-                                #aprofundar ccm e ccj igualmente
-                                degInt=ccGS_inter-ci
-                                ccm_p=ccm_p-degInt
-                                ccj_p=ccj_p-degInt
-                            else:
-                                #fixa montante e calcula declividade (maior) entre ccm e ci-diam_m
-                                Ip=(ccm-(ci-diam_m))/distMont
-                                Ip=min(Ip,Imax)
-                                diam_calc=self.CalcDiametro(qfim, n, Ip, lam_max)
-                                if diam_calc<diam:
-                                    ccGI_inter2=ccm_p-Ip*distMont
-                                    ccGS_inter2=ccGI_inter2+diam_m
-                                    degInt=ccGS_inter2-ci
-                                    ccm_p=ccm_p-degInt
-                                    ccj_p=ccj_p-degInt
-                                else:
-                                    Ip=Io
-                                    #aprofundar ccm e ccj igualmente
-                                    degInt=ccGS_inter-ci
-                                    ccm_p=ccm_p-degInt
-                                    ccj_p=ccj_p-degInt
                 ccm=ccm_p
                 ccj=ccj_p
                 Io=Ip
@@ -263,6 +256,7 @@ class QEsg_03Dimens:
             trecho['CCJ']=ccj
             trecho['OBS']=obs
             vLayer.updateFeature(trecho)
+        #end for Trechos
 
         Trechos=vLayer.getFeatures()
         #faz loop novamente para medir o degraus
@@ -516,7 +510,12 @@ class QEsg_03Dimens:
                                            QEsgModel.CAMPOSDEF[campo][2], 
                                            QEsgModel.CAMPOSDEF[campo][3])
                               )
-        layer_nos=QgsVectorFileWriter(nome_arquivo,"UTF-8",campos,QGis.WKBPoint,layer.crs(),"ESRI Shapefile") 
+        layer_nos=QgsVectorFileWriter(nome_arquivo,"UTF-8",campos,QGis.WKBPoint,layer.crs(),"ESRI Shapefile")
+        if layer_nos.hasError() != QgsVectorFileWriter.NoError:
+            msgTxt=layer_nos.errorMessage()
+            QgsMessageLog.logMessage(msgTxt,'QEsg_03Dimensionamento',level=QgsMessageLog.CRITICAL)
+            QMessageBox.critical(None,'QEsg',msgTxt)
+            return 
         nos={}
         cotasTN={}
         lines=layer.getFeatures()
@@ -545,7 +544,7 @@ class QEsg_03Dimens:
                 CotaTN=float(cotasTN[n])
             else:
                 CotaTN=None
-            node.setAttributes([str(nos[n]),CotaTN])
+            node.setAttributes([nos[n],CotaTN])#str(nos[n]) passou a dar erro em qgis 2.16
             layer_nos.addFeature(node)
         #outs.write(str(n)+";"+str(nos[n])+"\n")
         #outs.close()
@@ -557,4 +556,4 @@ class QEsg_03Dimens:
 
             EstiloClasse=Estilos()
             EstiloClasse.CarregaEstilo(vlayer, 'nos_nomes.qml')
-            proj.writeEntry("QEsg", "JUNCTIONS", nome_camada)     
+            proj.writeEntry("QEsg", "JUNCTIONS", nome_camada)

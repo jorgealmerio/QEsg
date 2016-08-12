@@ -4,7 +4,7 @@
 <context>
     <name>QEsg</name>
     <message>
-        <location filename="../QEsg_00Settings.py" line="367"/>
+        <location filename="../QEsg_00Settings.py" line="386"/>
         <source>&amp;QEsg</source>
         <translation>&amp;QEsg</translation>
     </message>
@@ -49,12 +49,12 @@
         <translation>Missing Fields in </translation>
     </message>
     <message>
-        <location filename="../QEsg_02Vazao.py" line="72"/>
+        <location filename="../QEsg_02Vazao.py" line="78"/>
         <source>Vazões calculadas com sucesso!</source>
         <translation>Flows sucessfully calculated!</translation>
     </message>
     <message>
-        <location filename="../QEsg_02Vazao.py" line="190"/>
+        <location filename="../QEsg_02Vazao.py" line="196"/>
         <source>Falha ao adicionar feição</source>
         <translation>Fail to add feature</translation>
     </message>
@@ -64,7 +64,7 @@
         <translation>Diameters list undefined!</translation>
     </message>
     <message>
-        <location filename="../QEsg_03Dimensionamento.py" line="286"/>
+        <location filename="../QEsg_03Dimensionamento.py" line="280"/>
         <source>Rede dimensionada com sucesso!</source>
         <translation>Network sucessfully calculated!</translation>
     </message>
@@ -89,7 +89,7 @@
         <translation>Importing completed successfully!</translation>
     </message>
     <message>
-        <location filename="../QEsg_03Dimensionamento.py" line="417"/>
+        <location filename="../QEsg_03Dimensionamento.py" line="411"/>
         <source>&apos;{}&apos; com valor Nulo! Utilize a Ferramenta de Preenchimento</source>
         <translation>&apos;{} with null value! Use Fill Tool</translation>
     </message>
@@ -99,7 +99,7 @@
         <translation>&apos;{}&apos; Field not found</translation>
     </message>
     <message>
-        <location filename="../QEsg_03Dimensionamento.py" line="502"/>
+        <location filename="../QEsg_03Dimensionamento.py" line="496"/>
         <source>Salvar o layer de nós como:</source>
         <translation>Save Node Layer as:</translation>
     </message>
@@ -119,22 +119,22 @@
         <translation>Fill only selected records?</translation>
     </message>
     <message>
-        <location filename="../QEsg_00Settings.py" line="488"/>
+        <location filename="../QEsg_00Settings.py" line="508"/>
         <source>As configurações do Plugin foram removidas do Projeto</source>
         <translation>The Plugin settings was removed from Project</translation>
     </message>
     <message>
-        <location filename="../QEsg_01Campos.py" line="170"/>
+        <location filename="../QEsg_01Campos.py" line="173"/>
         <source>Layer &apos;{}&apos; não encontrado!</source>
         <translation>Layer &apos;{}&apos; not found!</translation>
     </message>
     <message>
-        <location filename="../QEsg_01Campos.py" line="173"/>
+        <location filename="../QEsg_01Campos.py" line="176"/>
         <source>Layer Indefinido: {}</source>
         <translation>Undefined Layer: {}</translation>
     </message>
     <message>
-        <location filename="../QEsg_01Campos.py" line="203"/>
+        <location filename="../QEsg_01Campos.py" line="206"/>
         <source>Nomes dos PVS atualizados com sucesso!</source>
         <translation>Manhole names sucessfully udated!</translation>
     </message>
@@ -144,22 +144,22 @@
         <translation>Update Manholes names from node Layer</translation>
     </message>
     <message>
-        <location filename="../QEsg_00Rename.py" line="340"/>
+        <location filename="../QEsg_00Rename.py" line="356"/>
         <source> Deseja convertê-los para partes simples?</source>
         <translation> Do you want to convert to single parts?</translation>
     </message>
     <message>
-        <location filename="../QEsg_00Rename.py" line="354"/>
+        <location filename="../QEsg_00Rename.py" line="370"/>
         <source> Deseja convertê-los para linhas simples?</source>
         <translation> Do you want to convert to single lines?</translation>
     </message>
     <message>
-        <location filename="../QEsg_00Rename.py" line="339"/>
+        <location filename="../QEsg_00Rename.py" line="355"/>
         <source>Existem elementos multipartes com {:d} vértices.</source>
         <translation>There are multipart elements with {:d} vertices.</translation>
     </message>
     <message>
-        <location filename="../QEsg_00Rename.py" line="353"/>
+        <location filename="../QEsg_00Rename.py" line="369"/>
         <source>Existem elementos com {:d} vértices.</source>
         <translation>There are elements with {:d} vertices.</translation>
     </message>
@@ -179,17 +179,17 @@
         <translation>05 Calculate Flow</translation>
     </message>
     <message>
-        <location filename="../QEsg_02Vazao.py" line="119"/>
+        <location filename="../QEsg_02Vazao.py" line="125"/>
         <source>&apos;{}&apos; com valor Nulo! Utilize a Ferramenta de Numeração ou Preenchimento</source>
         <translation>&apos;{}&apos; with Null value! Use Number or Fill tool</translation>
     </message>
     <message>
-        <location filename="../QEsg_00Settings.py" line="428"/>
+        <location filename="../QEsg_00Settings.py" line="448"/>
         <source>&lt;span style=&quot; color:#0000ff;&quot;&gt;Comprimento Geométrico:&lt;br&gt;Etapa 1 = {0:.2f} m&lt;br&gt;Etapa 2 = {1:.2f} m&lt;/span&gt;</source>
         <translation>&lt;span style=&quot; color:#0000ff;&quot;&gt;Geometric Length:&lt;br&gt;Stage 1 = {0:.2f} m&lt;br&gt;Stage 2 = {1:.2f} m&lt;/span&gt;</translation>
     </message>
     <message>
-        <location filename="../QEsg_00Settings.py" line="439"/>
+        <location filename="../QEsg_00Settings.py" line="459"/>
         <source>Comprimento Virtual:
 Etapa 1 = {} m
 Etapa 2 = {} m</source>
@@ -198,7 +198,7 @@ Stage 1 = {} m
 Stage 2 = {} m</translation>
     </message>
     <message>
-        <location filename="../QEsg_00Settings.py" line="433"/>
+        <location filename="../QEsg_00Settings.py" line="453"/>
         <source>Comprimento Atual:
 Etapa 1 = {} m
 Etapa 2 = {} m</source>
@@ -212,32 +212,32 @@ Stage 2 = {} m</translation>
         <translation>Erase Manifold Numbers</translation>
     </message>
     <message>
-        <location filename="../QEsg_00Rename.py" line="413"/>
+        <location filename="../QEsg_00Rename.py" line="430"/>
         <source>Apagar os nomes apenas dos coletores selecionados?</source>
         <translation>Erase numbers only from selected manifolds?</translation>
     </message>
     <message>
-        <location filename="../QEsg_02Vazao.py" line="61"/>
+        <location filename="../QEsg_02Vazao.py" line="67"/>
         <source>Não é permitido PV com mais de uma saída! Identifique os &apos;Ponta Seca&apos;</source>
         <translation>Manhole with more than one exit is not allowed! Identify the dry points</translation>
     </message>
     <message>
-        <location filename="../QEsg_03Dimensionamento.py" line="370"/>
+        <location filename="../QEsg_03Dimensionamento.py" line="364"/>
         <source>&apos;{}&apos; com valor Nulo em Trecho Existente!</source>
         <translation>&apos;{}&apos; with Null value on existent reach!</translation>
     </message>
     <message>
-        <location filename="../QEsg_03Dimensionamento.py" line="384"/>
+        <location filename="../QEsg_03Dimensionamento.py" line="378"/>
         <source>&apos;{}&apos; e &apos;{}&apos; com valores Nulos em Trecho Existente!</source>
         <translation>&apos;{}&apos; and &apos;{}&apos; with Null values on existent reach!</translation>
     </message>
     <message>
-        <location filename="../QEsg_03Dimensionamento.py" line="404"/>
+        <location filename="../QEsg_03Dimensionamento.py" line="398"/>
         <source>&apos;{}&apos; com valor Nulo!</source>
         <translation>&apos;{}&apos; with Null value on existent reach!</translation>
     </message>
     <message>
-        <location filename="../QEsg_03Dimensionamento.py" line="472"/>
+        <location filename="../QEsg_03Dimensionamento.py" line="466"/>
         <source>Trecho em carga! Verifique a rede</source>
         <translation>Forced conduit reach! Check your network</translation>
     </message>
@@ -247,42 +247,42 @@ Stage 2 = {} m</translation>
         <translation>Draw Profile</translation>
     </message>
     <message>
-        <location filename="../QEsg_05Perfil.py" line="128"/>
+        <location filename="../QEsg_05Perfil.py" line="152"/>
         <source>Distância (m)</source>
         <translation>Distance (m)</translation>
     </message>
     <message>
-        <location filename="../QEsg_05Perfil.py" line="129"/>
+        <location filename="../QEsg_05Perfil.py" line="153"/>
         <source>Cota (m)</source>
         <translation>Elevation (m)</translation>
     </message>
     <message>
-        <location filename="../QEsg_05Perfil.py" line="131"/>
+        <location filename="../QEsg_05Perfil.py" line="156"/>
         <source>Cota do Terreno</source>
         <translation>Ground Elevation</translation>
     </message>
     <message>
-        <location filename="../QEsg_05Perfil.py" line="131"/>
+        <location filename="../QEsg_05Perfil.py" line="157"/>
         <source>Cota da Geratriz Superior</source>
         <translation>Upper Edge Elevation</translation>
     </message>
     <message>
-        <location filename="../QEsg_05Perfil.py" line="131"/>
+        <location filename="../QEsg_05Perfil.py" line="165"/>
         <source>Interferências</source>
         <translation>Interferences</translation>
     </message>
     <message>
-        <location filename="../QEsg_05Perfil.py" line="131"/>
+        <location filename="../QEsg_05Perfil.py" line="158"/>
         <source>Cota do NA</source>
         <translation>WS Elevation</translation>
     </message>
     <message>
-        <location filename="../QEsg_05Perfil.py" line="131"/>
+        <location filename="../QEsg_05Perfil.py" line="159"/>
         <source>Cota da Geratriz Inferior</source>
         <translation>Lower Edge Elevation</translation>
     </message>
     <message>
-        <location filename="../QEsg_05Perfil.py" line="77"/>
+        <location filename="../QEsg_05Perfil.py" line="92"/>
         <source>Coletor </source>
         <translation>Manifold </translation>
     </message>
@@ -321,6 +321,21 @@ Stage 2 = {} m</translation>
         <source>Layer Tipo &apos;JUNCTIONS&apos; indefinido ou não encontrado!
  Os PVs não foram criados!</source>
         <translation>Layer type &apos;JUNCTIONS&apos; undefined or not found!</translation>
+    </message>
+    <message>
+        <location filename="../QEsg_00Settings.py" line="369"/>
+        <source>Ajuda</source>
+        <translation>Help</translation>
+    </message>
+    <message>
+        <location filename="../QEsg_00Rename.py" line="223"/>
+        <source>Existem trechos com identificação de PV de montante duplicada</source>
+        <translation>There is reaches with Upstream Manholes identification duplicated</translation>
+    </message>
+    <message>
+        <location filename="../QEsg_00Rename.py" line="379"/>
+        <source>As feições foram verificadas com sucesso!</source>
+        <translation>The features were successfully verified!</translation>
     </message>
 </context>
 <context>
@@ -564,17 +579,17 @@ Stage 2 = {} m</translation>
         <translation>Progressive Diameters</translation>
     </message>
     <message>
-        <location filename="../QEsg_Settings_dialog_base.ui" line="941"/>
+        <location filename="../QEsg_Settings_dialog_base.ui" line="969"/>
         <source>Limpa os registros do Plugin do Projeto ativo</source>
         <translation>Clear settings from active Project</translation>
     </message>
     <message>
-        <location filename="../QEsg_Settings_dialog_base.ui" line="938"/>
+        <location filename="../QEsg_Settings_dialog_base.ui" line="966"/>
         <source>Status Tip</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../QEsg_Settings_dialog_base.ui" line="944"/>
+        <location filename="../QEsg_Settings_dialog_base.ui" line="972"/>
         <source>Limpa Configs</source>
         <translation>Clear Settings</translation>
     </message>
@@ -614,6 +629,11 @@ Upper Edge</translation>
         <location filename="../QEsg_Settings_dialog_base.ui" line="856"/>
         <source>Altura mínima para degrau (m)</source>
         <translation>Minimum step (m)</translation>
+    </message>
+    <message utf8="true">
+        <location filename="../QEsg_Settings_dialog_base.ui" line="900"/>
+        <source>Precisão conforme SANCAD</source>
+        <translation>Accuracy as SANCAD</translation>
     </message>
 </context>
 <context>

@@ -29,8 +29,23 @@ from QEsg_00Model import *
 from QEsg_03Dimensionamento import *
 from QEsg_05ProfileDialog import ProfileDialog
 import matplotlib.pyplot as plt
-from matplotlib.patches import Ellipse
+from matplotlib.patches import Ellipse, Rectangle
+
+from matplotlib.legend_handler import HandlerPatch
+import matplotlib.patches as mpatches
+
 import qgis
+
+class HandlerEllipse(HandlerPatch):
+    def create_artists(self, legend, orig_handle,
+                       xdescent, ydescent, width, height, fontsize, trans):
+        center = 0.5 * width - 0.5 * xdescent, 0.5 * height - 0.5 * ydescent
+        p = mpatches.Ellipse(xy=center, width=width + xdescent,
+                             height=height + ydescent)
+        self.update_prop(p, orig_handle, legend)
+        p.set_transform(trans)
+        return [p]
+
 
 class QEsg_05Perfil:
     def __init__(self):
@@ -79,6 +94,7 @@ class QEsg_05Perfil:
         ax = plt.gca()
         #Lista as interfencias de todos os trechos apenas uma vez
         lstIds,lstTr_inter=self.DimensClasse.Lista_Interferencias(vLayer)
+        HasInter=False
         for feat in vLayer.getFeatures(request):
             ident=feat['DC_ID']
             lstCTx.append(ext)
@@ -94,6 +110,8 @@ class QEsg_05Perfil:
             na.append(namon)
             cgs.append(ccm+diam)
 
+            self.Desenha_PV(ax, ext, ctm, ccm, .8, .1)
+
             tr_id=feat.id()
             #lista as interferencias apenas do trecho
             interfs=[[distMont,cs,ci,tipoInt] for id,distMont,cs,ci,tipoInt in lstTr_inter if id == tr_id]
@@ -103,9 +121,10 @@ class QEsg_05Perfil:
                     lstCTx.append(locX)
                     lstCTy.append(cs)
                 else:
-                    ellipse = Ellipse(xy=(locX, (cs+ci)/2.), width=5, height=cs-ci, 
+                    ellipse = Ellipse(xy=(locX, (cs+ci)/2.), width=cs-ci, height=cs-ci, 
                                              edgecolor='r', fc='None', lw=2)
-                    ax.add_patch(ellipse)
+                    intLine=ax.add_patch(ellipse)
+                    HasInter=True
 
             ctj=feat['CTJ']
             ccj=feat['CCJ']
@@ -121,19 +140,53 @@ class QEsg_05Perfil:
             cc.append(ccj)
             na.append(najus)
             cgs.append(ccj+diam)
-        plt.plot(lstCTx,lstCTy,color='magenta')
-        plt.plot(lstCGx,cgs,color='green')
-        plt.plot(lstCGx,na,color='cyan')
-        plt.plot(lstCGx,cc,color='blue')
+        #end for Trechos
+        
+        #Draw last PV
+        self.Desenha_PV(ax, ext, ctj, ccj, .8, .1)
+        
+        ctLine,=plt.plot(lstCTx,lstCTy,color='magenta')
+        cgsLine,=plt.plot(lstCGx,cgs,color='green')
+        naLine,=plt.plot(lstCGx,na,color='cyan')
+        cgiLine,=plt.plot(lstCGx,cc,color='blue')
         plt.xlabel(QCoreApplication.translate('QEsg',u'Distância (m)'))
         plt.ylabel(QCoreApplication.translate('QEsg','Cota (m)'))
         plt.grid(True)
-        plt.legend([QCoreApplication.translate('QEsg','Cota do Terreno'),
+        LegLines=[ctLine,cgsLine,naLine,cgiLine]
+        subs=[QCoreApplication.translate('QEsg','Cota do Terreno'),
                     QCoreApplication.translate('QEsg','Cota da Geratriz Superior'),
                     QCoreApplication.translate('QEsg','Cota do NA'),
-                    QCoreApplication.translate('QEsg','Cota da Geratriz Inferior'),
-                    QCoreApplication.translate('QEsg',u'Interferências')
-                    ])
+                    QCoreApplication.translate('QEsg','Cota da Geratriz Inferior')
+                    ]
+        #QCoreApplication.translate('QEsg','PV\'s')
+        
+        if HasInter:
+            LegLines.append(intLine)
+            subs.append(QCoreApplication.translate('QEsg',u'Interferências'))
+            hndMap={intLine: HandlerEllipse()}
+        else:
+            hndMap={}
+        plt.legend(LegLines,subs,handler_map=hndMap)
         plt.title(titulo)
         plt.show()
         plt.draw()
+    def Desenha_PV(self,ax,ext,ctm,ccm,pvDiam,thick):
+        #Add PV wall
+        thick=.1 #espessura da parede
+        pvDiam=.8+2.*thick #PV diam
+        pvBLx=(ext-pvDiam/2.) #PV Bottom Left X
+        pvBLy=ccm-thick #PV Bottom Left Y
+        pvH=ctm-ccm+thick #PV Height
+        rect = plt.Rectangle((pvBLx, pvBLy), pvDiam, pvH, facecolor="#aaaaaa",alpha=.70)
+        ax.add_patch(rect)
+
+        #Add PV
+        pvDiam=.8 #PV diam
+        pvBLx=ext-pvDiam/2. #PV Bottom Left X
+        pvBLy=ccm #PV Bottom Left Y
+        pvH=ctm-ccm-thick/2. #PV Height
+        rect = plt.Rectangle((pvBLx, pvBLy), pvDiam, pvH, facecolor="white")
+        ax.add_patch(rect)
+
+        #Linha vertical no eixo do PV
+        plt.plot([ext,ext],[ctm,ccm],color='black',linestyle='--')

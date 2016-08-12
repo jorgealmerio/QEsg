@@ -115,7 +115,7 @@ class QEsg_06Export:
         lyr=prefix+'SETA'
         solid = dxf.solid([(4*sc, 0), (-4*sc,-1.33*sc), (-4*sc, 1.33*sc)], color=256, layer=lyr)
         # Create a block
-        oBlock = dxf.block(name='SETA')
+        oBlock = dxf.block(name=lyr)
         oBlock.add(solid)
         # add block definition to the drawing
         drawing.blocks.add(oBlock)
@@ -227,7 +227,7 @@ class QEsg_06Export:
         circle=dxf.circle(radius=2.99*sc,center=(0.,0.),color=256,layer=lyr)
         #solid = dxf.solid([(4, 0), (-4,-1.33), (-4, 1.33)], color=256, layer=lyr)
         # Create a block
-        oBlock = dxf.block(name='PV')
+        oBlock = dxf.block(name=lyr)
         #oBlock.add(solid)
         oBlock.add(circle)
         # add block definition to the drawing
@@ -235,6 +235,7 @@ class QEsg_06Export:
 
         for feat in PVLayer.getFeatures():
             point=feat.geometry().asPoint()
+            lyr=prefix+'PV'
             drawing.add(dxf.insert2(blockdef=oBlock, insert=point, layer=lyr))
 
             lyr=prefix+'NUMPV'
