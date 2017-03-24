@@ -1,7 +1,6 @@
 <html>
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=windows-1252"/>
-	<title></title>
 	<meta name="generator" content="LibreOffice 5.2.0.1 (Windows)"/>
 	<meta name="author" content="Juan Ramseyer"/>
 	<meta name="created" content="2016-06-07T17:41:21.305062039"/>
