@@ -261,9 +261,7 @@ tra&ccedil;ar a rede de esgotos.</b></font></p>
 
 </p>
 <h2 class="western" style="page-break-before: always"><a name="__RefHeading___Toc3067_1012792670"></a>
-4.4 <img src="images\figfef4e818bfc6bf06.png" name="Figura9" align="middle" width="30" height="30" border="0"/>
-
-BOTÃO 00 CONFIGURAÇÃO</h2>
+4.4 <img src="images\figfef4e818bfc6bf06.png" name="Figura9" align="middle" width="30" height="30" border="0"/>BOTÃO 00 CONFIGURAÇÃO</h2>
 <p class="western"><br/>
 
 </p>
@@ -335,9 +333,7 @@ na janela aberta.
 <p class="western"><br/>
 
 </p>
-<h2 class="western"><a name="__RefHeading___Toc3069_1012792670"></a>4.5 <img src="images\fig4382197c198bdabe.png" name="Figura10" align="middle" width="30" height="30" border="0"/>
-
-BOTÃO 01 VERIFICA/CRIA CAMPOS</h2>
+<h2 class="western"><a name="__RefHeading___Toc3069_1012792670"></a>4.5 <img src="images\fig4382197c198bdabe.png" name="Figura10" align="middle" width="30" height="30" border="0"/>BOTÃO 01 VERIFICA/CRIA CAMPOS</h2>
 <p class="western"><br/>
 
 </p>
@@ -383,9 +379,7 @@ ou zeros (sem informa&ccedil;&atilde;o ainda).</p>
 <p class="western"><br/>
 
 </p>
-<h2 class="western"><a name="__RefHeading___Toc3071_1012792670"></a>4.6 <img src="images\fig96a608ce40392369.png" name="Figura11" align="middle" width="30" height="30" border="0"/>
-
-BOTÃO 02 NUMERAR REDE</h2>
+<h2 class="western"><a name="__RefHeading___Toc3071_1012792670"></a>4.6 <img src="images\fig96a608ce40392369.png" name="Figura11" align="middle" width="30" height="30" border="0"/>BOTÃO 02 NUMERAR REDE</h2>
 <p class="western"><br/>
 
 </p>
@@ -592,9 +586,7 @@ campos Coletor, Trecho, DC_ID, PVM e PVJ.</p>
 <p class="western" style="line-height: 100%"><br/>
 
 </p>
-<h2 class="western"><a name="__RefHeading___Toc3073_1012792670"></a>4.7 <img src="images\fig30dc2cdc68e77050.png" name="Figura12" align="middle" width="30" height="30" border="0"/>
-
-BOTÃO 03 CRIAR LAYER DE NÓS</h2>
+<h2 class="western"><a name="__RefHeading___Toc3073_1012792670"></a>4.7 <img src="images\fig30dc2cdc68e77050.png" name="Figura12" align="middle" width="30" height="30" border="0"/>BOTÃO 03 CRIAR LAYER DE NÓS</h2>
 <p class="western"><br/>
 
 </p>
@@ -630,9 +622,7 @@ BOTÃO 03 CRIAR LAYER DE NÓS</h2>
 <p class="western"><br/>
 
 </p>
-<h2 class="western"><a name="__RefHeading___Toc3075_1012792670"></a>4.8<img src="images\fig85a4f30f64038587.png" name="Figura1" align="middle" width="30" height="30" border="0"/>
-
-BOTÃO 04 PREENCHE OS CAMPOS</h2>
+<h2 class="western"><a name="__RefHeading___Toc3075_1012792670"></a>4.8<img src="images\fig85a4f30f64038587.png" name="Figura1" align="middle" width="30" height="30" border="0"/>BOTÃO 04 PREENCHE OS CAMPOS</h2>
 <p class="western"><br/>
 
 </p>
@@ -721,9 +711,7 @@ e saia do modo de edi&ccedil;&atilde;o. Salve o </span>projeto.
 
 </p>
 <h2 class="western" style="page-break-before: always"><a name="__RefHeading___Toc3079_1012792670"></a>
-4.10 <img src="images\fig62bba675e061c761.png" name="Figura13" align="middle" width="30" height="30" border="0"/>
-
-BOTÃO 5 CALCULA VAZÃO</h2>
+4.10 <img src="images\fig62bba675e061c761.png" name="Figura13" align="middle" width="30" height="30" border="0"/>BOTÃO 05 CALCULA VAZÃO</h2>
 <p class="western"><br/>
 
 </p>
@@ -747,9 +735,7 @@ de projeto calculadas.</b></font></p>
 <p class="western"><br/>
 
 </p>
-<h2 class="western"><a name="__RefHeading___Toc3081_1012792670"></a>4.11<img src="images\fige74254464005de07.png" name="Figura14" align="middle" width="30" height="30" border="0"/>
-
-BOT&Atilde;O 6 DIMENSIONA</h2>
+<h2 class="western"><a name="__RefHeading___Toc3081_1012792670"></a>4.11<img src="images\fige74254464005de07.png" name="Figura14" align="middle" width="30" height="30" border="0"/>BOT&Atilde;O 6 DIMENSIONA</h2>
 <p class="western"><br/>
 
 </p>
@@ -781,9 +767,7 @@ eletr&ocirc;nica (MS-Excel, Libreoffice-Calc ou outra)</span>.
 <p class="western" style="line-height: 100%"><br/>
 
 </p>
-<h2 class="western"><a name="__RefHeading___Toc3083_1012792670"></a>4.12<img src="images\figfe786608f4b2d9f7.png" name="Figura25" width="30" height="30" border="0"/>
-
-BOT&Atilde;O 7 DESENHA PERFIL</h2>
+<h2 class="western"><a name="__RefHeading___Toc3083_1012792670"></a>4.12<img src="images\figfe786608f4b2d9f7.png" name="Figura25" width="30" height="30" border="0"/>BOT&Atilde;O 7 DESENHA PERFIL</h2>
 <p class="western" style="line-height: 100%"> 
 </p>
 <p class="western" style="line-height: 100%">Trata-se de uma
@@ -1239,7 +1223,7 @@ TRECHO</h2>
 <p class="western" align="left"><span style="font-size: small;">DECL</span></p>
 </td>
 <td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding: 0cm 0cm 0.1cm 0.1cm;" width="17%">
-<p class="western" align="center"><span style="font-size: small;">m</span></p>
+<p class="western" align="center"><span style="font-size: small;">m/m</span></p>
 </td>
 <td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding: 0cm 0cm 0.1cm 0.1cm;" width="17%">
 <p class="western" align="center"><span style="font-size: small;">Real</span></p>
@@ -1262,7 +1246,7 @@ TRECHO</h2>
 <p class="western" align="left"><span style="font-size: small;">MANNING</span></p>
 </td>
 <td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding: 0cm 0cm 0.1cm 0.1cm;" width="17%">
-<p class="western" align="center"><span style="font-size: small;">m</span></p>
+<p class="western" align="center"><span style="font-size: small;">Adimensional<br /></span></p>
 </td>
 <td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding: 0cm 0cm 0.1cm 0.1cm;" width="17%">
 <p class="western" align="center"><span style="font-size: small;">Real</span></p>
@@ -1274,7 +1258,7 @@ TRECHO</h2>
 <p class="western" align="center"><span style="font-size: small;">3</span></p>
 </td>
 <td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.1cm 0.1cm 0.1cm;" width="17%">
-<p class="western" align="center"><span style="font-size: small;">Coeficiente de Manning</span></p>
+<p class="western" align="center"><span style="font-size: small;">Coeficiente de rugosidade de Manning</span></p>
 </td>
 </tr>
 <tr valign="top">
@@ -1285,7 +1269,7 @@ TRECHO</h2>
 <p class="western" align="left"><span style="font-size: small;">Q_CONC_INI</span></p>
 </td>
 <td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding: 0cm 0cm 0.1cm 0.1cm;" width="17%">
-<p class="western" align="center"><span style="font-size: small;">m</span></p>
+<p class="western" align="center"><span style="font-size: small;">L/s</span></p>
 </td>
 <td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding: 0cm 0cm 0.1cm 0.1cm;" width="17%">
 <p class="western" align="center"><span style="font-size: small;">Real</span></p>
@@ -1308,7 +1292,7 @@ TRECHO</h2>
 <p class="western" align="left"><span style="font-size: small;">Q_CONC_FIM</span></p>
 </td>
 <td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding: 0cm 0cm 0.1cm 0.1cm;" width="17%">
-<p class="western" align="center"><span style="font-size: small;">m</span></p>
+<p class="western" align="center"><span style="font-size: small;">L/s</span></p>
 </td>
 <td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding: 0cm 0cm 0.1cm 0.1cm;" width="17%">
 <p class="western" align="center"><span style="font-size: small;">Real</span></p>
@@ -1331,7 +1315,7 @@ TRECHO</h2>
 <p class="western" align="left"><span style="font-size: small;">Q_INI</span></p>
 </td>
 <td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding: 0cm 0cm 0.1cm 0.1cm;" width="17%">
-<p class="western" align="center"><span style="font-size: small;">m</span></p>
+<p class="western" align="center"><span style="font-size: small;"><span style="font-size: small;">L/s</span></span></p>
 </td>
 <td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding: 0cm 0cm 0.1cm 0.1cm;" width="17%">
 <p class="western" align="center"><span style="font-size: small;">Real</span></p>
@@ -1354,7 +1338,7 @@ TRECHO</h2>
 <p class="western" align="left"><span style="font-size: small;">Q_FIM</span></p>
 </td>
 <td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding: 0cm 0cm 0.1cm 0.1cm;" width="17%">
-<p class="western" align="center"><span style="font-size: small;">m</span></p>
+<p class="western" align="center"><span style="font-size: small;"><span style="font-size: small;">L/s</span></span></p>
 </td>
 <td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding: 0cm 0cm 0.1cm 0.1cm;" width="17%">
 <p class="western" align="center"><span style="font-size: small;">Real</span></p>
@@ -1377,7 +1361,7 @@ TRECHO</h2>
 <p class="western" align="left"><span style="font-size: small;">VEL_INI</span></p>
 </td>
 <td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding: 0cm 0cm 0.1cm 0.1cm;" width="17%">
-<p class="western" align="center"><span style="font-size: small;">m</span></p>
+<p class="western" align="center"><span style="font-size: small;">m/s</span></p>
 </td>
 <td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding: 0cm 0cm 0.1cm 0.1cm;" width="17%">
 <p class="western" align="center"><span style="font-size: small;">Real</span></p>
@@ -1400,7 +1384,7 @@ TRECHO</h2>
 <p class="western" align="left"><span style="font-size: small;">VEL_FIM</span></p>
 </td>
 <td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding: 0cm 0cm 0.1cm 0.1cm;" width="17%">
-<p class="western" align="center"><span style="font-size: small;">m</span></p>
+<p class="western" align="center"><span style="font-size: small;">m/s</span></p>
 </td>
 <td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding: 0cm 0cm 0.1cm 0.1cm;" width="17%">
 <p class="western" align="center"><span style="font-size: small;">Real</span></p>
@@ -1423,7 +1407,7 @@ TRECHO</h2>
 <p class="western" align="left"><span style="font-size: small;">VEL_CRI</span></p>
 </td>
 <td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding: 0cm 0cm 0.1cm 0.1cm;" width="17%">
-<p class="western" align="center"><span style="font-size: small;">m</span></p>
+<p class="western" align="center"><span style="font-size: small;">m/s</span></p>
 </td>
 <td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding: 0cm 0cm 0.1cm 0.1cm;" width="17%">
 <p class="western" align="center"><span style="font-size: small;">Real</span></p>
@@ -1515,7 +1499,7 @@ TRECHO</h2>
 <p class="western" align="left"><span style="font-size: small;">LAM_MAX</span></p>
 </td>
 <td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding: 0cm 0cm 0.1cm 0.1cm;" width="17%">
-<p class="western" align="center"><span style="font-size: small;">m</span></p>
+<p class="western" align="center"><span style="font-size: small;">Adimensional</span></p>
 </td>
 <td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding: 0cm 0cm 0.1cm 0.1cm;" width="17%">
 <p class="western" align="center"><span style="font-size: small;">Real</span></p>
@@ -1647,7 +1631,7 @@ TRECHO</h2>
 </tr>
 </tbody>
 </table>
-<p>&nbsp;</p><p class="western" style="line-height: 100%"><font size="2" style="font-size: 9pt">Valores
+<p>&nbsp;</p><p>&nbsp;</p><p class="western" style="line-height: 100%"><font size="2" style="font-size: 9pt">Valores
 permitidos</font></p>
 <p class="western" style="line-height: 100%"><font size="2" style="font-size: 9pt"><sup>(1)</sup>:
 Trecho sem contribui&ccedil;&atilde;o = 0, contribui&ccedil;&atilde;o
@@ -1660,124 +1644,131 @@ na segunda etapa = 2</font></p>
 <p class="western" style="line-height: 100%"><br/>
 
 </p>
-<h2 class="western"><a name="__RefHeading___Toc3091_1012792670"></a>5.3 SHAPE
-INTERFERÊNCIAS</h2>
-<table width="100%" cellpadding="4" cellspacing="0">
-	<col width="43*">
-	<col width="43*">
-	<col width="43*">
-	<col width="43*">
-	<col width="43*">
-	<col width="43*">
-	<tr valign="top">
-		<td width="17%" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0.1cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
-			<p class="western" align="center"><font size="2" style="font-size: 10pt"><b>Ordem</b></font></p>
-		</td>
-		<td width="17%" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0.1cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
-			<p class="western" align="center"><font size="2" style="font-size: 10pt"><b>Nome</b></font></p>
-		</td>
-		<td width="17%" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0.1cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
-			<p class="western" align="center"><font size="2" style="font-size: 10pt"><b>Unidade</b></font></p>
-		</td>
-		<td width="17%" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0.1cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
-			<p class="western" align="center"><font size="2" style="font-size: 10pt"><b>Tipo</b></font></p>
-		</td>
-		<td width="17%" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0.1cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
-			<p class="western" align="center"><font size="2" style="font-size: 10pt"><b>Comprimento</b></font></p>
-		</td>
-		<td width="17%" style="border: 1px solid #000000; padding: 0.1cm">
-			<p class="western" align="center"><font size="2" style="font-size: 10pt"><b>Precis&atilde;o</b></font></p>
-		</td>
-	</tr>
-	<tr valign="top">
-		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
-			<p class="western" align="center"><font size="2" style="font-size: 10pt">1</font></p>
-		</td>
-		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
-			<p class="western" align="left"><font size="2" style="font-size: 10pt">DC_ID</font></p>
-		</td>
-		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
-			<p class="western" align="center"><font size="2" style="font-size: 10pt">-</font></p>
-		</td>
-		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm" sdval="31" sdnum="1046;">
-			<p class="western" align="center"><font size="2" style="font-size: 10pt">31</font></p>
-		</td>
-		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
-			<p class="western" align="center"><font size="2" style="font-size: 10pt">10</font></p>
-		</td>
-		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm">
-			<p class="western" align="center"><font size="2" style="font-size: 10pt">-</font></p>
-		</td>
-	</tr>
-	<tr valign="top">
-		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
-			<p class="western" align="center"><font size="2" style="font-size: 10pt">2</font></p>
-		</td>
-		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
-			<p class="western" align="left"><font size="2" style="font-size: 10pt">TIPO_INT</font></p>
-		</td>
-		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
-			<p class="western" align="center"><font size="2" style="font-size: 10pt">-<sup>(1)</sup></font></p>
-		</td>
-		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
-			<p class="western" align="center"><font size="2" style="font-size: 10pt">QString</font></p>
-		</td>
-		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm" sdval="2" sdnum="1046;">
-			<p class="western" align="center"><font size="2" style="font-size: 10pt">2</font></p>
-		</td>
-		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm">
-			<p class="western" align="center"><font size="2" style="font-size: 10pt">-</font></p>
-		</td>
-	</tr>
-	<tr valign="top">
-		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
-			<p class="western" align="center"><font size="2" style="font-size: 10pt">3</font></p>
-		</td>
-		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
-			<p class="western" align="left"><font size="2" style="font-size: 10pt">CS</font></p>
-		</td>
-		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
-			<p class="western" align="center"><font size="2" style="font-size: 10pt">m</font></p>
-		</td>
-		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
-			<p class="western" align="center"><font size="2" style="font-size: 10pt">Real</font></p>
-		</td>
-		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
-			<p class="western" align="center"><font size="2" style="font-size: 10pt">10</font></p>
-		</td>
-		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm" sdval="3" sdnum="1046;">
-			<p class="western" align="center"><font size="2" style="font-size: 10pt">3</font></p>
-		</td>
-	</tr>
-	<tr valign="top">
-		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
-			<p class="western" align="center"><font size="2" style="font-size: 10pt">4</font></p>
-		</td>
-		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
-			<p class="western" align="left"><font size="2" style="font-size: 10pt">CI</font></p>
-		</td>
-		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
-			<p class="western" align="center"><font size="2" style="font-size: 10pt">m</font></p>
-		</td>
-		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
-			<p class="western" align="center"><font size="2" style="font-size: 10pt">Real</font></p>
-		</td>
-		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
-			<p class="western" align="center"><font size="2" style="font-size: 10pt">10</font></p>
-		</td>
-		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm" sdval="3" sdnum="1046;">
-			<p class="western" align="center"><font size="2" style="font-size: 10pt">3</font></p>
-		</td>
-	</tr>
+<h2 class="western"><a name="__RefHeading___Toc3091_1012792670"></a>5.3 SHAPE INTERFERÊNCIAS</h2>
+<table width="100%" cellspacing="0" cellpadding="4">
+<tbody>
+<tr valign="top">
+<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding: 0.1cm 0cm 0.1cm 0.1cm;" width="17%">
+<p class="western" align="center"><span style="font-size: small;"><strong>Ordem</strong></span></p>
+</td>
+<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding: 0.1cm 0cm 0.1cm 0.1cm;" width="17%">
+<p class="western" align="center"><span style="font-size: small;"><strong>Nome</strong></span></p>
+</td>
+<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding: 0.1cm 0cm 0.1cm 0.1cm;" width="17%">
+<p class="western" align="center"><span style="font-size: small;"><strong>Unidade</strong></span></p>
+</td>
+<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding: 0.1cm 0cm 0.1cm 0.1cm;" width="17%">
+<p class="western" align="center"><span style="font-size: small;"><strong>Tipo</strong></span></p>
+</td>
+<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding: 0.1cm 0cm 0.1cm 0.1cm;" width="17%">
+<p class="western" align="center"><span style="font-size: small;"><strong>Comprimento</strong></span></p>
+</td>
+<td style="border: 1px solid #000000; padding: 0.1cm;" width="17%">
+<p class="western" align="center"><span style="font-size: small;"><strong>Precis&atilde;o</strong></span></p>
+</td>
+<td style="border: 1px solid #000000; padding: 0.1cm;" width="17%">
+<p class="western" align="center"><span style="font-size: small;"><strong>Descri&ccedil;&atilde;o</strong></span></p>
+</td>
+</tr>
+<tr valign="top">
+<td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding: 0cm 0cm 0.1cm 0.1cm;" width="17%">
+<p class="western" align="center"><span style="font-size: small;">1</span></p>
+</td>
+<td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding: 0cm 0cm 0.1cm 0.1cm;" width="17%">
+<p class="western" align="left"><span style="font-size: small;">DC_ID</span></p>
+</td>
+<td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding: 0cm 0cm 0.1cm 0.1cm;" width="17%">
+<p class="western" align="center"><span style="font-size: small;">-</span></p>
+</td>
+<td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding: 0cm 0cm 0.1cm 0.1cm;" width="17%">
+<p class="western" align="center"><span style="font-size: small;">31</span></p>
+</td>
+<td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding: 0cm 0cm 0.1cm 0.1cm;" width="17%">
+<p class="western" align="center"><span style="font-size: small;">10</span></p>
+</td>
+<td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.1cm 0.1cm 0.1cm;" width="17%">
+<p class="western" align="center"><span style="font-size: small;">-</span></p>
+</td>
+<td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.1cm 0.1cm 0.1cm;" width="17%">
+<p class="western" align="center"><span style="font-size: small;">Identifica&ccedil;&atilde;o da Interfer&ecirc;ncia</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding: 0cm 0cm 0.1cm 0.1cm;" width="17%">
+<p class="western" align="center"><span style="font-size: small;">2</span></p>
+</td>
+<td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding: 0cm 0cm 0.1cm 0.1cm;" width="17%">
+<p class="western" align="left"><span style="font-size: small;">TIPO_INT</span></p>
+</td>
+<td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding: 0cm 0cm 0.1cm 0.1cm;" width="17%">
+<p class="western" align="center"><span style="font-size: small;">-<sup>(1)</sup></span></p>
+</td>
+<td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding: 0cm 0cm 0.1cm 0.1cm;" width="17%">
+<p class="western" align="center"><span style="font-size: small;">QString</span></p>
+</td>
+<td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding: 0cm 0cm 0.1cm 0.1cm;" width="17%">
+<p class="western" align="center"><span style="font-size: small;">2</span></p>
+</td>
+<td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.1cm 0.1cm 0.1cm;" width="17%">
+<p class="western" align="center"><span style="font-size: small;">-</span></p>
+</td>
+<td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.1cm 0.1cm 0.1cm;" width="17%">
+<p class="western" align="center"><span style="font-size: small;">Tipo de Interfer&ecirc;ncia</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding: 0cm 0cm 0.1cm 0.1cm;" width="17%">
+<p class="western" align="center"><span style="font-size: small;">3</span></p>
+</td>
+<td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding: 0cm 0cm 0.1cm 0.1cm;" width="17%">
+<p class="western" align="left"><span style="font-size: small;">CS</span></p>
+</td>
+<td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding: 0cm 0cm 0.1cm 0.1cm;" width="17%">
+<p class="western" align="center"><span style="font-size: small;">m</span></p>
+</td>
+<td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding: 0cm 0cm 0.1cm 0.1cm;" width="17%">
+<p class="western" align="center"><span style="font-size: small;">Real</span></p>
+</td>
+<td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding: 0cm 0cm 0.1cm 0.1cm;" width="17%">
+<p class="western" align="center"><span style="font-size: small;">10</span></p>
+</td>
+<td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.1cm 0.1cm 0.1cm;" width="17%">
+<p class="western" align="center"><span style="font-size: small;">3</span></p>
+</td>
+<td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.1cm 0.1cm 0.1cm;" width="17%">
+<p class="western" align="center"><span style="font-size: small;">Cota da Geratriz Superior da interfer&ecirc;ncia</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding: 0cm 0cm 0.1cm 0.1cm;" width="17%">
+<p class="western" align="center"><span style="font-size: small;">4</span></p>
+</td>
+<td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding: 0cm 0cm 0.1cm 0.1cm;" width="17%">
+<p class="western" align="left"><span style="font-size: small;">CI</span></p>
+</td>
+<td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding: 0cm 0cm 0.1cm 0.1cm;" width="17%">
+<p class="western" align="center"><span style="font-size: small;">m</span></p>
+</td>
+<td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding: 0cm 0cm 0.1cm 0.1cm;" width="17%">
+<p class="western" align="center"><span style="font-size: small;">Real</span></p>
+</td>
+<td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding: 0cm 0cm 0.1cm 0.1cm;" width="17%">
+<p class="western" align="center"><span style="font-size: small;">10</span></p>
+</td>
+<td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.1cm 0.1cm 0.1cm;" width="17%">
+<p class="western" align="center"><span style="font-size: small;">3</span></p>
+</td>
+<td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.1cm 0.1cm 0.1cm;" width="17%">
+<p class="western" align="center"><span style="font-size: small;">Cota da Geratriz Inferior da interfer&ecirc;ncia</span></p>
+</td>
+</tr>
+</tbody>
 </table>
-<p class="western" style="line-height: 100%"><font size="2" style="font-size: 9pt">Valores
-permitidos</font></p>
-<p class="western" style="line-height: 100%"><font size="2" style="font-size: 9pt"><sup>(1)</sup>:
-TN para terreno natural, qualquer outro valor (inclusive nulo) &eacute;
-considerada uma interfer&ecirc;ncia.</font></p>
-<p class="western" style="line-height: 100%"><br/>
-
-</p>
+<p>&nbsp;</p>
+<p class="western" style="line-height: 100%;"><span style="font-size: small;">Valores permitidos</span></p>
+<p class="western" style="line-height: 100%;"><span style="font-size: small;"><sup>(1)</sup>: TN para terreno natural, qualquer outro valor (inclusive nulo) &eacute; considerada uma interfer&ecirc;ncia.</span></p>
+<p class="western" style="line-height: 100%;"><span style="font-size: small;">Quando a interfer&ecirc;ncia for do tipo 'TN' no campo 'CS' deve ser informada a cota do Terreno natural e no campo CI deve ser informada a cota da geratriz superior m&aacute;xima desejada para a tubula&ccedil;&atilde;o projetada.</span></p>
+<p class="western" style="line-height: 100%;">&nbsp;</p>
 <h1 class="western"><a name="__RefHeading___Toc3820_1012792670"></a>6 AUTOR</h1>
 <p class="western"><br/>
 
