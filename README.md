@@ -22,14 +22,14 @@
 <p class="western"><span lang="pt-BR"><a class="western" href="https://plugins.qgis.org/plugins/QEsg/">QEsg</a>
 &eacute; um </span><span lang="pt-BR">complemento</span><span lang="pt-BR">
 desenvolvido para o software <a class="western" href="http://www.qgis.org/">Qgis</a>
-com o objetivo de auxiliar na projeto de redes de esgotamento
+com o objetivo de auxiliar no projeto de redes de esgotamento
 sanit&aacute;rio.</span></p>
 <p class="western"><a name="__RefHeading___Toc3053_1012792670"></a><span lang="pt-BR">O
 plugin se utiliza das facilidades e recursos inerentes a um ambiente
 SIG (Sistema de Informa&ccedil;&otilde;es geogr&aacute;ficas) para
 apoiar a </span><span lang="pt-BR">organiza&ccedil;&atilde;o,</span><span lang="pt-BR">
 desenvolvimento, </span><span lang="pt-BR">dimensionamento e
-apresenta&ccedil;&atilde;o final do projeto de uma rede esgoto.</span></p>
+apresenta&ccedil;&atilde;o final do projeto de uma rede de esgoto.</span></p>
 <p class="western"><br/>
 
 </p>
