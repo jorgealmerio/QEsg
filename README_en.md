@@ -7,11 +7,6 @@
 	<meta name="changed" content="2016-07-04T22:02:46.747000000"/>
 </head>
 <body lang="pt-BR" dir="ltr">
-<h1 class="western"><a name="__RefHeading___Toc3816_1012792670"></a><img src="images\figb6a402436fc68eb5.png" name="qesg_logo" align="bottom" width="605" height="85" border="0"/>
-</h1>
-<p class="western"><br/>
-
-</p>
 <h1 class="western"><a name="__RefHeading___Toc3816_1012792670"></a><img src="images\figb6a402436fc68eb5.png" alt="" width="605" height="85" name="qesg_logo" align="bottom" border="0" /></h1>
 <p class="western">&nbsp;</p>
 <h1 class="western"><a name="__RefHeading___Toc3818_1012792670"></a>1 PRESENTATION</h1>
@@ -24,8 +19,8 @@
 <h1 class="western"><a name="__RefHeading___Toc3912_1012792670"></a>2 SUMMARY</h1>
 <p class="western">&nbsp;</p>
 <div id="Sumario1" dir="ltr">
-<p style="text-transform: uppercase; line-height: 100%;"><strong><a class="western" href="#__RefHeading___Toc3818_1012792670">1 presentation</a></strong></p>
-<p style="text-transform: uppercase; line-height: 100%;"><strong><a class="western" href="#__RefHeading___Toc3912_1012792670">2 SUMmary</a></strong></p>
+<p style="text-transform: uppercase; line-height: 100%;"><strong><a class="western" href="#__RefHeading___Toc3818_1012792670">1 PRESENTATION</a></strong></p>
+<p style="text-transform: uppercase; line-height: 100%;"><strong><a class="western" href="#__RefHeading___Toc3912_1012792670">2 SUMMARY</a></strong></p>
 <p style="text-transform: uppercase; line-height: 100%;"><strong><a class="western" href="#__RefHeading___Toc3057_1012792670">3 SCREENSHOTS</a></strong></p>
 <p style="text-transform: uppercase; line-height: 100%;"><strong><a class="western" href="#__RefHeading___Toc3059_1012792670">4 TUTORIAL</a></strong></p>
 <p style="margin-bottom: 0.1cm; text-transform: uppercase; line-height: 100%; text-decoration: none;"><span style="background: transparent;"><a class="western" href="#__RefHeading___Toc3061_1012792670">4.1 definition</a></span></p>
