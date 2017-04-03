@@ -26,7 +26,7 @@
 <p style="margin-bottom: 0.1cm; text-transform: uppercase; line-height: 100%; text-decoration: none;"><span style="background: transparent;"> <a class="western" href="#__RefHeading___Toc3061_1012792670"> 4.1 DEFINITION </a> </span></p>
 <p style="text-indent: 0.2cm; margin-bottom: 0.1cm; text-transform: uppercase; line-height: 100%; text-decoration: none;"><span style="background: transparent;"> <a class="western" href="#__RefHeading___Toc3063_1012792670"> 4.2 FILES USED IN THIS TUTORIAL </a> </span></p>
 <p style="text-indent: 0.2cm; margin-bottom: 0.1cm; text-transform: uppercase; line-height: 100%; text-decoration: none;"><span style="background: transparent;"> <a class="western" href="#__RefHeading___Toc3065_1012792670"> 4.3 APPLICATION EXAMPLE </a> </span></p>
-<p style="text-indent: 0.2cm; margin-bottom: 0.1cm; text-transform: uppercase; line-height: 100%; text-decoration: none;"><span style="background: transparent;"> <a class="western" href="#__RefHeading___Toc3067_1012792670"> 4.4 BUTTON 00 CONFIGURATION </a> </span></p>
+<p style="text-indent: 0.2cm; margin-bottom: 0.1cm; text-transform: uppercase; line-height: 100%; text-decoration: none;"><span style="background: transparent;"> <a class="western" href="#__RefHeading___Toc3067_1012792670"> 4.4 BUTTON 00 SETTINGS </a> </span></p>
 <p style="text-indent: 0.2cm; margin-bottom: 0.1cm; text-transform: uppercase; line-height: 100%; text-decoration: none;"><span style="background: transparent;"> <a class="western" href="#__RefHeading___Toc3069_1012792670"> 4.5 BUTTON 01 CHECK/CREATE FIELDS </a> </span></p>
 <p style="text-indent: 0.2cm; margin-bottom: 0.1cm; text-transform: uppercase; line-height: 100%; text-decoration: none;"><span style="background: transparent;"> <a class="western" href="#__RefHeading___Toc3071_1012792670"> 4.6 BUTTON 02 NUMBER NETWORK </a> </span></p>
 <p style="text-indent: 0.2cm; margin-bottom: 0.1cm; text-transform: uppercase; line-height: 100%; text-decoration: none;"><span style="background: transparent;"> <a class="western" href="#__RefHeading___Toc3073_1012792670"> 4.7 BUTTON 03 CREATE NODE LAYER </a> </span></p>
@@ -95,14 +95,14 @@
 </ul>
 </li>
 <li>Save the Project. <span id="result_box" class="" lang="en"><span class="">At this point the project window will look like <strong>Figure 5</strong>.</span></span></li>
+<li><span class="" lang="en"><span class="">Open <strong>Reaches</strong> attribute table where there will be one line for each collector and only one field with null values (see <strong>Figure 5).</strong>&nbsp;</span></span></li>
 </ul>
-<p class="western">Abra a tabela de atributos do shape de rede, onde existir&aacute; uma linha para cada coletor tra&ccedil;ado e somente um campo com valores nulos (vide <strong> Figura 5 </strong> ).</p>
 <p class="western">&nbsp;</p>
-<p style="font-style: normal; line-height: 100%;" align="center"><span style="font-size: small;"> <strong> Figura 5 - Apar&ecirc;ncia inicial do projeto, ap&oacute;s carregar ou tra&ccedil;ar a rede de esgotos. </strong> </span></p>
+<p style="font-style: normal; line-height: 100%;" align="center"><span style="font-size: small;"> <strong> Figure 5 - <strong>Initial appearance of the project, after loading or tracing the sewage network.</strong> </strong> </span></p>
 <p style="font-style: normal; line-height: 100%;" align="center"><img src="images\fig99e68e04b169121.png" alt="" width="605" height="427" name="figura05" align="bottom" border="0" /></p>
 <p class="western" style="line-height: 100%;">&nbsp;</p>
 <p class="western">&nbsp;</p>
-<h2 class="western" style="page-break-before: always;"><a name="__RefHeading___Toc3067_1012792670"></a> 4.4 <img src="images\figfef4e818bfc6bf06.png" alt="" width="30" height="30" name="Figura9" align="middle" border="0" /> BUTTON 00 CONFIGURA&Ccedil;&Atilde;O</h2>
+<h2 class="western" style="page-break-before: always;"><a name="__RefHeading___Toc3067_1012792670"></a> 4.4 <img src="images\figfef4e818bfc6bf06.png" alt="" width="30" height="30" name="Figura9" align="middle" border="0" /> BUTTON 00 SETTINGS</h2>
 <p class="western">&nbsp;</p>
 <p class="western">Ao clicar abre uma janela apresentada na <strong> Figura 6 </strong> .</p>
 <p class="western">&nbsp;</p>
@@ -131,7 +131,7 @@
 <p class="western">Clique no BUTTON <strong> OK </strong> para salvar os par&acirc;metros gerais do projeto.</p>
 <p class="western">&nbsp;</p>
 <p class="western">&nbsp;</p>
-<h2 class="western"><a name="__RefHeading___Toc3069_1012792670"></a> 4.5 <img src="images\fig4382197c198bdabe.png" alt="" width="30" height="30" name="Figura10" align="middle" border="0" /> BUTTON 01 VERIFICA/CRIA CAMPOS</h2>
+<h2 class="western"><a name="__RefHeading___Toc3069_1012792670"></a> 4.5 <img src="images\fig4382197c198bdabe.png" alt="" width="30" height="30" name="Figura10" align="middle" border="0" /> BUTTON 01 CHECK/CREATE FIELDS</h2>
 <p class="western">&nbsp;</p>
 <p class="western">Ao pressionar neste BUTTON o plugin verifica se o shape <strong> Trechos </strong> com o tra&ccedil;ado da rede cont&eacute;m os campos padr&otilde;es. Se n&atilde;o existe oferece a possibilidade de cri&aacute;-los automaticamente, como mostra a <strong> Figura 8 </strong> . Aceite essa op&ccedil;&atilde;o.</p>
 <p class="western">&nbsp;</p>
@@ -153,7 +153,7 @@
 </table>
 <p class="western">&nbsp;</p>
 <p class="western">&nbsp;</p>
-<h2 class="western"><a name="__RefHeading___Toc3071_1012792670"></a> 4.6 <img src="images\fig96a608ce40392369.png" alt="" width="30" height="30" name="Figura11" align="middle" border="0" /> BUTTON 02 NUMERAR REDE</h2>
+<h2 class="western"><a name="__RefHeading___Toc3071_1012792670"></a> 4.6 <img src="images\fig96a608ce40392369.png" alt="" width="30" height="30" name="Figura11" align="middle" border="0" /> BUTTON 02 NUMBER NETWORK</h2>
 <p class="western">&nbsp;</p>
 <p class="western">Ao clicar nesse BUTTON &eacute; verificado se o tra&ccedil;ado da rede de esgoto &eacute; composto por segmentos simples (segmentos de reta individuais entre v&eacute;rtices consecutivos). Caso exista algum elemento de rede com mais de dois v&eacute;rtices, ser&aacute; apresentada uma mensagem semelhante &agrave; da <strong> Figura 10 </strong> .</p>
 <p class="western">&nbsp;</p>
@@ -214,7 +214,7 @@
 <p class="western">No shape <strong> Trechos </strong> foram preenchidos os campos Coletor, Trecho, DC_ID, PVM e PVJ.</p>
 <p class="western">&nbsp;</p>
 <p class="western" style="line-height: 100%;">&nbsp;</p>
-<h2 class="western"><a name="__RefHeading___Toc3073_1012792670"></a> 4.7 <img src="images\fig30dc2cdc68e77050.png" alt="" width="30" height="30" name="Figura12" align="middle" border="0" /> BUTTON 03 CRIAR LAYER DE N&Oacute;S</h2>
+<h2 class="western"><a name="__RefHeading___Toc3073_1012792670"></a> 4.7 <img src="images\fig30dc2cdc68e77050.png" alt="" width="30" height="30" name="Figura12" align="middle" border="0" /> BUTTON 03 CREATE NODE LAYER</h2>
 <p class="western">&nbsp;</p>
 <p class="western">Ao clicar no BUTTON &eacute; aberta a janela para atribui&ccedil;&atilde;o do nome do shape de n&oacute;s (formato de pontos). Selecione o local e nomes adequados a este shape, para este exemplo escolha como nome <strong> Nos </strong> . Clique no BUTTON Salvar para concluir a grava&ccedil;&atilde;o do layer. <span style="text-decoration: underline;"> Aten&ccedil;&atilde;o </span> : quando elabor&aacute;vamos este tutorial, no ambiente Linux, a biblioteca utilizada para salvar o shape de <strong> Nos </strong> apresentava um bug. Era necess&aacute;rio digitar a extens&atilde;o &ldquo;.shp&rdquo; ao final do nome do arquivo para que ocorresse o carregamento autom&aacute;tico do arquivo salvo.</p>
 <p class="western">Ap&oacute;s fechar a janela o shape <strong> Nos </strong> &eacute; adicionado ao projeto.</p>
@@ -223,7 +223,7 @@
 <p class="western">Salve o projeto.</p>
 <p class="western">&nbsp;</p>
 <p class="western">&nbsp;</p>
-<h2 class="western"><a name="__RefHeading___Toc3075_1012792670"></a> 4.8 <img src="images\fig85a4f30f64038587.png" alt="" width="30" height="30" name="Figura1" align="middle" border="0" /> BUTTON 04 PREENCHE OS CAMPOS</h2>
+<h2 class="western"><a name="__RefHeading___Toc3075_1012792670"></a> 4.8 <img src="images\fig85a4f30f64038587.png" alt="" width="30" height="30" name="Figura1" align="middle" border="0" /> BUTTON 04 FILL IN FIELDS</h2>
 <p class="western">&nbsp;</p>
 <p class="western">Ao clicar no BUTTON:</p>
 <p class="western">Todos os campos nulos do shape <strong> Trechos </strong> s&atilde;o preenchidos;</p>
@@ -250,7 +250,7 @@
 <p class="western" style="line-height: 100%;">Salve as modifica&ccedil;&otilde;es introduzidas na tabela do shape <strong> Trechos </strong> <span style="font-weight: normal;"> e saia do modo de edi&ccedil;&atilde;o. Salve o </span> projeto.</p>
 <p class="western" style="line-height: 100%;">&nbsp;</p>
 <p class="western">&nbsp;</p>
-<h2 class="western" style="page-break-before: always;"><a name="__RefHeading___Toc3079_1012792670"></a> 4.10 <img src="images\fig62bba675e061c761.png" alt="" width="30" height="30" name="Figura13" align="middle" border="0" /> BUTTON 05 CALCULA FLOW</h2>
+<h2 class="western" style="page-break-before: always;"><a name="__RefHeading___Toc3079_1012792670"></a> 4.10 <img src="images\fig62bba675e061c761.png" alt="" width="30" height="30" name="Figura13" align="middle" border="0" /> BUTTON 05 CALCULATE FLOW</h2>
 <p class="western">&nbsp;</p>
 <p class="western">Ao clicar neste BUTTON, s&atilde;o calculadas as vaz&otilde;es acumuladas ao longo de cada um dos trechos que formam os coletores, os resultados s&atilde;o gravados no shape <strong> Trechos </strong> . O formato de apresenta&ccedil;&atilde;o dos trechos muda para mostrar os dados: nome do trecho; comprimento, di&acirc;metro e vaz&atilde;o de cada trecho.</p>
 <p class="western">&nbsp;</p>
@@ -258,7 +258,7 @@
 <p class="western" style="line-height: 100%;" align="center"><img src="images\figa457ae216bd4057d.png" alt="" width="605" height="362" name="figura20" align="bottom" border="0" /></p>
 <p class="western">&nbsp;</p>
 <p class="western">&nbsp;</p>
-<h2 class="western"><a name="__RefHeading___Toc3081_1012792670"></a> 4.11 <img src="images\fige74254464005de07.png" alt="" width="30" height="30" name="Figura14" align="middle" border="0" /> BUTTON 6 DIMENSIONA</h2>
+<h2 class="western"><a name="__RefHeading___Toc3081_1012792670"></a> 4.11 <img src="images\fige74254464005de07.png" alt="" width="30" height="30" name="Figura14" align="middle" border="0" /> BUTTON 6 CALCULATE NETWORK</h2>
 <p class="western">&nbsp;</p>
 <p class="western">Ao clicar neste BUTTON, s&atilde;o dimensionados todos os trechos que formam os coletores da rede. O formato de apresenta&ccedil;&atilde;o dos trechos muda para mostrar os dados: nome do trecho; comprimento; di&acirc;metro nominal e declividade, como mostra a <strong> Figura 21 </strong> .</p>
 <p class="western">&nbsp;</p>
@@ -268,7 +268,7 @@
 <p class="western">Todos os dados do dimensionamento est&atilde;o contidos na tabela do shape <strong> Trechos </strong> . Caso deseje, abra a tabela do shape <strong> Trechos </strong> <span style="font-weight: normal;"> , selecione todos os campos, copie e cole dentro de uma planilha eletr&ocirc;nica (MS-Excel, Libreoffice-Calc ou outra) </span> .</p>
 <p class="western" style="line-height: 100%;">&nbsp;</p>
 <p class="western" style="line-height: 100%;">&nbsp;</p>
-<h2 class="western"><a name="__RefHeading___Toc3083_1012792670"></a> 4.12 <img src="images\figfe786608f4b2d9f7.png" alt="" width="30" height="30" name="Figura25" border="0" /> BUTTON 7 DESENHA PERFIL</h2>
+<h2 class="western"><a name="__RefHeading___Toc3083_1012792670"></a> 4.12 <img src="images\figfe786608f4b2d9f7.png" alt="" width="30" height="30" name="Figura25" border="0" /> BUTTON 7 DRAW PROFILE</h2>
 <p class="western" style="line-height: 100%;">&nbsp;</p>
 <p class="western" style="line-height: 100%;">Trata-se de uma ferramenta de confer&ecirc;ncia r&aacute;pida que o projetista pode usar para an&aacute;lise dos coletores projetados. Ao clicar no BUTTON &eacute; apresentado um menu flutuante como o da <strong> Figura 22 </strong> . Selecione o coletor a desenhar e clique no BUTTON <strong> OK </strong> .</p>
 <p class="western">&nbsp;</p>
@@ -284,9 +284,9 @@
 <p class="western">&nbsp;</p>
 <p class="western">&nbsp;</p>
 <p class="western">&nbsp;</p>
-<h1 class="western" style="page-break-before: always;"><a name="__RefHeading___Toc3085_1012792670"></a> 5 TABELAS</h1>
+<h1 class="western" style="page-break-before: always;"><a name="__RefHeading___Toc3085_1012792670"></a> 5 TABLES</h1>
 <p class="western">&nbsp;</p>
-<h2 class="western"><a name="__RefHeading___Toc3087_1012792670"></a> 5.1 SHAPE N&Oacute;S</h2>
+<h2 class="western"><a name="__RefHeading___Toc3087_1012792670"></a> 5.1 NODES SHAPE</h2>
 <table width="100%" cellspacing="0" cellpadding="4">
 <tbody>
 <tr valign="top">
@@ -352,7 +352,7 @@
 </tbody>
 </table>
 <p class="western">&nbsp;</p>
-<h2 class="western"><a name="__RefHeading___Toc3089_1012792670"></a> 5.2 SHAPE TRECHO</h2>
+<h2 class="western"><a name="__RefHeading___Toc3089_1012792670"></a> 5.2 REACHES SHAPE</h2>
 <table width="100%" cellspacing="0" cellpadding="4">
 <tbody>
 <tr valign="top">
@@ -1100,7 +1100,7 @@
 <p class="western" style="line-height: 100%;"><span style="font-size: small;"> <sup> (2) </sup> : Trecho existente = 0, a implantar na primeira etapa = 1, a implantar na segunda etapa = 2 </span></p>
 <p class="western" style="line-height: 100%;"><span style="font-size: small;"> <sup> (3) </sup> : &Eacute; ponta seca = S, n&atilde;o &eacute; ponta seca = N </span></p>
 <p class="western" style="line-height: 100%;">&nbsp;</p>
-<h2 class="western"><a name="__RefHeading___Toc3091_1012792670"></a> 5.3 SHAPE INTERFER&Ecirc;NCIAS</h2>
+<h2 class="western"><a name="__RefHeading___Toc3091_1012792670"></a> 5.3 INTERFERENCES SHAPE</h2>
 <table width="100%" cellspacing="0" cellpadding="4">
 <tbody>
 <tr valign="top">
@@ -1225,7 +1225,7 @@
 <p class="western" style="line-height: 100%;"><span style="font-size: small;"> <sup> (1) </sup> : TN para terreno natural, qualquer outro valor (inclusive nulo) &eacute; considerada uma interfer&ecirc;ncia. </span></p>
 <p class="western" style="line-height: 100%;"><span style="font-size: small;"> Quando a interfer&ecirc;ncia for do tipo 'TN' no campo 'CS' deve ser informada a cota do Terreno natural e no campo CI deve ser informada a cota da geratriz superior m&aacute;xima desejada para a tubula&ccedil;&atilde;o projetada. </span></p>
 <p class="western" style="line-height: 100%;">&nbsp;</p>
-<h1 class="western"><a name="__RefHeading___Toc3820_1012792670"></a> 6 AUTOR</h1>
+<h1 class="western"><a name="__RefHeading___Toc3820_1012792670"></a> 6 AUTHOR</h1>
 <p class="western">&nbsp;</p>
 <p class="western">Plugin desenvolvido por Jorge Alm&eacute;rio Sousa Moreira, Engenheiro Civil.</p>
 <p class="western">D&uacute;vidas, cr&iacute;ticas e sugest&otilde;es s&atilde;o bem vindas.</p>
@@ -1233,10 +1233,10 @@
 <p class="western">Plugin Site: <a class="western" href="https://github.com/jorgealmerio/QEsg/blob/master/README.md"> github.com/jorgealmerio/QEsg </a></p>
 <p class="western">Bugs, Falhas e solicita&ccedil;&otilde;es: <a class="western" href="https://github.com/jorgealmerio/QEsg/issues"> github.com/jorgealmerio/QEsg/issues </a></p>
 <p class="western" style="line-height: 100%;">&nbsp;</p>
-<h1 class="western"><a name="__RefHeading___Toc3822_1012792670"></a> 7 COLABORADOR</h1>
+<h1 class="western"><a name="__RefHeading___Toc3822_1012792670"></a> 7 COLLABORATOR</h1>
 <p class="western">&nbsp;</p>
 <p class="western">Juan Santiago Ramseyer</p>
 <p class="western" style="line-height: 100%;">&nbsp;</p>
-<h1 class="western"><a name="__RefHeading___Toc3093_1012792670"></a> 8 NOTA DE RESPONSABILIDADE DE USO</h1>
+<h1 class="western"><a name="__RefHeading___Toc3093_1012792670"></a> 8 DISCLAIMER OF USE</h1>
 <p class="western" style="line-height: 100%;">&nbsp;</p>
-<p class="western" style="line-height: 100%;">Esse plugin est&aacute; sujeito aos termos da licen&ccedil;a &ldquo; <a class="western" href="https://www.gnu.org/licenses/gpl-3.0.html"> <em> GNU GENERAL PUBLIC LICENSE, Version 3, 29 June 2007 </em> </a> &rdquo;, portanto os danos ou consequ&ecirc;ncias da utiliza&ccedil;&atilde;o do plugin e/ou dos seus resultados, em qualquer ordem &eacute; de inteira responsabilidade do usu&aacute;rio final, ficando os desenvolvedores isentos de qualquer responsabilidade t&eacute;cnica ou jur&iacute;dica inerente da utiliza&ccedil;&atilde;o com ou sem inabilidade no uso do mesmo, inclusive no caso de eventual falha comprovada do plugin.</p>
+<p class="western" style="line-height: 100%;">Esse plugin est&aacute; sujeito aos termos da licen&ccedil;a &ldquo; <a class="western" href="https://www.gnu.org/licenses/gpl-3.0.html"> <em> GNU GENERAL PUBLIC LICENSE, Version 3, 29 June 2007 </em> </a> &rdquo;, portanto os danos ou consequ&ecirc;ncias da utiliza&ccedil;&atilde;o do plugin e/ou dos seus resultados, em qualquer ordem &eacute; de inteira responsabilidade do usu&aacute;rio final, ficando os desenvolvedores isentos de qualquer responsabilidade t&eacute;cnica ou jur&iacute;dica inerente da utiliza&ccedil;&atilde;o com ou sem inabilidade no uso do mesmo, inclusive no caso de eventual falha comprovada do plugin.</p></html>
