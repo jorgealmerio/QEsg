@@ -136,7 +136,7 @@
 </ul>
 <p class="western">&nbsp;</p>
 <p class="western">&nbsp;</p>
-<h2 class="western"><a name="__RefHeading___Toc3069_1012792670"></a> 4.5 <img src="images\fig4382197c198bdabe.png" alt="" width="30" height="30" name="Figura10" align="middle" valign="top" border="0" /> BUTTON 01 CHECK/CREATE FIELDS</h2>
+<h2 class="western"><a name="__RefHeading___Toc3069_1012792670"></a> 4.5 <img src="images\fig4382197c198bdabe.png" alt="" width="30" height="30" name="Figura10" align="middle" valign="bottom" border="0" /> BUTTON 01 CHECK/CREATE FIELDS</h2>
 <p class="western">&nbsp;</p>
 <p class="western">By pressing this button the plugin checks if the shape <strong>Pipes</strong>, with the design of the network, has the default fields. If it does not have the fields it offers the possibility to create them automatically, as shown in <strong>Figure 8</strong>. Accept this option.</p>
 <p class="western">&nbsp;</p>
@@ -146,11 +146,11 @@
 <tbody>
 <tr valign="top">
 <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding: 0.1cm 0cm 0.1cm 0.1cm;" width="50%">
-<p style="font-style: normal;" align="center"><span style="font-size: small;"> <strong> Figura 8 - Mensagem para cria&ccedil;&atilde;o dos campos padr&otilde;es no shape da rede de esgotos. </strong> </span></p>
+<p style="font-style: normal;" align="center"><span style="font-size: small;"> <strong> Figure 8 - Message for creating the default fields in the shape of the sewage network. </strong> </span></p>
 <p class="western" align="center"><img src="images\fige9af7918483dbddc.png" alt="" width="189" height="454" name="figura08" align="bottom" border="0" /></p>
 </td>
 <td style="border: 1px solid #000000; padding: 0.1cm;" width="50%">
-<p style="font-style: normal;" align="center"><span style="font-size: small;"> <strong> Figura 9 - Tabela da rede de esgotos, ap&oacute;s a cria&ccedil;&atilde;o dos campos padr&otilde;es. </strong> </span></p>
+<p style="font-style: normal;" align="center"><span style="font-size: small;"> <strong> Figure 9 - Sewage network table, after the creation of the standard fields. </strong> </span></p>
 <p class="western" align="center"><img src="images\fig9a568b01d89ce8f3.png" alt="" width="134" height="454" name="figura09" align="bottom" border="0" /></p>
 </td>
 </tr>
@@ -160,58 +160,58 @@
 <p class="western">&nbsp;</p>
 <h2 class="western"><a name="__RefHeading___Toc3071_1012792670"></a> 4.6 <img src="images\fig96a608ce40392369.png" alt="" width="30" height="30" name="Figura11" align="middle" border="0" /> BUTTON 02 NUMBER NETWORK</h2>
 <p class="western">&nbsp;</p>
-<p class="western">Ao clicar nesse BUTTON &eacute; verificado se o tra&ccedil;ado da rede de esgoto &eacute; composto por segmentos simples (segmentos de reta individuais entre v&eacute;rtices consecutivos). Caso exista algum elemento de rede com mais de dois v&eacute;rtices, ser&aacute; apresentada uma mensagem semelhante &agrave; da <strong> Figura 10 </strong> .</p>
+<p class="western">Clicking on this button checks if the sewer is composed of single segments (individual line segments between consecutive vertices). If there is any network element with more than two vertices, a message similar to <strong> Figure 10 </strong> appears.</p>
 <p class="western">&nbsp;</p>
-<p style="font-style: normal; line-height: 100%;" align="center"><span style="font-size: small;"> <strong> Figura 10 - Mensagem subdivis&atilde;o de coletores em trechos. </strong> </span></p>
+<p style="font-style: normal; line-height: 100%;" align="center"><span style="font-size: small;"> <strong> Figure 10 - Message subdivision of collectors in stretches. </strong> </span></p>
 <p class="western" style="page-break-before: auto; page-break-after: auto;" align="center"><img src="images\fige520154b13736a0b.png" alt="" width="293" height="76" name="figura10" align="bottom" border="0" /></p>
 <p class="western" style="line-height: 100%;">&nbsp;</p>
 <p class="western">&nbsp;</p>
-<p class="western">No nosso exemplo, antes de clicar pela primeira vez, o shape <strong> Trechos </strong> possui tr&ecirc;s coletores tra&ccedil;ados de montante para jusante (vide <strong> Figura 9 </strong> ) definidos por poligonais abertas (um coletor com 5 v&eacute;rtices e dois coletores com 3). Na mensagem semelhante &agrave; da <strong> Figura 10 </strong> <span style="font-weight: normal;"> clicar em </span> <strong> Sim </strong> .</p>
-<p class="western"><span style="text-decoration: underline;"> Mensagem para subdivis&atilde;o de coletores em trechos </span> . Existem elementos com ( &hellip;). Deseja convert&ecirc;-los para linhas simples? (vide ) <strong> Figura 10 </strong> . Clique no BUTTON Sim.</p>
+<p class="western">In our example, before you click for the first time, the shape <strong>Pipes</strong> has three main collectors downstream (see Figure 9) defined by open polygonal (a collector with 5 vertices and two collectors with 3). In the message similar to <strong>Figure 10</strong> click on <strong> Yes </strong> .</p>
+<p class="western">Message to the subdivision of collectors in reaches. There are (...) elements. Do you want to convert them to simple lines? (see <strong> Figure 10 </strong>). Click on <strong> Yes </strong>.</p>
 <p class="western">&nbsp;</p>
 <p class="western">&nbsp;</p>
-<p style="font-style: normal; line-height: 100%;" align="center"><span style="font-size: small;"> <strong> Figura 11 - Mensagem subdivis&atilde;o de coletores em trechos. </strong> </span></p>
+<p style="font-style: normal; line-height: 100%;" align="center"><span style="font-size: small;"> <strong> Figure 11 - Message subdivision of collectors in reaches. </strong> </span></p>
 <p style="font-style: normal; line-height: 100%;" align="center"><img src="images\fig497bb7c3ae5f5870.png" alt="" width="595" height="367" name="figura11" align="middle" border="0" /></p>
 <p class="western" style="line-height: 100%;">&nbsp;</p>
 <p class="western" style="line-height: 100%;">&nbsp;</p>
-<p class="western">Ser&aacute; aberta uma janela, semelhante &agrave; <strong> Figura 11 </strong> , a qual ser&aacute; fixada na lateral direita no ambiente QGIS. Nos passos a seguir, proceda com aten&ccedil;&atilde;o.</p>
+<p class="western">Ser&aacute; aberta uma janela, semelhante &agrave; <strong> Figure 11 </strong> , a qual ser&aacute; fixada na lateral direita no ambiente QGIS. Nos passos a seguir, proceda com aten&ccedil;&atilde;o.</p>
 <p class="western">Verifique que a caixa &lt;Coletor&gt; esteja preenchido com o valor 1. Sen&atilde;o digite o valor 1.</p>
 <p class="western">Verifique que a caixa &lt;N&uacute;mero de d&iacute;gitos&gt; esteja preenchido com o valor 1. Sen&atilde;o digite o valor 1.</p>
 <p class="western">Verifique que a op&ccedil;&atilde;o &lt;Somente trechos sem identifica&ccedil;&atilde;o&gt; esteja selecionada.</p>
 <p class="western">Clique no BUTTON &lt;Selecionar Montante&gt;.</p>
-<p class="western">Movimente o cursor e fa&ccedil;a clique com o BUTTON esquerdo (prim&aacute;rio) no meio do trecho mais a montante do coletor principal da rede. Todos os trechos do coletor mudar&atilde;o para a cor amarela (padr&atilde;o de sele&ccedil;&atilde;o do QGIS), como mostra a <strong> Figura 12 </strong> .</p>
+<p class="western">Movimente o cursor e fa&ccedil;a clique com o BUTTON esquerdo (prim&aacute;rio) no meio do trecho mais a montante do coletor principal da rede. Todos os trechos do coletor mudar&atilde;o para a cor amarela (padr&atilde;o de sele&ccedil;&atilde;o do QGIS), como mostra a <strong> Figure 12 </strong> .</p>
 <p class="western">&nbsp;</p>
 <p class="western">&nbsp;</p>
-<p style="font-style: normal; line-height: 100%;" align="center"><span style="font-size: small;"> <strong> Figura 12 - Sele&ccedil;&atilde;o do trecho de montante do coletor principal. </strong> </span></p>
+<p style="font-style: normal; line-height: 100%;" align="center"><span style="font-size: small;"> <strong> Figure 12 - Sele&ccedil;&atilde;o do trecho de montante do coletor principal. </strong> </span></p>
 <p style="font-style: normal; line-height: 100%;" align="center"><img src="images\figa0b8312aef0b4b0c.png" alt="" width="605" height="362" name="figura12" align="bottom" border="0" /></p>
 <p class="western">&nbsp;</p>
-<p class="western">Clique no BUTTON &lt;Renomear&gt; da janela Renomear Rede. Na primeira vez, o estilo do shape <strong> Trechos </strong> &eacute; alterado, s&atilde;o representados os v&eacute;rtices e o sentido do fluxo, como ilustra a Figura 13. Para o <span style="background: transparent;"> coletor </span> renomeado ser&atilde;o apresentadas as informa&ccedil;&otilde;es: nome do coletor-trecho e nomes dos PVs de montante e jusante.</p>
+<p class="western">Clique no BUTTON &lt;Renomear&gt; da janela Renomear Rede. Na primeira vez, o estilo do shape <strong> Trechos </strong> &eacute; alterado, s&atilde;o representados os v&eacute;rtices e o sentido do fluxo, como ilustra a Figure 13. Para o <span style="background: transparent;"> coletor </span> renomeado ser&atilde;o apresentadas as informa&ccedil;&otilde;es: nome do coletor-trecho e nomes dos PVs de montante e jusante.</p>
 <p class="western">&nbsp;</p>
-<p style="font-style: normal; line-height: 100%;" align="center"><span style="font-size: small;"> <strong> Figura 13 - Coletor principal renumerado </strong> </span></p>
+<p style="font-style: normal; line-height: 100%;" align="center"><span style="font-size: small;"> <strong> Figure 13 - Coletor principal renumerado </strong> </span></p>
 <p style="font-style: normal; line-height: 100%;" align="center"><img src="images\figa9093071ca21db05.png" alt="" width="605" height="341" name="figura13" align="bottom" border="0" /></p>
 <p class="western">&nbsp;</p>
 <p class="western"><span style="background: transparent;"> Clique no BUTTON &lt;Novo Coletor&gt;. O n&uacute;mero da caixa Coletor mudar&aacute; para 2 e o trecho anterior ser&aacute; deselecionado. </span></p>
 <p class="western"><span style="background: transparent;"> Verifique que a op&ccedil;&atilde;o &lt;Soment </span> e trechos sem identifica&ccedil;&atilde;o&gt; continue selecionada.</p>
-<p class="western">Selecione o trecho de montante do segundo coletor (no nosso exemplo, o coletor mais a jusante), como ilustra a Figura 14. A cor do coletor mudar&aacute; para amarelo at&eacute; o PV de interliga&ccedil;&atilde;o com o coletor anterior.</p>
+<p class="western">Selecione o trecho de montante do segundo coletor (no nosso exemplo, o coletor mais a jusante), como ilustra a Figure 14. A cor do coletor mudar&aacute; para amarelo at&eacute; o PV de interliga&ccedil;&atilde;o com o coletor anterior.</p>
 <p class="western">&nbsp;</p>
-<p style="font-style: normal; line-height: 100%;" align="center"><span style="font-size: small;"> <strong> Figura 14 - Sele&ccedil;&atilde;o do trecho de montante do segundo coletor </strong> </span></p>
+<p style="font-style: normal; line-height: 100%;" align="center"><span style="font-size: small;"> <strong> Figure 14 - Sele&ccedil;&atilde;o do trecho de montante do segundo coletor </strong> </span></p>
 <p class="western" align="center"><img src="images\fige462dd58418f2ff6.png" alt="" width="642" height="385" name="figura14" align="middle" border="0" /></p>
 <p class="western">&nbsp;</p>
 <p class="western">&nbsp;</p>
-<p class="western">Clique em renomear o coletor selecionado. O coletor selecionado ser&aacute; renomeado e numerado, de forma an&aacute;loga ao primeiro coletor, como ilustra a Figura 15.</p>
+<p class="western">Clique em renomear o coletor selecionado. O coletor selecionado ser&aacute; renomeado e numerado, de forma an&aacute;loga ao primeiro coletor, como ilustra a Figure 15.</p>
 <p class="western">&nbsp;</p>
 <p class="western">&nbsp;</p>
-<p style="font-style: normal; line-height: 100%;" align="center"><span style="font-size: small;"> <strong> Figura 15 - Segundo coletor renumerado. </strong> </span></p>
+<p style="font-style: normal; line-height: 100%;" align="center"><span style="font-size: small;"> <strong> Figure 15 - Segundo coletor renumerado. </strong> </span></p>
 <p style="font-style: normal; line-height: 100%;" align="center"><img src="images\fige94a0e31ed3f3ca4.png" alt="" width="605" height="343" name="figura15" align="bottom" border="0" /></p>
 <p class="western" style="line-height: 100%;">&nbsp;</p>
-<p class="western">Repita o processo para o terceiro coletor, que consiste em: clicar no BUTTON Novo coletor, clicar sobre o trecho de montante do coletor (como mostra a Figura 16), clicar no BUTTON Renomear (como mostra a Figura 17). O processo de nomea&ccedil;&atilde;o de trechos da rede estar&aacute; conclu&iacute;do.</p>
+<p class="western">Repita o processo para o terceiro coletor, que consiste em: clicar no BUTTON Novo coletor, clicar sobre o trecho de montante do coletor (como mostra a Figure 16), clicar no BUTTON Renomear (como mostra a Figure 17). O processo de nomea&ccedil;&atilde;o de trechos da rede estar&aacute; conclu&iacute;do.</p>
 <p class="western">&nbsp;</p>
 <p class="western">&nbsp;</p>
-<p style="font-style: normal; line-height: 100%;" align="center"><span style="font-size: small;"> <strong> Figura 16 - Clique no trecho de montante para a sele&ccedil;&atilde;o do terceiro coletor. </strong> </span></p>
+<p style="font-style: normal; line-height: 100%;" align="center"><span style="font-size: small;"> <strong> Figure 16 - Clique no trecho de montante para a sele&ccedil;&atilde;o do terceiro coletor. </strong> </span></p>
 <p style="font-style: normal; line-height: 100%;" align="center"><img src="images\figcf390edf76df8f0d.png" alt="" width="605" height="344" name="figura16" align="bottom" border="0" /></p>
 <p class="western" style="line-height: 100%;">&nbsp;</p>
 <p class="western" style="line-height: 100%;">&nbsp;</p>
-<p style="font-style: normal; line-height: 100%;" align="center"><span style="font-size: small;"> <strong> Figura 17 - Todos os trechos dos tr&ecirc;s coletores renumerados </strong> </span></p>
+<p style="font-style: normal; line-height: 100%;" align="center"><span style="font-size: small;"> <strong> Figure 17 - Todos os trechos dos tr&ecirc;s coletores renumerados </strong> </span></p>
 <p style="font-style: normal; line-height: 100%;" align="center"><img src="images\fig9984ce4666d03153.png" alt="" width="605" height="342" name="figura17" align="bottom" border="0" /></p>
 <p class="western">&nbsp;</p>
 <p class="western">Salve o shape <strong> Trechos </strong> e encerre o processo de edi&ccedil;&atilde;o.</p>
@@ -239,17 +239,17 @@
 <p class="western">&nbsp;</p>
 <h2 class="western"><a name="__RefHeading___Toc3077_1012792670"></a> 4.9 DEAD END</h2>
 <p class="western">&nbsp;</p>
-<p class="western">Tem como objetivo identificar os trechos que n&atilde;o recebem contribui&ccedil;&otilde;es atrav&eacute;s do PV de montante. Essa identifica&ccedil;&atilde;o &eacute; necess&aacute;ria em trechos cujos PVs de montante possam apresentar mais de uma sa&iacute;da, situa&ccedil;&atilde;o <span style="font-family: Calibri,sans-serif;"> <span style="font-size: small;"> n&atilde;o </span> </span> permitida segundo as normas brasileiras. A &ldquo;ponta seca&rdquo; &eacute; informada manualmente na tabela do shape <strong> Trechos </strong> , campo (coluna) PONTA_SECA, trocando a letra N (n&atilde;o) pela letra S (sim), como ilustra a <strong> Figura 18 </strong> .</p>
+<p class="western">Tem como objetivo identificar os trechos que n&atilde;o recebem contribui&ccedil;&otilde;es atrav&eacute;s do PV de montante. Essa identifica&ccedil;&atilde;o &eacute; necess&aacute;ria em trechos cujos PVs de montante possam apresentar mais de uma sa&iacute;da, situa&ccedil;&atilde;o <span style="font-family: Calibri,sans-serif;"> <span style="font-size: small;"> n&atilde;o </span> </span> permitida segundo as normas brasileiras. A &ldquo;ponta seca&rdquo; &eacute; informada manualmente na tabela do shape <strong> Trechos </strong> , campo (coluna) PONTA_SECA, trocando a letra N (n&atilde;o) pela letra S (sim), como ilustra a <strong> Figure 18 </strong> .</p>
 <p class="western">&nbsp;</p>
 <p class="western">&nbsp;</p>
-<p style="font-style: normal; line-height: 100%;" align="center"><span style="font-size: small;"> <strong> Figura 18 - Altera&ccedil;&atilde;o da condi&ccedil;&atilde;o de montante para &ldquo;ponta seca&rdquo; </strong> </span></p>
+<p style="font-style: normal; line-height: 100%;" align="center"><span style="font-size: small;"> <strong> Figure 18 - Altera&ccedil;&atilde;o da condi&ccedil;&atilde;o de montante para &ldquo;ponta seca&rdquo; </strong> </span></p>
 <p style="font-style: normal; line-height: 100%;" align="center"><img src="images\fig5acf898bdc82b29c.png" alt="" width="602" height="321" name="figura18" align="bottom" border="0" /></p>
 <p class="western" align="center">&nbsp;</p>
 <p class="western">&nbsp;</p>
-<p class="western" style="line-height: 100%;"><span lang="pt-BR"> Ap&oacute;s essa </span> altera&ccedil;&atilde;o <span lang="pt-BR"> a representa&ccedil;&atilde;o de montante dos trechos &ldquo; </span> p <span lang="pt-BR"> onta </span> s <span lang="pt-BR"> eca&rdquo; ser&aacute; modificada </span> <span lang="pt-BR"> como ilustra a </span> <span lang="pt-BR"> <strong> Figura 19 </strong> </span> <span lang="pt-BR"> . </span></p>
+<p class="western" style="line-height: 100%;"><span lang="pt-BR"> Ap&oacute;s essa </span> altera&ccedil;&atilde;o <span lang="pt-BR"> a representa&ccedil;&atilde;o de montante dos trechos &ldquo; </span> p <span lang="pt-BR"> onta </span> s <span lang="pt-BR"> eca&rdquo; ser&aacute; modificada </span> <span lang="pt-BR"> como ilustra a </span> <span lang="pt-BR"> <strong> Figure 19 </strong> </span> <span lang="pt-BR"> . </span></p>
 <p class="western">&nbsp;</p>
 <p class="western">&nbsp;</p>
-<p style="font-style: normal; line-height: 100%;" align="center"><span style="font-size: small;"> <strong> Figura 19 - Altera&ccedil;&atilde;o da condi&ccedil;&atilde;o hidr&aacute;ulica de montante dos trechos iniciais para &ldquo;ponta seca&rdquo; </strong> </span></p>
+<p style="font-style: normal; line-height: 100%;" align="center"><span style="font-size: small;"> <strong> Figure 19 - Altera&ccedil;&atilde;o da condi&ccedil;&atilde;o hidr&aacute;ulica de montante dos trechos iniciais para &ldquo;ponta seca&rdquo; </strong> </span></p>
 <p class="western" align="center"><img src="images\fig87942741b4df8b51.png" alt="" width="605" height="362" name="figura19" align="bottom" border="0" /></p>
 <p class="western">&nbsp;</p>
 <p class="western" style="line-height: 100%;">Salve as modifica&ccedil;&otilde;es introduzidas na tabela do shape <strong> Trechos </strong> <span style="font-weight: normal;"> e saia do modo de edi&ccedil;&atilde;o. Salve o </span> projeto.</p>
@@ -259,15 +259,15 @@
 <p class="western">&nbsp;</p>
 <p class="western">Ao clicar neste BUTTON, s&atilde;o calculadas as vaz&otilde;es acumuladas ao longo de cada um dos trechos que formam os coletores, os resultados s&atilde;o gravados no shape <strong> Trechos </strong> . O formato de apresenta&ccedil;&atilde;o dos trechos muda para mostrar os dados: nome do trecho; comprimento, di&acirc;metro e vaz&atilde;o de cada trecho.</p>
 <p class="western">&nbsp;</p>
-<p style="font-style: normal; line-height: 100%;" align="center"><span style="font-size: small;"> <strong> Figura 20 - Todos os trechos dos tr&ecirc;s coletores com as vaz&otilde;es de projeto calculadas. </strong> </span></p>
+<p style="font-style: normal; line-height: 100%;" align="center"><span style="font-size: small;"> <strong> Figure 20 - Todos os trechos dos tr&ecirc;s coletores com as vaz&otilde;es de projeto calculadas. </strong> </span></p>
 <p class="western" style="line-height: 100%;" align="center"><img src="images\figa457ae216bd4057d.png" alt="" width="605" height="362" name="figura20" align="bottom" border="0" /></p>
 <p class="western">&nbsp;</p>
 <p class="western">&nbsp;</p>
 <h2 class="western"><a name="__RefHeading___Toc3081_1012792670"></a> 4.11 <img src="images\fige74254464005de07.png" alt="" width="30" height="30" name="Figura14" align="middle" border="0" /> BUTTON 6 CALCULATE NETWORK</h2>
 <p class="western">&nbsp;</p>
-<p class="western">Ao clicar neste BUTTON, s&atilde;o dimensionados todos os trechos que formam os coletores da rede. O formato de apresenta&ccedil;&atilde;o dos trechos muda para mostrar os dados: nome do trecho; comprimento; di&acirc;metro nominal e declividade, como mostra a <strong> Figura 21 </strong> .</p>
+<p class="western">Ao clicar neste BUTTON, s&atilde;o dimensionados todos os trechos que formam os coletores da rede. O formato de apresenta&ccedil;&atilde;o dos trechos muda para mostrar os dados: nome do trecho; comprimento; di&acirc;metro nominal e declividade, como mostra a <strong> Figure 21 </strong> .</p>
 <p class="western">&nbsp;</p>
-<p style="font-style: normal; line-height: 100%;" align="center"><span style="font-size: small;"> <strong> Figura 21 - Clique no trecho de montante para a sele&ccedil;&atilde;o do terceiro coletor. </strong> </span></p>
+<p style="font-style: normal; line-height: 100%;" align="center"><span style="font-size: small;"> <strong> Figure 21 - Clique no trecho de montante para a sele&ccedil;&atilde;o do terceiro coletor. </strong> </span></p>
 <p class="western" align="center"><img src="images\figb238c0e89bad54f6.png" alt="" width="605" height="362" name="figura21" align="bottom" border="0" /></p>
 <p class="western">&nbsp;</p>
 <p class="western">Todos os dados do dimensionamento est&atilde;o contidos na tabela do shape <strong> Trechos </strong> . Caso deseje, abra a tabela do shape <strong> Trechos </strong> <span style="font-weight: normal;"> , selecione todos os campos, copie e cole dentro de uma planilha eletr&ocirc;nica (MS-Excel, Libreoffice-Calc ou outra) </span> .</p>
@@ -275,15 +275,15 @@
 <p class="western" style="line-height: 100%;">&nbsp;</p>
 <h2 class="western"><a name="__RefHeading___Toc3083_1012792670"></a> 4.12 <img src="images\figfe786608f4b2d9f7.png" alt="" width="30" height="30" name="Figura25" border="0" /> BUTTON 7 DRAW PROFILE</h2>
 <p class="western" style="line-height: 100%;">&nbsp;</p>
-<p class="western" style="line-height: 100%;">Trata-se de uma ferramenta de confer&ecirc;ncia r&aacute;pida que o projetista pode usar para an&aacute;lise dos coletores projetados. Ao clicar no BUTTON &eacute; apresentado um menu flutuante como o da <strong> Figura 22 </strong> . Selecione o coletor a desenhar e clique no BUTTON <strong> OK </strong> .</p>
+<p class="western" style="line-height: 100%;">Trata-se de uma ferramenta de confer&ecirc;ncia r&aacute;pida que o projetista pode usar para an&aacute;lise dos coletores projetados. Ao clicar no BUTTON &eacute; apresentado um menu flutuante como o da <strong> Figure 22 </strong> . Selecione o coletor a desenhar e clique no BUTTON <strong> OK </strong> .</p>
 <p class="western">&nbsp;</p>
-<p style="font-style: normal; line-height: 100%;" align="center"><span style="font-size: small;"> <strong> Figura 22 - Menu flutuante para sele&ccedil;&atilde;o do coletor a desenhar </strong> </span></p>
+<p style="font-style: normal; line-height: 100%;" align="center"><span style="font-size: small;"> <strong> Figure 22 - Menu flutuante para sele&ccedil;&atilde;o do coletor a desenhar </strong> </span></p>
 <p class="western" align="center"><img src="images\figbe5d64e5199146fc.png" alt="" width="189" height="125" name="figura22" align="bottom" border="0" /></p>
 <p class="western">&nbsp;</p>
 <p class="western">&nbsp;</p>
-<p class="western">Uma janela semelhante ao da <strong> Figura 23 </strong> ser&aacute; apresentada (neste exemplo foi selecionado o Coletor 1).</p>
+<p class="western">Uma janela semelhante ao da <strong> Figure 23 </strong> ser&aacute; apresentada (neste exemplo foi selecionado o Coletor 1).</p>
 <p class="western">&nbsp;</p>
-<p style="font-style: normal; line-height: 100%;" align="center"><span style="font-size: small;"> <strong> Figura 23 - Perfil do coletor selecionado </strong> </span></p>
+<p style="font-style: normal; line-height: 100%;" align="center"><span style="font-size: small;"> <strong> Figure 23 - Perfil do coletor selecionado </strong> </span></p>
 <p class="western" align="center"><img src="images\figb56f4bb5c449c1b9.png" alt="" width="454" height="451" name="figura23" align="bottom" border="0" /></p>
 <p class="western">&nbsp;</p>
 <p class="western">&nbsp;</p>
