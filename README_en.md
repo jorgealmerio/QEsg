@@ -136,7 +136,7 @@
 </ul>
 <p class="western">&nbsp;</p>
 <p class="western">&nbsp;</p>
-<h2 class="western"><a name="__RefHeading___Toc3069_1012792670"></a> 4.5 <img src="images\fig4382197c198bdabe.png" alt="" width="30" height="30" name="Figura10" align="middle" valign="baseline" border="0" /> BUTTON 01 CHECK/CREATE FIELDS</h2>
+<h2 class="western"><a name="__RefHeading___Toc3069_1012792670"></a> 4.5 <img src="images\fig4382197c198bdabe.png" alt="" width="30" height="30" name="Figura10" align="middle" valign="top" border="0" /> BUTTON 01 CHECK/CREATE FIELDS</h2>
 <p class="western">&nbsp;</p>
 <p class="western">By pressing this button the plugin checks if the shape <strong>Pipes</strong>, with the design of the network, has the default fields. If it does not have the fields it offers the possibility to create them automatically, as shown in <strong>Figure 8</strong>. Accept this option.</p>
 <p class="western">&nbsp;</p>
