@@ -31,7 +31,7 @@
 <p style="text-indent: 0.2cm; margin-bottom: 0.1cm; text-transform: uppercase; line-height: 100%; text-decoration: none;"><span style="background: transparent;"> <a class="western" href="#__RefHeading___Toc3071_1012792670"> 4.6 BUTTON 02 NUMBER NETWORK </a> </span></p>
 <p style="text-indent: 0.2cm; margin-bottom: 0.1cm; text-transform: uppercase; line-height: 100%; text-decoration: none;"><span style="background: transparent;"> <a class="western" href="#__RefHeading___Toc3073_1012792670"> 4.7 BUTTON 03 CREATE NODE LAYER </a> </span></p>
 <p style="text-indent: 0.2cm; margin-bottom: 0.1cm; text-transform: uppercase; line-height: 100%; text-decoration: none;"><span style="background: transparent;"> <a class="western" href="#__RefHeading___Toc3075_1012792670"> 4.8 BUTTON 04 FILL IN FIELDS </a> </span></p>
-<p style="text-indent: 0.2cm; margin-bottom: 0.1cm; text-transform: uppercase; line-height: 100%; text-decoration: none;"><span style="background: transparent;"> <a class="western" href="#__RefHeading___Toc3077_1012792670"> 4.9 PONTA SECA </a> </span></p>
+<p style="text-indent: 0.2cm; margin-bottom: 0.1cm; text-transform: uppercase; line-height: 100%; text-decoration: none;"><span style="background: transparent;"> <a class="western" href="#__RefHeading___Toc3077_1012792670"> 4.9 DEAD END </a> </span></p>
 <p style="text-indent: 0.2cm; margin-bottom: 0.1cm; text-transform: uppercase; line-height: 100%; text-decoration: none;"><span style="background: transparent;"> <a class="western" href="#__RefHeading___Toc3079_1012792670">4.10 BUTTON 5 CALCULATE FLOW</a> </span></p>
 <p style="text-indent: 0.2cm; margin-bottom: 0.1cm; text-transform: uppercase; line-height: 100%; text-decoration: none;"><span style="background: transparent;"> <a class="western" href="#__RefHeading___Toc3081_1012792670"> 4.11 BUTTON 6 CALCULATE NETWORK </a> </span></p>
 <p style="text-indent: 0.2cm; margin-bottom: 0.1cm; text-transform: uppercase; line-height: 100%; text-decoration: none;"><span style="background: transparent;"> <a class="western" href="#__RefHeading___Toc3083_1012792670">4.12 BUTTON 7 DRAW PROFILE</a> </span></p>
@@ -232,7 +232,7 @@
 <p class="western">Salve o shape <span style="font-style: normal;"> <strong> Trechos </strong> </span> e saia do modo de edi&ccedil;&atilde;o.</p>
 <p class="western">&nbsp;</p>
 <p class="western">&nbsp;</p>
-<h2 class="western"><a name="__RefHeading___Toc3077_1012792670"></a> 4.9 PONTA SECA</h2>
+<h2 class="western"><a name="__RefHeading___Toc3077_1012792670"></a> 4.9 DEAD END</h2>
 <p class="western">&nbsp;</p>
 <p class="western">Tem como objetivo identificar os trechos que n&atilde;o recebem contribui&ccedil;&otilde;es atrav&eacute;s do PV de montante. Essa identifica&ccedil;&atilde;o &eacute; necess&aacute;ria em trechos cujos PVs de montante possam apresentar mais de uma sa&iacute;da, situa&ccedil;&atilde;o <span style="font-family: Calibri,sans-serif;"> <span style="font-size: small;"> n&atilde;o </span> </span> permitida segundo as normas brasileiras. A &ldquo;ponta seca&rdquo; &eacute; informada manualmente na tabela do shape <strong> Trechos </strong> , campo (coluna) PONTA_SECA, trocando a letra N (n&atilde;o) pela letra S (sim), como ilustra a <strong> Figura 18 </strong> .</p>
 <p class="western">&nbsp;</p>
@@ -1050,7 +1050,7 @@
 <p class="western" align="center"><span style="font-size: small;"> 30 </span></p>
 </td>
 <td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding: 0cm 0cm 0.1cm 0.1cm;" width="17%">
-<p class="western" align="left"><span style="font-size: small;"> PONTA_SECA </span></p>
+<p class="western" align="left"><span style="font-size: small;"> DEAD END </span></p>
 </td>
 <td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding: 0cm 0cm 0.1cm 0.1cm;" width="17%">
 <p class="western" align="center"><span style="font-size: small;"> - <sup> (3) </sup> </span></p>
