@@ -136,11 +136,11 @@
 </ul>
 <p class="western">&nbsp;</p>
 <p class="western">&nbsp;</p>
-<h2 class="western"><a name="__RefHeading___Toc3069_1012792670"></a> 4.5 <img src="images\fig4382197c198bdabe.png" alt="" width="30" height="30" name="Figura10" align="middle" border="0" /> BUTTON 01 CHECK/CREATE FIELDS</h2>
+<h2 class="western"><a name="__RefHeading___Toc3069_1012792670"></a> 4.5 <img src="images\fig4382197c198bdabe.png" alt="" width="30" height="30" name="Figura10" align="middle" valign="bottom" border="0" /> BUTTON 01 CHECK/CREATE FIELDS</h2>
 <p class="western">&nbsp;</p>
-<p class="western">Ao pressionar neste BUTTON o plugin verifica se o shape <strong> Trechos </strong> com o tra&ccedil;ado da rede cont&eacute;m os campos padr&otilde;es. Se n&atilde;o existe oferece a possibilidade de cri&aacute;-los automaticamente, como mostra a <strong> Figura 8 </strong> . Aceite essa op&ccedil;&atilde;o.</p>
+<p class="western">By pressing this button the plugin checks if the shape <strong>Pipes</strong>, with the design of the network, has the default fields. If it does not have the fields it offers the possibility to create them automatically, as shown in <strong>Figure 8</strong>. Accept this option.</p>
 <p class="western">&nbsp;</p>
-<p class="western">Abra novamente a tabela de atributos do shape <strong> Trechos </strong> com a rede de esgoto (vide <strong> Figura 9 </strong> ). Voc&ecirc; ver&aacute; que foram criados um conjunto de campos para cada coletor tra&ccedil;ado. Os valores contidos nesses campos ser&atilde;o nulos ou zeros (sem informa&ccedil;&atilde;o ainda).</p>
+<p class="western">Reopen the attribute table of <strong>Pipes</strong> with the sewage system (see <strong>Figure 9</strong>). You will see that a set of fields have been created for each pipe reach. The values contained in these fields will be nulls or zeros (no information yet). </p>
 <p class="western">&nbsp;</p>
 <table width="100%" cellspacing="0" cellpadding="4">
 <tbody>
@@ -1244,4 +1244,5 @@
 <p class="western" style="line-height: 100%;">&nbsp;</p>
 <h1 class="western"><a name="__RefHeading___Toc3093_1012792670"></a> 8 DISCLAIMER OF USE</h1>
 <p class="western" style="line-height: 100%;">&nbsp;</p>
-<p class="western" style="line-height: 100%;">Esse plugin est&aacute; sujeito aos termos da licen&ccedil;a &ldquo; <a class="western" href="https://www.gnu.org/licenses/gpl-3.0.html"> <em> GNU GENERAL PUBLIC LICENSE, Version 3, 29 June 2007 </em> </a> &rdquo;, portanto os danos ou consequ&ecirc;ncias da utiliza&ccedil;&atilde;o do plugin e/ou dos seus resultados, em qualquer ordem &eacute; de inteira responsabilidade do usu&aacute;rio final, ficando os desenvolvedores isentos de qualquer responsabilidade t&eacute;cnica ou jur&iacute;dica inerente da utiliza&ccedil;&atilde;o com ou sem inabilidade no uso do mesmo, inclusive no caso de eventual falha comprovada do plugin.</p></html>
+<p class="western" style="line-height: 100%;">Esse plugin est&aacute; sujeito aos termos da licen&ccedil;a &ldquo; <a class="western" href="https://www.gnu.org/licenses/gpl-3.0.html"> <em> GNU GENERAL PUBLIC LICENSE, Version 3, 29 June 2007 </em> </a> &rdquo;, portanto os danos ou consequ&ecirc;ncias da utiliza&ccedil;&atilde;o do plugin e/ou dos seus resultados, em qualquer ordem &eacute; de inteira responsabilidade do usu&aacute;rio final, ficando os desenvolvedores isentos de qualquer responsabilidade t&eacute;cnica ou jur&iacute;dica inerente da utiliza&ccedil;&atilde;o com ou sem inabilidade no uso do mesmo, inclusive no caso de eventual falha comprovada do plugin.</p>
+</html>
