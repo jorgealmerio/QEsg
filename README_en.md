@@ -1,23 +1,12 @@
 <html>
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=windows-1252"/>
-	<title>QEsg</title>
-	<meta name="generator" content="LibreOffice 5.2.3.3 (Windows)"/>
+	<meta name="generator" content="LibreOffice 5.2.0.1 (Windows)"/>
 	<meta name="author" content="Juan Ramseyer"/>
-	<meta name="created" content="00:00:00"/>
-	<meta name="changed" content="2017-04-03T14:26:41.015000000"/>
-	<meta name="created" content="2016-06-07T17:41:21.305062039">
-	<meta name="changed" content="2016-07-04T22:02:46.747000000">
-	<style type="text/css">
-		p { color: #000000 }
-		td p { color: #000000 }
-		h1 { color: #000000 }
-		h2 { color: #000000 }
-		h2.cjk { font-family: "SimSun" }
-		h2.ctl { font-family: "Mangal" }
-	</style>
+	<meta name="created" content="2016-06-07T17:41:21.305062039"/>
+	<meta name="changed" content="2016-07-04T22:02:46.747000000"/>
 </head>
-<body lang="pt-BR" text="#000000" dir="ltr">
+<body lang="pt-BR" dir="ltr">
 <h1 class="western"><a name="__RefHeading___Toc3816_1012792670"></a> <img src="images\figb6a402436fc68eb5.png" alt="" width="605" height="85" name="qesg_logo" align="bottom" border="0" /></h1>
 <p class="western">&nbsp;</p>
 <h1 class="western"><a name="__RefHeading___Toc3818_1012792670"></a> 1 PRESENTATION</h1>
