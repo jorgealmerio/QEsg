@@ -410,9 +410,9 @@ poligonais abertas (um coletor com 5 v&eacute;rtices e dois coletores
 com 3). Na mensagem semelhante &agrave; da <b>Figura 10</b><span style="font-weight: normal">
 clicar em </span><b>Sim</b>.</p>
 <p class="western">Mensagem para subdivis&atilde;o de
-coletores em trechos:</p><p>Existem elementos com ( &hellip;). Deseja
+coletores em trechos: Existem elementos com ( &hellip;). Deseja
 	convert&ecirc;-los para linhas simples? (vide <b>Figura 10</b>).
-	Clique no bot&atilde;o Sim.</p>
+	Clique no bot&atilde;o <b>Sim</b>.</p>
 
 <p class="western"><br/>
 
