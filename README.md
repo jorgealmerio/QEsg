@@ -409,13 +409,11 @@ de montante para jusante (vide <b>Figura 9</b>) definidos por
 poligonais abertas (um coletor com 5 v&eacute;rtices e dois coletores
 com 3). Na mensagem semelhante &agrave; da <b>Figura 10</b><span style="font-weight: normal">
 clicar em </span><b>Sim</b>.</p>
-<ul>
-	<li/>
-<p class="western"><u>Mensagem para subdivis&atilde;o de
-	coletores em trechos</u>. Existem elementos com ( &hellip;). Deseja
-	convert&ecirc;-los para linhas simples? (vide ) <b>Figura 10</b>.
+<p class="western">Mensagem para subdivis&atilde;o de
+coletores em trechos:</p><p>Existem elementos com ( &hellip;). Deseja
+	convert&ecirc;-los para linhas simples? (vide <b>Figura 10</b>).
 	Clique no bot&atilde;o Sim.</p>
-</ul>
+
 <p class="western"><br/>
 
 </p>
