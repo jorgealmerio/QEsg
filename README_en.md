@@ -8,7 +8,9 @@
 </head>
 <body lang="pt-BR" dir="ltr">
 <h1 class="western"><a name="__RefHeading___Toc3816_1012792670"></a> <img src="images\figb6a402436fc68eb5.png" alt="" width="605" height="85" name="qesg_logo" align="bottom" border="0" /></h1>
+<br>
 <p class="western" style="text-align: right;"><a href="https://github.com/jorgealmerio/QEsg/blob/master/README.md">CLIQUE AQUI PARA VERS&Atilde;O EM PORTUGU&Ecirc;S</a>&nbsp;</p>
+<br>
 <h1 class="western"><a name="__RefHeading___Toc3818_1012792670"></a> 1 PRESENTATION</h1>
 <p class="western">&nbsp;</p>
 <p class="western">&nbsp;</p>
