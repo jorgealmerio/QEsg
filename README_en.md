@@ -12,7 +12,7 @@
 <h1 class="western"><a name="__RefHeading___Toc3818_1012792670"></a> 1 PRESENTATION</h1>
 <p class="western">&nbsp;</p>
 <p class="western">&nbsp;</p>
-<p><span lang="pt-BR"> <a class="western" href="https://plugins.qgis.org/plugins/QEsg/"> QEsg </a> is a plugin developed </span> <span lang="pt-BR"> for the software <a class="western" href="http://www.qgis.org/"> Qgis </a> </span> in order to assist in the design of sewage networks.</p>
+<p><span lang="pt-BR"> <a class="western" href="https://plugins.qgis.org/plugins/QEsg/" target="_blank"> QEsg </a> is a plugin developed </span> <span lang="pt-BR"> for the software <a class="western" href="http://www.qgis.org/" target="_blank"> Qgis </a> </span> in order to assist in the design of sewage networks.</p>
 <p>The plugin uses the facilities and resources inherent to a GIS (Geographic Information System) environment to support the organization, development, design and final presentation of the project of a sewer network.</p>
 <p class="western"><span lang="pt-BR"> &nbsp; </span></p>
 <p class="western">&nbsp;</p>
@@ -136,11 +136,11 @@
 </ul>
 <p class="western">&nbsp;</p>
 <p class="western">&nbsp;</p>
-<h2 class="western"><a name="__RefHeading___Toc3069_1012792670"></a> 4.5 <img src="images\fig4382197c198bdabe.png" alt="" width="30" height="30" name="Figura10" align="middle" valign="bottom" border="0" /> BUTTON 01 CHECK/CREATE FIELDS</h2>
+<h2 class="western"><a name="__RefHeading___Toc3069_1012792670"></a> 4.5 <img src="images\fig4382197c198bdabe.png" alt="" width="30" height="30" name="Figura10" align="middle" border="0" /> BUTTON 01 CHECK/CREATE FIELDS</h2>
 <p class="western">&nbsp;</p>
 <p class="western">By pressing this button the plugin checks if the shape <strong>Pipes</strong>, with the design of the network, has the default fields. If it does not have the fields it offers the possibility to create them automatically, as shown in <strong>Figure 8</strong>. Accept this option.</p>
 <p class="western">&nbsp;</p>
-<p class="western">Reopen the attribute table of <strong>Pipes</strong> with the sewage system (see <strong>Figure 9</strong>). You will see that a set of fields have been created for each pipe reach. The values contained in these fields will be nulls or zeros (no information yet). </p>
+<p class="western">Reopen the attribute table of <strong>Pipes</strong> with the sewage system (see <strong>Figure 9</strong>). You will see that a set of fields have been created for each pipe reach. The values contained in these fields will be nulls or zeros (no information yet).</p>
 <p class="western">&nbsp;</p>
 <table width="100%" cellspacing="0" cellpadding="4">
 <tbody>
@@ -174,49 +174,63 @@
 <p style="font-style: normal; line-height: 100%;" align="center"><img src="images\fig497bb7c3ae5f5870.png" alt="" width="595" height="367" name="figura11" align="middle" border="0" /></p>
 <p class="western" style="line-height: 100%;">&nbsp;</p>
 <p class="western" style="line-height: 100%;">&nbsp;</p>
-<p class="western">Ser&aacute; aberta uma janela, semelhante &agrave; <strong> Figure 11 </strong> , a qual ser&aacute; fixada na lateral direita no ambiente QGIS. Nos passos a seguir, proceda com aten&ccedil;&atilde;o.</p>
-<p class="western">Verifique que a caixa &lt;Coletor&gt; esteja preenchido com o valor 1. Sen&atilde;o digite o valor 1.</p>
-<p class="western">Verifique que a caixa &lt;N&uacute;mero de d&iacute;gitos&gt; esteja preenchido com o valor 1. Sen&atilde;o digite o valor 1.</p>
-<p class="western">Verifique que a op&ccedil;&atilde;o &lt;Somente trechos sem identifica&ccedil;&atilde;o&gt; esteja selecionada.</p>
-<p class="western">Clique no BUTTON &lt;Selecionar Montante&gt;.</p>
-<p class="western">Movimente o cursor e fa&ccedil;a clique com o BUTTON esquerdo (prim&aacute;rio) no meio do trecho mais a montante do coletor principal da rede. Todos os trechos do coletor mudar&atilde;o para a cor amarela (padr&atilde;o de sele&ccedil;&atilde;o do QGIS), como mostra a <strong> Figure 12 </strong> .</p>
+<p class="western">This opens a window similar to <strong>Figure 11,</strong> which is fixed on the right side in the QGIS environment. Please follow the steps below.</p>
+<ul>
+<li>Check that the &lt;Manifold&gt; box is filled with the value 1. If not, Enter the value 1.</li>
+<li>Check that the &lt;Number of digits&gt; box is filled with the value 1. If not, Enter the value 1.</li>
+<li>Check the option &lt;Only undefined reaches&gt; is selected.</li>
+<li>Click the button the &lt;Select Upstream&gt;.</li>
+<li>Move the cursor and click the button left (primary) in the middle of the upstream main manifold reach. All reaches changes to the yellow (standard selection color of QGIS), as shown in <strong>Figure 12</strong>.</li>
+</ul>
+<p>&nbsp;</p>
 <p class="western">&nbsp;</p>
 <p class="western">&nbsp;</p>
-<p style="font-style: normal; line-height: 100%;" align="center"><span style="font-size: small;"> <strong> Figure 12 - Sele&ccedil;&atilde;o do trecho de montante do coletor principal. </strong> </span></p>
+<p style="font-style: normal; line-height: 100%;" align="center"><span style="font-size: small;"> <strong> Figure 12 - Selection of the upstream main manifold reach. </strong> </span></p>
 <p style="font-style: normal; line-height: 100%;" align="center"><img src="images\figa0b8312aef0b4b0c.png" alt="" width="605" height="362" name="figura12" align="bottom" border="0" /></p>
 <p class="western">&nbsp;</p>
-<p class="western">Clique no BUTTON &lt;Renomear&gt; da janela Renomear Rede. Na primeira vez, o estilo do shape <strong> Trechos </strong> &eacute; alterado, s&atilde;o representados os v&eacute;rtices e o sentido do fluxo, como ilustra a Figure 13. Para o <span style="background: transparent;"> coletor </span> renomeado ser&atilde;o apresentadas as informa&ccedil;&otilde;es: nome do coletor-trecho e nomes dos PVs de montante e jusante.</p>
+<ul>
+<li>Click the button &lt;Renumber&gt; from Rename Network window. The first time, the style of shape <strong>Pipes</strong> changes, representing the vertices and the direction of flow, as illustrated in <strong>Figure 13</strong>. Information about renamed manifold is shown as: Manifold-reach name and upstream and downstream Manhole names.</li>
+</ul>
 <p class="western">&nbsp;</p>
-<p style="font-style: normal; line-height: 100%;" align="center"><span style="font-size: small;"> <strong> Figure 13 - Coletor principal renumerado </strong> </span></p>
+<p style="font-style: normal; line-height: 100%;" align="center"><span style="font-size: small;"> <strong> Figure 13 - Renumbered manifold </strong> </span></p>
 <p style="font-style: normal; line-height: 100%;" align="center"><img src="images\figa9093071ca21db05.png" alt="" width="605" height="341" name="figura13" align="bottom" border="0" /></p>
 <p class="western">&nbsp;</p>
-<p class="western"><span style="background: transparent;"> Clique no BUTTON &lt;Novo Coletor&gt;. O n&uacute;mero da caixa Coletor mudar&aacute; para 2 e o trecho anterior ser&aacute; deselecionado. </span></p>
-<p class="western"><span style="background: transparent;"> Verifique que a op&ccedil;&atilde;o &lt;Soment </span> e trechos sem identifica&ccedil;&atilde;o&gt; continue selecionada.</p>
-<p class="western">Selecione o trecho de montante do segundo coletor (no nosso exemplo, o coletor mais a jusante), como ilustra a Figure 14. A cor do coletor mudar&aacute; para amarelo at&eacute; o PV de interliga&ccedil;&atilde;o com o coletor anterior.</p>
+<ul>
+<li>Click the button &lt;New Manifold&gt;. The Manifold number will increase by 1 and the previous renamed manifold will be unselected.</li>
+<li>Check the option &lt;Only undefined reaches&gt; continue selected.</li>
+<li>Select the upstream reach of the second manifold (in our example, the downstream one), as illustrated in <strong>Figure 14</strong>. The pipe color changes to yellow from upstream to the manhole of previous pipe intersection.</li>
+</ul>
+<p>&nbsp;</p>
 <p class="western">&nbsp;</p>
-<p style="font-style: normal; line-height: 100%;" align="center"><span style="font-size: small;"> <strong> Figure 14 - Sele&ccedil;&atilde;o do trecho de montante do segundo coletor </strong> </span></p>
+<p style="font-style: normal; line-height: 100%;" align="center"><span style="font-size: small;"> <strong> Figure 14 -&nbsp;Selection of the upstream reach of the second manifold </strong> </span></p>
 <p class="western" align="center"><img src="images\fige462dd58418f2ff6.png" alt="" width="642" height="385" name="figura14" align="middle" border="0" /></p>
 <p class="western">&nbsp;</p>
 <p class="western">&nbsp;</p>
-<p class="western">Clique em renomear o coletor selecionado. O coletor selecionado ser&aacute; renomeado e numerado, de forma an&aacute;loga ao primeiro coletor, como ilustra a Figure 15.</p>
+<ul>
+<li class="western">Click &lt;Renumber&gt;. The selected manifold will be renamed and numbered, similarly to the first manifold, as illustrated in <strong>Figure 15</strong>.</li>
+</ul>
 <p class="western">&nbsp;</p>
 <p class="western">&nbsp;</p>
-<p style="font-style: normal; line-height: 100%;" align="center"><span style="font-size: small;"> <strong> Figure 15 - Segundo coletor renumerado. </strong> </span></p>
+<p style="font-style: normal; line-height: 100%;" align="center"><span style="font-size: small;"> <strong> Figure 15 - Second renumbered manifold. </strong> </span></p>
 <p style="font-style: normal; line-height: 100%;" align="center"><img src="images\fige94a0e31ed3f3ca4.png" alt="" width="605" height="343" name="figura15" align="bottom" border="0" /></p>
 <p class="western" style="line-height: 100%;">&nbsp;</p>
-<p class="western">Repita o processo para o terceiro coletor, que consiste em: clicar no BUTTON Novo coletor, clicar sobre o trecho de montante do coletor (como mostra a Figure 16), clicar no BUTTON Renomear (como mostra a Figure 17). O processo de nomea&ccedil;&atilde;o de trechos da rede estar&aacute; conclu&iacute;do.</p>
+<ul>
+<li>Repeat the process for the third manifold, consisting of: click the button &lt;New Manifold&gt;, click on the manifold upstream reach (as shown in <strong>Figure 16</strong>), click the button &lt;Renumber&gt; (as shown in <strong>Figure 17</strong>). The remane process of network will be finished.</li>
+</ul>
 <p class="western">&nbsp;</p>
 <p class="western">&nbsp;</p>
-<p style="font-style: normal; line-height: 100%;" align="center"><span style="font-size: small;"> <strong> Figure 16 - Clique no trecho de montante para a sele&ccedil;&atilde;o do terceiro coletor. </strong> </span></p>
+<p style="font-style: normal; line-height: 100%;" align="center"><span style="font-size: small;"> <strong>Figure 16 - Click on the upstream reach to select the third manifold.</strong> </span></p>
 <p style="font-style: normal; line-height: 100%;" align="center"><img src="images\figcf390edf76df8f0d.png" alt="" width="605" height="344" name="figura16" align="bottom" border="0" /></p>
 <p class="western" style="line-height: 100%;">&nbsp;</p>
 <p class="western" style="line-height: 100%;">&nbsp;</p>
-<p style="font-style: normal; line-height: 100%;" align="center"><span style="font-size: small;"> <strong> Figure 17 - Todos os trechos dos tr&ecirc;s coletores renumerados </strong> </span></p>
+<p style="font-style: normal; line-height: 100%;" align="center"><span style="font-size: small;"> <strong> Figure 17 - All reaches of the three manifolds renumbered. </strong> </span></p>
 <p style="font-style: normal; line-height: 100%;" align="center"><img src="images\fig9984ce4666d03153.png" alt="" width="605" height="342" name="figura17" align="bottom" border="0" /></p>
 <p class="western">&nbsp;</p>
-<p class="western">Salve o shape <strong> Trechos </strong> e encerre o processo de edi&ccedil;&atilde;o.</p>
+<ul>
+<li class="western">Save the <strong>Pipes</strong> shape and stop the Editing process.</li>
+</ul>
 <p class="western">&nbsp;</p>
-<p class="western">No shape <strong> Trechos </strong> foram preenchidos os campos Coletor, Trecho, DC_ID, PVM e PVJ.</p>
+<p class="western">In shape <strong>Pipes</strong> were filled in the fields: Coletor (Manifold), Trecho (Reach), DC_ID, PVM and PVJ</p>
 <p class="western">&nbsp;</p>
 <p class="western" style="line-height: 100%;">&nbsp;</p>
 <h2 class="western"><a name="__RefHeading___Toc3073_1012792670"></a> 4.7 <img src="images\fig30dc2cdc68e77050.png" alt="" width="30" height="30" name="Figura12" align="middle" border="0" /> BUTTON 03 CREATE NODE LAYER</h2>
