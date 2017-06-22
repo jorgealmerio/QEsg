@@ -28,14 +28,14 @@
 <p style="text-indent: 0.2cm; margin-bottom: 0.1cm; text-transform: uppercase; line-height: 100%; text-decoration: none;"><span style="background: transparent;"> <a class="western" href="#__RefHeading___Toc3063_1012792670"> 4.2 FILES USED IN THIS TUTORIAL </a> </span></p>
 <p style="text-indent: 0.2cm; margin-bottom: 0.1cm; text-transform: uppercase; line-height: 100%; text-decoration: none;"><span style="background: transparent;"> <a class="western" href="#__RefHeading___Toc3065_1012792670"> 4.3 APPLICATION EXAMPLE </a> </span></p>
 <p style="text-indent: 0.2cm; margin-bottom: 0.1cm; text-transform: uppercase; line-height: 100%; text-decoration: none;"><span style="background: transparent;"> <a class="western" href="#__RefHeading___Toc3067_1012792670"> 4.4 BUTTON 00 SETTINGS </a> </span></p>
-<p style="text-indent: 0.2cm; margin-bottom: 0.1cm; text-transform: uppercase; line-height: 100%; text-decoration: none;"><span style="background: transparent;"> <a class="western" href="#__RefHeading___Toc3069_1012792670"> 4.5 BUTTON 01 CHECK/CREATE FIELDS </a> </span></p>
-<p style="text-indent: 0.2cm; margin-bottom: 0.1cm; text-transform: uppercase; line-height: 100%; text-decoration: none;"><span style="background: transparent;"> <a class="western" href="#__RefHeading___Toc3071_1012792670"> 4.6 BUTTON 02 NUMBER NETWORK </a> </span></p>
-<p style="text-indent: 0.2cm; margin-bottom: 0.1cm; text-transform: uppercase; line-height: 100%; text-decoration: none;"><span style="background: transparent;"> <a class="western" href="#__RefHeading___Toc3073_1012792670"> 4.7 BUTTON 03 CREATE NODE LAYER </a> </span></p>
-<p style="text-indent: 0.2cm; margin-bottom: 0.1cm; text-transform: uppercase; line-height: 100%; text-decoration: none;"><span style="background: transparent;"> <a class="western" href="#__RefHeading___Toc3075_1012792670"> 4.8 BUTTON 04 FILL IN FIELDS </a> </span></p>
+<p style="text-indent: 0.2cm; margin-bottom: 0.1cm; text-transform: uppercase; line-height: 100%; text-decoration: none;"><span style="background: transparent;"> <a class="western" href="#__RefHeading___Toc3069_1012792670"> 4.5 BUTTON 01 FIELDS CHECK/CREATION </a> </span></p>
+<p style="text-indent: 0.2cm; margin-bottom: 0.1cm; text-transform: uppercase; line-height: 100%; text-decoration: none;"><span style="background: transparent;"> <a class="western" href="#__RefHeading___Toc3071_1012792670"> 4.6 BUTTON 02 NETWORK&nbsp;</a><a class="western" href="#__RefHeading___Toc3071_1012792670">NUMBERing</a> </span></p>
+<p style="text-indent: 0.2cm; margin-bottom: 0.1cm; text-transform: uppercase; line-height: 100%; text-decoration: none;"><span style="background: transparent;"> <a class="western" href="#__RefHeading___Toc3073_1012792670"> 4.7 BUTTON 03 </a><a class="western" href="#__RefHeading___Toc3073_1012792670">NODE LAYER CREATION</a></span></p>
+<p style="text-indent: 0.2cm; margin-bottom: 0.1cm; text-transform: uppercase; line-height: 100%; text-decoration: none;"><span style="background: transparent;"> <a class="western" href="#__RefHeading___Toc3075_1012792670"> 4.8 BUTTON 04 FIELDS FILLING </a> </span></p>
 <p style="text-indent: 0.2cm; margin-bottom: 0.1cm; text-transform: uppercase; line-height: 100%; text-decoration: none;"><span style="background: transparent;"> <a class="western" href="#__RefHeading___Toc3077_1012792670"> 4.9 DEAD END </a> </span></p>
-<p style="text-indent: 0.2cm; margin-bottom: 0.1cm; text-transform: uppercase; line-height: 100%; text-decoration: none;"><span style="background: transparent;"> <a class="western" href="#__RefHeading___Toc3079_1012792670">4.10 BUTTON 5 CALCULATE FLOW</a> </span></p>
-<p style="text-indent: 0.2cm; margin-bottom: 0.1cm; text-transform: uppercase; line-height: 100%; text-decoration: none;"><span style="background: transparent;"> <a class="western" href="#__RefHeading___Toc3081_1012792670"> 4.11 BUTTON 6 CALCULATE NETWORK </a> </span></p>
-<p style="text-indent: 0.2cm; margin-bottom: 0.1cm; text-transform: uppercase; line-height: 100%; text-decoration: none;"><span style="background: transparent;"> <a class="western" href="#__RefHeading___Toc3083_1012792670">4.12 BUTTON 7 DRAW PROFILE</a> </span></p>
+<p style="text-indent: 0.2cm; margin-bottom: 0.1cm; text-transform: uppercase; line-height: 100%; text-decoration: none;"><span style="background: transparent;"> <a class="western" href="#__RefHeading___Toc3079_1012792670">4.10 BUTTON 5 FLOW CALCULATION</a> </span></p>
+<p style="text-indent: 0.2cm; margin-bottom: 0.1cm; text-transform: uppercase; line-height: 100%; text-decoration: none;"><span style="background: transparent;"> <a class="western" href="#__RefHeading___Toc3081_1012792670"> 4.11 BUTTON 6 </a><a class="western" href="#__RefHeading___Toc3081_1012792670">NETWORK CALCULATION</a></span></p>
+<p style="text-indent: 0.2cm; margin-bottom: 0.1cm; text-transform: uppercase; line-height: 100%; text-decoration: none;"><span style="background: transparent;"> <a class="western" href="#__RefHeading___Toc3083_1012792670">4.12 BUTTON 7 PROFILE DRAW</a> </span></p>
 <p style="text-transform: uppercase; line-height: 100%;"><strong> <a class="western" href="#__RefHeading___Toc3085_1012792670"> 5 TABLES </a> </strong></p>
 <p style="text-indent: 0.2cm; margin-bottom: 0.1cm; text-transform: uppercase; line-height: 100%; text-decoration: none;"><span style="background: transparent;"> <a class="western" href="#__RefHeading___Toc3087_1012792670"> 5.1 NODES SHAPE </a> </span></p>
 <p style="text-indent: 0.2cm; margin-bottom: 0.1cm; text-transform: uppercase; line-height: 100%; text-decoration: none;"><span style="background: transparent;"> <a class="western" href="#__RefHeading___Toc3089_1012792670"> 5.2 PIPES SHAPE </a> </span></p>
@@ -137,7 +137,7 @@
 </ul>
 <p class="western">&nbsp;</p>
 <p class="western">&nbsp;</p>
-<h2 class="western"><a name="__RefHeading___Toc3069_1012792670"></a> 4.5 <img src="images\fig4382197c198bdabe.png" alt="" width="30" height="30" name="Figura10" align="middle" border="0" /> BUTTON 01 CHECK/CREATE FIELDS</h2>
+<h2 class="western"><a name="__RefHeading___Toc3069_1012792670"></a> 4.5 <img src="images\fig4382197c198bdabe.png" alt="" width="30" height="30" name="Figura10" align="middle" border="0" /> BUTTON 01 FIELDS CHECK/CREATION</h2>
 <p class="western">&nbsp;</p>
 <p class="western">By pressing this button the plugin checks if the shape <strong>Pipes</strong>, with the design of the network, has the default fields. If it does not have the fields it offers the possibility to create them automatically, as shown in <strong>Figure 8</strong>. Accept this option.</p>
 <p class="western">&nbsp;</p>
@@ -159,7 +159,7 @@
 </table>
 <p class="western">&nbsp;</p>
 <p class="western">&nbsp;</p>
-<h2 class="western"><a name="__RefHeading___Toc3071_1012792670"></a> 4.6 <img src="images\fig96a608ce40392369.png" alt="" width="30" height="30" name="Figura11" align="middle" border="0" /> BUTTON 02 NUMBER NETWORK</h2>
+<h2 class="western"><a name="__RefHeading___Toc3071_1012792670"></a> 4.6 <img src="images\fig96a608ce40392369.png" alt="" width="30" height="30" name="Figura11" align="middle" border="0" /> BUTTON 02 NETWORK NUMBERING </h2>
 <p class="western">&nbsp;</p>
 <p class="western">Clicking on this button checks if the sewer is composed of single segments (individual line segments between consecutive vertices). If there is any network element with more than two vertices, a message similar to <strong> Figure 10 </strong> appears.</p>
 <p class="western">&nbsp;</p>
@@ -234,19 +234,19 @@
 <p class="western">In shape <strong>Pipes</strong> were filled in the fields: Coletor (Manifold), Trecho (Reach), DC_ID, PVM and PVJ</p>
 <p class="western">&nbsp;</p>
 <p class="western" style="line-height: 100%;">&nbsp;</p>
-<h2 class="western"><a name="__RefHeading___Toc3073_1012792670"></a> 4.7 <img src="images\fig30dc2cdc68e77050.png" alt="" width="30" height="30" name="Figura12" align="middle" border="0" /> BUTTON 03 CREATE NODE LAYER</h2>
+<h2 class="western"><a name="__RefHeading___Toc3073_1012792670"></a> 4.7 <img src="images\fig30dc2cdc68e77050.png" alt="" width="30" height="30" name="Figura12" align="middle" border="0" /> BUTTON 03 NODE LAYER CREATION</h2>
 <p class="western">&nbsp;</p>
 <ul>
-<li class="western">On BUTTON click is opened the window to save the node shapefile (point format). Selecione o local e nomes adequados a este shape, para este exemplo escolha como nome <strong> Nos </strong> . Click on Save BUTTON to finish file save. The file is automatic added to the QGis Project.</li>
+<li class="western">On click this button is opened the window to save the node shapefile (point format). Selecione o local e nomes adequados a este shape, para este exemplo escolha como nome <strong> Nos </strong> . Click on Save BUTTON to finish file save. The file is automatic added to the QGis Project.</li>
 <li class="western"><span style="text-decoration: underline;"> Warning for Linux</span>: When this tutorial was been writing it had a bug. It was necessary to type the filename with the extension (*.shp) to have the file automatic added to the QGis project.</li>
 <li class="western">Enable editing to the Node Layer to fill in all ground elevation data for each Node.</li>
 <li class="western">Save the <strong>Node</strong> Shape and disable editing</li>
 <li class="western">Save the project.</li>
 </ul>
 <p class="western">&nbsp;</p>
-<h2 class="western"><a name="__RefHeading___Toc3075_1012792670"></a> 4.8 <img src="images\fig85a4f30f64038587.png" alt="" width="30" height="30" name="Figura1" align="middle" border="0" /> BUTTON 04 FILL IN FIELDS</h2>
+<h2 class="western"><a name="__RefHeading___Toc3075_1012792670"></a> 4.8 <img src="images\fig85a4f30f64038587.png" alt="" width="30" height="30" name="Figura1" align="middle" border="0" /> BUTTON 04 FIELD FILLING</h2>
 <p class="western">&nbsp;</p>
-<p class="western">On BUTTON Click:</p>
+<p class="western">On Click this button:</p>
 <ul>
 <li class="western">All Null fields from <strong>Pipes</strong> shape are automatic fill in;</li>
 <li class="western">All elevation fields Upstream and Downstream Manhole from <strong>Pipes</strong> are overwritten</li>
@@ -272,35 +272,32 @@
 <p class="western" style="line-height: 100%;">Save changes to attribute <strong>Pipes</strong> shapes  <span style="font-weight: normal;"> e finish editing mode. Save the project</span>.</p>
 <p class="western" style="line-height: 100%;">&nbsp;</p>
 <p class="western">&nbsp;</p>
-<h2 class="western" style="page-break-before: always;"><a name="__RefHeading___Toc3079_1012792670"></a> 4.10 <img src="images\fig62bba675e061c761.png" alt="" width="30" height="30" name="Figura13" align="middle" border="0" /> BUTTON 05 CALCULATE FLOW</h2>
+<h2 class="western" style="page-break-before: always;"><a name="__RefHeading___Toc3079_1012792670"></a> 4.10 <img src="images\fig62bba675e061c761.png" alt="" width="30" height="30" name="Figura13" align="middle" border="0" /> BUTTON 05 FLOW CALCULATION</h2>
 <p class="western">On click this button the accumulated flows along all pipe reaches of each manifold are calculated, results are written to <strong>Pipes</strong> shape.</p>
-<p class="western">The pipes representations changes to show Name, Length, Diameter and Flow of each reach.</p>
+<p class="western">The pipes representations changes to show Name, Length, Diameter and Flow for each reach.</p>
 <p class="western">&nbsp;</p>
 <p style="font-style: normal; line-height: 100%;" align="center"><span style="font-size: small;"> <strong> Figure 20 - All reaches of the three manifolds with calculated flows. </strong> </span></p>
 <p class="western" style="line-height: 100%;" align="center"><img src="images\figa457ae216bd4057d.png" alt="" width="605" height="362" name="figura20" align="bottom" border="0" /></p>
 <p class="western">&nbsp;</p>
 <p class="western">&nbsp;</p>
-<h2 class="western"><a name="__RefHeading___Toc3081_1012792670"></a> 4.11 <img src="images\fige74254464005de07.png" alt="" width="30" height="30" name="Figura14" align="middle" border="0" /> BUTTON 6 CALCULATE NETWORK</h2>
+<h2 class="western"><a name="__RefHeading___Toc3081_1012792670"></a> 4.11 <img src="images\fige74254464005de07.png" alt="" width="30" height="30" name="Figura14" align="middle" border="0" /> BUTTON 6 NETWORK CALCULATION</h2>
+<p class="western">On click this button, all pipes reaches from the sewer network are calculated. The representation changes to show: Name, Length, Nominal Diameter and Grading as shown in <strong>Figure 21</strong>.</p>
 <p class="western">&nbsp;</p>
-<p class="western">Ao clicar neste BUTTON, s&atilde;o dimensionados todos os trechos que formam os coletores da rede. O formato de apresenta&ccedil;&atilde;o dos trechos muda para mostrar os dados: nome do trecho; comprimento; di&acirc;metro nominal e declividade, como mostra a <strong> Figure 21 </strong> .</p>
-<p class="western">&nbsp;</p>
-<p style="font-style: normal; line-height: 100%;" align="center"><span style="font-size: small;"> <strong> Figure 21 - Clique no trecho de montante para a sele&ccedil;&atilde;o do terceiro coletor. </strong> </span></p>
+<p style="font-style: normal; line-height: 100%;" align="center"><span style="font-size: small;"> <strong> Figure 21 - Calculated network. </strong> </span></p>
 <p class="western" align="center"><img src="images\figb238c0e89bad54f6.png" alt="" width="605" height="362" name="figura21" align="bottom" border="0" /></p>
 <p class="western">&nbsp;</p>
-<p class="western">Todos os dados do dimensionamento est&atilde;o contidos na tabela do shape <strong> Trechos </strong> . Caso deseje, abra a tabela do shape <strong> Trechos </strong> <span style="font-weight: normal;"> , selecione todos os campos, copie e cole dentro de uma planilha eletr&ocirc;nica (MS-Excel, Libreoffice-Calc ou outra) </span> .</p>
+<p class="western">All network calculated results are in the shapefile <strong>Pipes</strong> attributes table. If you want you can open the table select all, copy and paste in any other electronic worksheet (MS-Excel, Libreoffice-Calc or other)</p>
 <p class="western" style="line-height: 100%;">&nbsp;</p>
+<h2 class="western"><a name="__RefHeading___Toc3083_1012792670"></a> 4.12 <img src="images\figfe786608f4b2d9f7.png" alt="" width="30" height="30" name="Figura25" border="0" /> BUTTON 7 PROFILE DRAW</h2>
 <p class="western" style="line-height: 100%;">&nbsp;</p>
-<h2 class="western"><a name="__RefHeading___Toc3083_1012792670"></a> 4.12 <img src="images\figfe786608f4b2d9f7.png" alt="" width="30" height="30" name="Figura25" border="0" /> BUTTON 7 DRAW PROFILE</h2>
-<p class="western" style="line-height: 100%;">&nbsp;</p>
-<p class="western" style="line-height: 100%;">Trata-se de uma ferramenta de confer&ecirc;ncia r&aacute;pida que o projetista pode usar para an&aacute;lise dos coletores projetados. Ao clicar no BUTTON &eacute; apresentado um menu flutuante como o da <strong> Figure 22 </strong> . Selecione o coletor a desenhar e clique no BUTTON <strong> OK </strong> .</p>
+<p class="western" style="line-height: 100%;">It is a quick reference design tool for user analyze the designed network manifolds. On click this button is shown a Pop up menu for the Manifold selection as <strong>Figure 22</strong>. Select manifold to draw and click <strong>OK</strong> button.</p>
 <p class="western">&nbsp;</p>
-<p style="font-style: normal; line-height: 100%;" align="center"><span style="font-size: small;"> <strong> Figure 22 - Menu flutuante para sele&ccedil;&atilde;o do coletor a desenhar </strong> </span></p>
+<p style="font-style: normal; line-height: 100%;" align="center"><span style="font-size: small;"> <strong> Figure 22 - Pop up Menu for Manifold selection. </strong> </span></p>
 <p class="western" align="center"><img src="images\figbe5d64e5199146fc.png" alt="" width="189" height="125" name="figura22" align="bottom" border="0" /></p>
 <p class="western">&nbsp;</p>
+<p class="western">A <strong>Figure 23</strong> similar window is shown (in this example was selected Manifold 1).</p>
 <p class="western">&nbsp;</p>
-<p class="western">Uma janela semelhante ao da <strong> Figure 23 </strong> ser&aacute; apresentada (neste exemplo foi selecionado o Coletor 1).</p>
-<p class="western">&nbsp;</p>
-<p style="font-style: normal; line-height: 100%;" align="center"><span style="font-size: small;"> <strong> Figure 23 - Perfil do coletor selecionado </strong> </span></p>
+<p style="font-style: normal; line-height: 100%;" align="center"><span style="font-size: small;"> <strong> Figure 23 - Selected Manifold Profile.</strong> </span></p>
 <p class="western" align="center"><img src="images\figb56f4bb5c449c1b9.png" alt="" width="454" height="451" name="figura23" align="bottom" border="0" /></p>
 <p class="western">&nbsp;</p>
 <p class="western">&nbsp;</p>
