@@ -159,7 +159,7 @@
 </table>
 <p class="western">&nbsp;</p>
 <p class="western">&nbsp;</p>
-<h2 class="western"><a name="__RefHeading___Toc3071_1012792670"></a> 4.6 <img src="images\fig96a608ce40392369.png" alt="" width="30" height="30" name="Figura11" align="middle" border="0" /> BUTTON 02 NETWORK NUMBERING </h2>
+<h2 class="western"><a name="__RefHeading___Toc3071_1012792670"></a> 4.6 <img src="images\fig96a608ce40392369.png" alt="" width="30" height="30" name="Figura11" align="middle" border="0" /> BUTTON 02 NETWORK NUMBERING</h2>
 <p class="western">&nbsp;</p>
 <p class="western">Clicking on this button checks if the sewer is composed of single segments (individual line segments between consecutive vertices). If there is any network element with more than two vertices, a message similar to <strong> Figure 10 </strong> appears.</p>
 <p class="western">&nbsp;</p>
@@ -251,7 +251,7 @@
 <li class="western">All Null fields from <strong>Pipes</strong> shape are automatic fill in;</li>
 <li class="western">All elevation fields Upstream and Downstream Manhole from <strong>Pipes</strong> are overwritten</li>
 <li class="western">The Length Field is overwritten with the current geometric value.</li>
-<li class="western">The ground elevations are copied from <strong>Node</strong> shape to CTM and CTJ fields of <strong>Pipes</strong> </li>
+<li class="western">The ground elevations are copied from <strong>Node</strong> shape to CTM and CTJ fields of <strong>Pipes</strong></li>
 <li class="western">Save <strong>Pipes</strong> Shape and finish editing mode.</li>
 </ul>
 <p class="western">&nbsp;</p>
@@ -269,7 +269,7 @@
 <p style="font-style: normal; line-height: 100%;" align="center"><span style="font-size: small;"> <strong> Figure 19 - Upstream initial reaches hydraulic conditions change to &ldquo;Dead End&rdquo; </strong> </span></p>
 <p class="western" align="center"><img src="images\fig87942741b4df8b51.png" alt="" width="605" height="362" name="figura19" align="bottom" border="0" /></p>
 <p class="western">&nbsp;</p>
-<p class="western" style="line-height: 100%;">Save changes to attribute <strong>Pipes</strong> shapes  <span style="font-weight: normal;"> e finish editing mode. Save the project</span>.</p>
+<p class="western" style="line-height: 100%;">Save changes to attribute <strong>Pipes</strong> shapes <span style="font-weight: normal;"> e finish editing mode. Save the project</span>.</p>
 <p class="western" style="line-height: 100%;">&nbsp;</p>
 <p class="western">&nbsp;</p>
 <h2 class="western" style="page-break-before: always;"><a name="__RefHeading___Toc3079_1012792670"></a> 4.10 <img src="images\fig62bba675e061c761.png" alt="" width="30" height="30" name="Figura13" align="middle" border="0" /> BUTTON 05 FLOW CALCULATION</h2>
@@ -310,22 +310,25 @@
 <tbody>
 <tr valign="top">
 <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding: 0.1cm 0cm 0.1cm 0.1cm;" width="17%">
-<p class="western" align="center"><span style="font-size: small;"> <strong> Ordem </strong> </span></p>
+<p class="western" align="center"><span style="font-size: small;"> <strong>Order</strong></span></p>
 </td>
 <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding: 0.1cm 0cm 0.1cm 0.1cm;" width="17%">
-<p class="western" align="center"><span style="font-size: small;"> <strong> Nome </strong> </span></p>
+<p class="western" align="center"><span style="font-size: small;"> <strong> Name </strong> </span></p>
 </td>
 <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding: 0.1cm 0cm 0.1cm 0.1cm;" width="17%">
-<p class="western" align="center"><span style="font-size: small;"> <strong> Unidade </strong> </span></p>
+<p class="western" align="center"><span style="font-size: small;"> <strong> Unit </strong> </span></p>
 </td>
 <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding: 0.1cm 0cm 0.1cm 0.1cm;" width="17%">
-<p class="western" align="center"><span style="font-size: small;"> <strong> Tipo </strong> </span></p>
+<p class="western" align="center"><span style="font-size: small;"> <strong>Type</strong> </span></p>
 </td>
 <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding: 0.1cm 0cm 0.1cm 0.1cm;" width="17%">
-<p class="western" align="center"><span style="font-size: small;"> <strong> Comprimento </strong> </span></p>
+<p class="western" align="center"><strong><span style="font-size: small;"> Field Length </span></strong></p>
 </td>
 <td style="border: 1px solid #000000; padding: 0.1cm;" width="17%">
-<p class="western" align="center"><span style="font-size: small;"> <strong> Precis&atilde;o </strong> </span></p>
+<p class="western" align="center"><span style="font-size: small;"> <strong>Accuracy</strong></span></p>
+</td>
+<td style="border: 1px solid #000000; padding: 0.1cm;" width="17%">
+<p class="western" align="center"><strong><span style="font-size: small;">Description</span></strong></p>
 </td>
 </tr>
 <tr valign="top">
@@ -347,6 +350,9 @@
 <td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.1cm 0.1cm 0.1cm;" width="17%">
 <p class="western" align="center"><span style="font-size: small;"> - </span></p>
 </td>
+<td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.1cm 0.1cm 0.1cm;" width="17%">
+<p class="western" align="center"><span style="font-size: small;">Identification</span></p>
+</td>
 </tr>
 <tr valign="top">
 <td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding: 0cm 0cm 0.1cm 0.1cm;" width="17%">
@@ -367,34 +373,37 @@
 <td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.1cm 0.1cm 0.1cm;" width="17%">
 <p class="western" align="center"><span style="font-size: small;"> 3 </span></p>
 </td>
+<td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.1cm 0.1cm 0.1cm;" width="17%">
+<p class="western" align="center"><span style="font-size: small;">Ground Elevation</span></p>
+</td>
 </tr>
 </tbody>
 </table>
 <p class="western">&nbsp;</p>
-<h2 class="western"><a name="__RefHeading___Toc3089_1012792670"></a> 5.2 REACHES SHAPE</h2>
+<h2 class="western"><a name="__RefHeading___Toc3089_1012792670"></a> 5.2 PIPES SHAPE</h2>
 <table width="100%" cellspacing="0" cellpadding="4">
 <tbody>
 <tr valign="top">
 <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding: 0.1cm 0cm 0.1cm 0.1cm;" width="17%">
-<p class="western" align="center"><span style="font-size: small;"> <strong> Ordem </strong> </span></p>
+<p class="western" align="center"><span style="font-size: small;"> <strong> Order </strong> </span></p>
 </td>
 <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding: 0.1cm 0cm 0.1cm 0.1cm;" width="17%">
-<p class="western" align="center"><span style="font-size: small;"> <strong> Nome </strong> </span></p>
+<p class="western" align="center"><span style="font-size: small;"> <strong> Name </strong> </span></p>
 </td>
 <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding: 0.1cm 0cm 0.1cm 0.1cm;" width="17%">
-<p class="western" align="center"><span style="font-size: small;"> <strong> Unidade </strong> </span></p>
+<p class="western" align="center"><span style="font-size: small;"> <strong> Unit </strong> </span></p>
 </td>
 <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding: 0.1cm 0cm 0.1cm 0.1cm;" width="17%">
-<p class="western" align="center"><span style="font-size: small;"> <strong> Tipo </strong> </span></p>
+<p class="western" align="center"><span style="font-size: small;"> <strong> Type </strong> </span></p>
 </td>
 <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding: 0.1cm 0cm 0.1cm 0.1cm;" width="17%">
-<p class="western" align="center"><span style="font-size: small;"> <strong> Comprimento </strong> </span></p>
+<p class="western" align="center"><span style="font-size: small;"> <strong>Field Length</strong><br /></span></p>
 </td>
 <td style="border: 1px solid #000000; padding: 0.1cm;" width="17%">
-<p class="western" align="center"><span style="font-size: small;"> <strong> Precis&atilde;o </strong> </span></p>
+<p class="western" align="center"><span style="font-size: small;"> <strong>Accuracy</strong><br /></span></p>
 </td>
 <td style="border: 1px solid #000000; padding: 0.1cm;" width="17%">
-<p class="western" align="center"><span style="font-size: small;"> <strong> Descri&ccedil;&atilde;o </strong> </span></p>
+<p class="western" align="center"><span style="font-size: small;"> <strong>Description</strong><br /></span></p>
 </td>
 </tr>
 <tr valign="top">
@@ -417,7 +426,7 @@
 <p class="western" align="center"><span style="font-size: small;"> - </span></p>
 </td>
 <td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.1cm 0.1cm 0.1cm;" width="17%">
-<p class="western" align="center"><span style="font-size: small;"> Identifica&ccedil;&atilde;o do Trecho </span></p>
+<p class="western" align="center"><span style="font-size: small;">Reach Identification</span></p>
 </td>
 </tr>
 <tr valign="top">
@@ -440,7 +449,7 @@
 <p class="western" align="center"><span style="font-size: small;"> - </span></p>
 </td>
 <td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.1cm 0.1cm 0.1cm;" width="17%">
-<p class="western" align="center"><span style="font-size: small;"> Identifica&ccedil;&atilde;o do PV de Montante </span></p>
+<p class="western" align="center"><span style="font-size: small;">Upstream MH Identification<br /></span></p>
 </td>
 </tr>
 <tr valign="top">
@@ -463,7 +472,7 @@
 <p class="western" align="center"><span style="font-size: small;"> - </span></p>
 </td>
 <td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.1cm 0.1cm 0.1cm;" width="17%">
-<p class="western" align="center"><span style="font-size: small;"> <span style="font-size: small;"> Identifica&ccedil;&atilde;o do PV de Jusante </span> </span></p>
+<p class="western" align="center"><span style="font-size: small;"> <span style="font-size: small;">Downstream MH Identification</span></span></p>
 </td>
 </tr>
 <tr valign="top">
@@ -486,7 +495,7 @@
 <p class="western" align="center"><span style="font-size: small;"> 1 </span></p>
 </td>
 <td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.1cm 0.1cm 0.1cm;" width="17%">
-<p class="western" align="center"><span style="font-size: small;"> Extens&atilde;o do Trecho </span></p>
+<p class="western" align="center"><span style="font-size: small;">Reach Length<br /></span></p>
 </td>
 </tr>
 <tr valign="top">
@@ -509,7 +518,7 @@
 <p class="western" align="center"><span style="font-size: small;"> 3 </span></p>
 </td>
 <td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.1cm 0.1cm 0.1cm;" width="17%">
-<p class="western" align="center"><span style="font-size: small;"> Cota do Terreno (Montante) </span></p>
+<p class="western" align="center"><span style="font-size: small;"> Ground Elevation (Upstream) </span></p>
 </td>
 </tr>
 <tr valign="top">
@@ -532,7 +541,7 @@
 <p class="western" align="center"><span style="font-size: small;"> 3 </span></p>
 </td>
 <td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.1cm 0.1cm 0.1cm;" width="17%">
-<p class="western" align="center"><span style="font-size: small;"> <span style="font-size: small;"> Cota do Terreno (Jusante) </span> </span></p>
+<p class="western" align="center"><span style="font-size: small;"> <span style="font-size: small;">Ground Elevation (Downstream)</span> </span></p>
 </td>
 </tr>
 <tr valign="top">
@@ -555,7 +564,7 @@
 <p class="western" align="center"><span style="font-size: small;"> 3 </span></p>
 </td>
 <td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.1cm 0.1cm 0.1cm;" width="17%">
-<p class="western" align="center"><span style="font-size: small;"> <span style="font-size: small;"> Cota do Coletor (Montante) </span> </span></p>
+<p class="western" align="center"><span style="font-size: small;"> <span style="font-size: small;"> Pipe Elevation (Upstream) </span> </span></p>
 </td>
 </tr>
 <tr valign="top">
@@ -578,7 +587,7 @@
 <p class="western" align="center"><span style="font-size: small;"> 3 </span></p>
 </td>
 <td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.1cm 0.1cm 0.1cm;" width="17%">
-<p class="western" align="center"><span style="font-size: small;"> <span style="font-size: small;"> Cota do Coletor (Jusante) </span> </span></p>
+<p class="western" align="center"><span style="font-size: small;"> <span style="font-size: small;"> Pipe Elevation (Downstream)</span> </span></p>
 </td>
 </tr>
 <tr valign="top">
@@ -601,7 +610,7 @@
 <p class="western" align="center"><span style="font-size: small;"> 3 </span></p>
 </td>
 <td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.1cm 0.1cm 0.1cm;" width="17%">
-<p class="western" align="center"><span style="font-size: small;"> <span style="font-size: small;"> Cota do Nivel de &Aacute;gua (Montante) </span> </span></p>
+<p class="western" align="center"><span style="font-size: small;"> <span style="font-size: small;">Water Elevation (Upstream)</span> </span></p>
 </td>
 </tr>
 <tr valign="top">
@@ -624,7 +633,7 @@
 <p class="western" align="center"><span style="font-size: small;"> 3 </span></p>
 </td>
 <td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.1cm 0.1cm 0.1cm;" width="17%">
-<p class="western" align="center"><span style="font-size: small;"> <span style="font-size: small;"> Cota do Nivel de &Aacute;gua (Jusante) </span> </span></p>
+<p class="western" align="center"><span style="font-size: small;"> <span style="font-size: small;">Water Elevation (Downstream)</span></span></p>
 </td>
 </tr>
 <tr valign="top">
@@ -647,7 +656,7 @@
 <p class="western" align="center"><span style="font-size: small;"> 3 </span></p>
 </td>
 <td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.1cm 0.1cm 0.1cm;" width="17%">
-<p class="western" align="center"><span style="font-size: small;"> Profundidade (Montante) </span></p>
+<p class="western" align="center"><span style="font-size: small;"> Depth (Upstream) </span></p>
 </td>
 </tr>
 <tr valign="top">
@@ -670,7 +679,7 @@
 <p class="western" align="center"><span style="font-size: small;"> 3 </span></p>
 </td>
 <td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.1cm 0.1cm 0.1cm;" width="17%">
-<p class="western" align="center"><span style="font-size: small;"> <span style="font-size: small;"> Profundidade (Jusante) </span> </span></p>
+<p class="western" align="center"><span style="font-size: small;">&nbsp; Depth <span style="font-size: small;">(Downstream) </span> </span></p>
 </td>
 </tr>
 <tr valign="top">
@@ -693,7 +702,7 @@
 <p class="western" align="center"><span style="font-size: small;"> 1 </span></p>
 </td>
 <td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.1cm 0.1cm 0.1cm;" width="17%">
-<p class="western" align="center"><span style="font-size: small;"> Di&acirc;metro </span></p>
+<p class="western" align="center"><span style="font-size: small;">Diameter</span></p>
 </td>
 </tr>
 <tr valign="top">
@@ -716,7 +725,7 @@
 <p class="western" align="center"><span style="font-size: small;"> 5 </span></p>
 </td>
 <td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.1cm 0.1cm 0.1cm;" width="17%">
-<p class="western" align="center"><span style="font-size: small;"> Declividade </span></p>
+<p class="western" align="center"><span style="font-size: small;">Grade (slope)<br /></span></p>
 </td>
 </tr>
 <tr valign="top">
@@ -727,7 +736,7 @@
 <p class="western" align="left"><span style="font-size: small;"> MANNING </span></p>
 </td>
 <td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding: 0cm 0cm 0.1cm 0.1cm;" width="17%">
-<p class="western" align="center"><span style="font-size: small;"> Adimensional <br /> </span></p>
+<p class="western" align="center"><span style="font-size: small;">Dimensionless<br /> </span></p>
 </td>
 <td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding: 0cm 0cm 0.1cm 0.1cm;" width="17%">
 <p class="western" align="center"><span style="font-size: small;"> Real </span></p>
@@ -739,7 +748,7 @@
 <p class="western" align="center"><span style="font-size: small;"> 3 </span></p>
 </td>
 <td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.1cm 0.1cm 0.1cm;" width="17%">
-<p class="western" align="center"><span style="font-size: small;"> Coeficiente de rugosidade de Manning </span></p>
+<p class="western" align="center"><span style="font-size: small;"><span id="result_box" class="short_text" lang="en"><span class="">Manning Roughness Coefficient</span></span></span></p>
 </td>
 </tr>
 <tr valign="top">
@@ -762,7 +771,7 @@
 <p class="western" align="center"><span style="font-size: small;"> 3 </span></p>
 </td>
 <td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.1cm 0.1cm 0.1cm;" width="17%">
-<p class="western" align="center"><span style="font-size: small;"> Vaz&atilde;o Concentrada (Inicio de Plano) </span></p>
+<p class="western" align="center"><span style="font-size: small;"> Point Demand (Initial) </span></p>
 </td>
 </tr>
 <tr valign="top">
@@ -785,7 +794,7 @@
 <p class="western" align="center"><span style="font-size: small;"> 3 </span></p>
 </td>
 <td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.1cm 0.1cm 0.1cm;" width="17%">
-<p class="western" align="center"><span style="font-size: small;"> <span style="font-size: small;"> Vaz&atilde;o Concentrada (Fim de Plano) </span> </span></p>
+<p class="western" align="center"><span style="font-size: small;"> <span style="font-size: small;">Point Demand (Final)</span> </span></p>
 </td>
 </tr>
 <tr valign="top">
@@ -1112,7 +1121,7 @@
 </tr>
 </tbody>
 </table>
-<p>&nbsp;</p>
+<p>* MH=Manhole</p>
 <p>&nbsp;</p>
 <p class="western" style="line-height: 100%;"><span style="font-size: small;"> Valores permitidos </span></p>
 <p class="western" style="line-height: 100%;"><span style="font-size: small;"> <sup> (1) </sup> : Trecho sem contribui&ccedil;&atilde;o = 0, contribui&ccedil;&atilde;o unilateral = 1 e contribui&ccedil;&atilde;o bilateral = 2 </span></p>
