@@ -746,8 +746,7 @@ declividade, como mostra a <b>Figura 21</b>.</p>
 
 </p>
 <p align="center" style="font-style: normal; line-height: 100%"><font size="2" style="font-size: 10pt"><b>Figura
-21 - Clique no trecho de montante para a sele&ccedil;&atilde;o do
-terceiro coletor.</b></font></p>
+21 - Rede calculada.</b></font></p>
 <p class="western" align="center"><img src="images\figb238c0e89bad54f6.png" name="figura21" align="bottom" width="605" height="362" border="0"/>
 </p>
 <p class="western"><br/>
