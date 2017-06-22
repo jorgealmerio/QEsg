@@ -564,7 +564,7 @@
 <p class="western" align="center"><span style="font-size: small;"> 3 </span></p>
 </td>
 <td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.1cm 0.1cm 0.1cm;" width="17%">
-<p class="western" align="center"><span style="font-size: small;"> <span style="font-size: small;"> Pipe Elevation (Upstream) </span> </span></p>
+<p class="western" align="center"><span style="font-size: small;"> <span style="font-size: small;">Invert Elevation (Upstream) </span> </span></p>
 </td>
 </tr>
 <tr valign="top">
@@ -587,7 +587,7 @@
 <p class="western" align="center"><span style="font-size: small;"> 3 </span></p>
 </td>
 <td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.1cm 0.1cm 0.1cm;" width="17%">
-<p class="western" align="center"><span style="font-size: small;"> <span style="font-size: small;"> Pipe Elevation (Downstream)</span> </span></p>
+<p class="western" align="center"><span style="font-size: small;"> <span style="font-size: small;">Invert Elevation (Downstream)</span> </span></p>
 </td>
 </tr>
 <tr valign="top">
@@ -725,7 +725,7 @@
 <p class="western" align="center"><span style="font-size: small;"> 5 </span></p>
 </td>
 <td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.1cm 0.1cm 0.1cm;" width="17%">
-<p class="western" align="center"><span style="font-size: small;">Grade (slope)<br /></span></p>
+<p class="western" align="center"><span style="font-size: small;">Slope<br /></span></p>
 </td>
 </tr>
 <tr valign="top">
@@ -817,7 +817,7 @@
 <p class="western" align="center"><span style="font-size: small;"> 3 </span></p>
 </td>
 <td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.1cm 0.1cm 0.1cm;" width="17%">
-<p class="western" align="center"><span style="font-size: small;"> Vaz&atilde;o Total (Inicio de Plano) </span></p>
+<p class="western" align="center"><span style="font-size: small;">Result Flow (Initial) </span></p>
 </td>
 </tr>
 <tr valign="top">
@@ -840,7 +840,7 @@
 <p class="western" align="center"><span style="font-size: small;"> 3 </span></p>
 </td>
 <td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.1cm 0.1cm 0.1cm;" width="17%">
-<p class="western" align="center"><span style="font-size: small;"> <span style="font-size: small;"> Vaz&atilde;o Total (Fim de Plano) </span> </span></p>
+<p class="western" align="center"><span style="font-size: small;"> Result <span style="font-size: small;">Flow (Final) </span> </span></p>
 </td>
 </tr>
 <tr valign="top">
@@ -863,7 +863,7 @@
 <p class="western" align="center"><span style="font-size: small;"> 2 </span></p>
 </td>
 <td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.1cm 0.1cm 0.1cm;" width="17%">
-<p class="western" align="center"><span style="font-size: small;"> Velocidade (Inicio de Plano) </span></p>
+<p class="western" align="center"><span style="font-size: small;"> Speed (Initial) </span></p>
 </td>
 </tr>
 <tr valign="top">
@@ -886,7 +886,7 @@
 <p class="western" align="center"><span style="font-size: small;"> 2 </span></p>
 </td>
 <td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.1cm 0.1cm 0.1cm;" width="17%">
-<p class="western" align="center"><span style="font-size: small;"> <span style="font-size: small;"> Velocidade (Fim de Plano) </span> </span></p>
+<p class="western" align="center"><span style="font-size: small;"> <span style="font-size: small;">Speed (Final) </span> </span></p>
 </td>
 </tr>
 <tr valign="top">
@@ -909,7 +909,7 @@
 <p class="western" align="center"><span style="font-size: small;"> 2 </span></p>
 </td>
 <td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.1cm 0.1cm 0.1cm;" width="17%">
-<p class="western" align="center"><span style="font-size: small;"> Velocidade Cr&iacute;tica </span></p>
+<p class="western" align="center"><span style="font-size: small;">Critical Speed<br /></span></p>
 </td>
 </tr>
 <tr valign="top">
@@ -1093,7 +1093,7 @@
 <p class="western" align="center"><span style="font-size: small;"> - </span></p>
 </td>
 <td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.1cm 0.1cm 0.1cm;" width="17%">
-<p class="western" align="center"><span style="font-size: small;"> Ponta Seca (S/N) </span></p>
+<p class="western" align="center"><span style="font-size: small;">&nbsp; Dead End (S/N) </span></p>
 </td>
 </tr>
 <tr valign="top">
@@ -1116,7 +1116,7 @@
 <p class="western" align="center"><span style="font-size: small;"> - </span></p>
 </td>
 <td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.1cm 0.1cm 0.1cm;" width="17%">
-<p class="western" align="center"><span style="font-size: small;"> Observa&ccedil;&otilde;es </span></p>
+<p class="western" align="center"><span style="font-size: small;"> Observations </span></p>
 </td>
 </tr>
 </tbody>
