@@ -6,11 +6,10 @@
 	<meta name="created" content="2016-06-07T17:41:21.305062039"/>
 	<meta name="changed" content="2016-07-04T22:02:46.747000000"/>
 </head>
-<body lang="pt-BR" dir="ltr">
 <h1 class="western"><a name="__RefHeading___Toc3816_1012792670"></a> <img src="images\figb6a402436fc68eb5.png" alt="" width="605" height="85" name="qesg_logo" align="bottom" border="0" /></h1>
-<br>
+<p>&nbsp;</p>
 <p class="western" style="text-align: right;"><a href="https://github.com/jorgealmerio/QEsg/blob/master/README.md">CLIQUE AQUI PARA VERS&Atilde;O EM PORTUGU&Ecirc;S</a>&nbsp;</p>
-<br>
+<p>&nbsp;</p>
 <h1 class="western"><a name="__RefHeading___Toc3818_1012792670"></a> 1 PRESENTATION</h1>
 <p class="western">&nbsp;</p>
 <p class="western">&nbsp;</p>
@@ -237,45 +236,47 @@
 <p class="western" style="line-height: 100%;">&nbsp;</p>
 <h2 class="western"><a name="__RefHeading___Toc3073_1012792670"></a> 4.7 <img src="images\fig30dc2cdc68e77050.png" alt="" width="30" height="30" name="Figura12" align="middle" border="0" /> BUTTON 03 CREATE NODE LAYER</h2>
 <p class="western">&nbsp;</p>
-<p class="western">Ao clicar no BUTTON &eacute; aberta a janela para atribui&ccedil;&atilde;o do nome do shape de n&oacute;s (formato de pontos). Selecione o local e nomes adequados a este shape, para este exemplo escolha como nome <strong> Nos </strong> . Clique no BUTTON Salvar para concluir a grava&ccedil;&atilde;o do layer. <span style="text-decoration: underline;"> Aten&ccedil;&atilde;o </span> : quando elabor&aacute;vamos este tutorial, no ambiente Linux, a biblioteca utilizada para salvar o shape de <strong> Nos </strong> apresentava um bug. Era necess&aacute;rio digitar a extens&atilde;o &ldquo;.shp&rdquo; ao final do nome do arquivo para que ocorresse o carregamento autom&aacute;tico do arquivo salvo.</p>
-<p class="western">Ap&oacute;s fechar a janela o shape <strong> Nos </strong> &eacute; adicionado ao projeto.</p>
-<p class="western">Habilite o modo de edi&ccedil;&atilde;o do shape <strong> Nos </strong> e preencha todos os campos de cota do terreno de cada n&oacute;.</p>
-<p class="western">Salve o shape <strong> Nos </strong> e desabilite o modo de edi&ccedil;&atilde;o.</p>
-<p class="western">Salve o projeto.</p>
-<p class="western">&nbsp;</p>
+<ul>
+<li class="western">On BUTTON click is opened the window to save the node shapefile (point format). Selecione o local e nomes adequados a este shape, para este exemplo escolha como nome <strong> Nos </strong> . Click on Save BUTTON to finish file save. The file is automatic added to the QGis Project.</li>
+<li class="western"><span style="text-decoration: underline;"> Warning for Linux</span>: When this tutorial was been writing it had a bug. It was necessary to type the filename with the extension (*.shp) to have the file automatic added to the QGis project.</li>
+<li class="western">Enable editing to the Node Layer to fill in all ground elevation data for each Node.</li>
+<li class="western">Save the <strong>Node</strong> Shape and disable editing</li>
+<li class="western">Save the project.</li>
+</ul>
 <p class="western">&nbsp;</p>
 <h2 class="western"><a name="__RefHeading___Toc3075_1012792670"></a> 4.8 <img src="images\fig85a4f30f64038587.png" alt="" width="30" height="30" name="Figura1" align="middle" border="0" /> BUTTON 04 FILL IN FIELDS</h2>
 <p class="western">&nbsp;</p>
-<p class="western">Ao clicar no BUTTON:</p>
-<p class="western">Todos os campos nulos do shape <strong> Trechos </strong> s&atilde;o preenchidos;</p>
-<p class="western">S&atilde;o sobrescritos todos os campos de cota dos PVs de montante, jusante e comprimento do trecho (calculado como comprimento real do trecho desenhado) do shape <strong> Trechos; </strong></p>
-<p class="western">S&atilde;o transferidos os valores do campo COTA_TN do shape <strong> Nos </strong> <span style="font-weight: normal;"> para os campos CTM e CTJ do shape </span> <strong> Trechos </strong> .</p>
-<p class="western">Salve o shape <span style="font-style: normal;"> <strong> Trechos </strong> </span> e saia do modo de edi&ccedil;&atilde;o.</p>
-<p class="western">&nbsp;</p>
+<p class="western">On BUTTON Click:</p>
+<ul>
+<li class="western">All Null fields from <strong>Pipes</strong> shape are automatic fill in;</li>
+<li class="western">All elevation fields Upstream and Downstream Manhole from <strong>Pipes</strong> are overwritten</li>
+<li class="western">The Length Field is overwritten with the current geometric value.</li>
+<li class="western">The ground elevations are copied from <strong>Node</strong> shape to CTM and CTJ fields of <strong>Pipes</strong> </li>
+<li class="western">Save <strong>Pipes</strong> Shape and finish editing mode.</li>
+</ul>
 <p class="western">&nbsp;</p>
 <h2 class="western"><a name="__RefHeading___Toc3077_1012792670"></a> 4.9 DEAD END</h2>
+<p class="western">This field is created for identify reaches that does not receive contribuitions from any other upstream manhole. This identification is necessary when the upstream manhole can have more than one exit connection, situation not allowed by Brazilians Standards. The Dead End is manually informed on <strong>Pipes</strong> shape attributes table, field (column) PONTA_SECA, typing S (Sim) or N (N&atilde;o) for Yes or No <span id="result_box" class="short_text" lang="en"><span class="">respectively as shown in <strong>Figure 18</strong> .</span></span></p>
 <p class="western">&nbsp;</p>
-<p class="western">Tem como objetivo identificar os trechos que n&atilde;o recebem contribui&ccedil;&otilde;es atrav&eacute;s do PV de montante. Essa identifica&ccedil;&atilde;o &eacute; necess&aacute;ria em trechos cujos PVs de montante possam apresentar mais de uma sa&iacute;da, situa&ccedil;&atilde;o <span style="font-family: Calibri,sans-serif;"> <span style="font-size: small;"> n&atilde;o </span> </span> permitida segundo as normas brasileiras. A &ldquo;ponta seca&rdquo; &eacute; informada manualmente na tabela do shape <strong> Trechos </strong> , campo (coluna) PONTA_SECA, trocando a letra N (n&atilde;o) pela letra S (sim), como ilustra a <strong> Figure 18 </strong> .</p>
 <p class="western">&nbsp;</p>
-<p class="western">&nbsp;</p>
-<p style="font-style: normal; line-height: 100%;" align="center"><span style="font-size: small;"> <strong> Figure 18 - Altera&ccedil;&atilde;o da condi&ccedil;&atilde;o de montante para &ldquo;ponta seca&rdquo; </strong> </span></p>
+<p style="font-style: normal; line-height: 100%;" align="center"><span style="font-size: small;"> <strong> Figure 18 - Upstream reaches condition change to &ldquo;Dead End&rdquo; </strong> </span></p>
 <p style="font-style: normal; line-height: 100%;" align="center"><img src="images\fig5acf898bdc82b29c.png" alt="" width="602" height="321" name="figura18" align="bottom" border="0" /></p>
 <p class="western" align="center">&nbsp;</p>
 <p class="western">&nbsp;</p>
-<p class="western" style="line-height: 100%;"><span lang="pt-BR"> Ap&oacute;s essa </span> altera&ccedil;&atilde;o <span lang="pt-BR"> a representa&ccedil;&atilde;o de montante dos trechos &ldquo; </span> p <span lang="pt-BR"> onta </span> s <span lang="pt-BR"> eca&rdquo; ser&aacute; modificada </span> <span lang="pt-BR"> como ilustra a </span> <span lang="pt-BR"> <strong> Figure 19 </strong> </span> <span lang="pt-BR"> . </span></p>
+<p class="western" style="line-height: 100%;"><span lang="pt-BR">After this modification the upstream node representation changes as shown in the</span> <span lang="pt-BR"><strong>Figure 19 </strong> </span> <span lang="pt-BR"> . </span></p>
 <p class="western">&nbsp;</p>
 <p class="western">&nbsp;</p>
-<p style="font-style: normal; line-height: 100%;" align="center"><span style="font-size: small;"> <strong> Figure 19 - Altera&ccedil;&atilde;o da condi&ccedil;&atilde;o hidr&aacute;ulica de montante dos trechos iniciais para &ldquo;ponta seca&rdquo; </strong> </span></p>
+<p style="font-style: normal; line-height: 100%;" align="center"><span style="font-size: small;"> <strong> Figure 19 - Upstream initial reaches hydraulic conditions change to &ldquo;Dead End&rdquo; </strong> </span></p>
 <p class="western" align="center"><img src="images\fig87942741b4df8b51.png" alt="" width="605" height="362" name="figura19" align="bottom" border="0" /></p>
 <p class="western">&nbsp;</p>
-<p class="western" style="line-height: 100%;">Salve as modifica&ccedil;&otilde;es introduzidas na tabela do shape <strong> Trechos </strong> <span style="font-weight: normal;"> e saia do modo de edi&ccedil;&atilde;o. Salve o </span> projeto.</p>
+<p class="western" style="line-height: 100%;">Save changes to attribute <strong>Pipes</strong> shapes  <span style="font-weight: normal;"> e finish editing mode. Save the project</span>.</p>
 <p class="western" style="line-height: 100%;">&nbsp;</p>
 <p class="western">&nbsp;</p>
 <h2 class="western" style="page-break-before: always;"><a name="__RefHeading___Toc3079_1012792670"></a> 4.10 <img src="images\fig62bba675e061c761.png" alt="" width="30" height="30" name="Figura13" align="middle" border="0" /> BUTTON 05 CALCULATE FLOW</h2>
+<p class="western">On click this button the accumulated flows along all pipe reaches of each manifold are calculated, results are written to <strong>Pipes</strong> shape.</p>
+<p class="western">The pipes representations changes to show Name, Length, Diameter and Flow of each reach.</p>
 <p class="western">&nbsp;</p>
-<p class="western">Ao clicar neste BUTTON, s&atilde;o calculadas as vaz&otilde;es acumuladas ao longo de cada um dos trechos que formam os coletores, os resultados s&atilde;o gravados no shape <strong> Trechos </strong> . O formato de apresenta&ccedil;&atilde;o dos trechos muda para mostrar os dados: nome do trecho; comprimento, di&acirc;metro e vaz&atilde;o de cada trecho.</p>
-<p class="western">&nbsp;</p>
-<p style="font-style: normal; line-height: 100%;" align="center"><span style="font-size: small;"> <strong> Figure 20 - Todos os trechos dos tr&ecirc;s coletores com as vaz&otilde;es de projeto calculadas. </strong> </span></p>
+<p style="font-style: normal; line-height: 100%;" align="center"><span style="font-size: small;"> <strong> Figure 20 - All reaches of the three manifolds with calculated flows. </strong> </span></p>
 <p class="western" style="line-height: 100%;" align="center"><img src="images\figa457ae216bd4057d.png" alt="" width="605" height="362" name="figura20" align="bottom" border="0" /></p>
 <p class="western">&nbsp;</p>
 <p class="western">&nbsp;</p>
@@ -1260,4 +1261,4 @@
 <p class="western" style="line-height: 100%;">&nbsp;</p>
 <h1 class="western"><a name="__RefHeading___Toc3093_1012792670"></a> 8 DISCLAIMER OF USE</h1>
 <p class="western" style="line-height: 100%;">&nbsp;</p>
-<p class="western" style="line-height: 100%;">Esse plugin est&aacute; sujeito aos termos da licen&ccedil;a &ldquo; <a class="western" href="https://www.gnu.org/licenses/gpl-3.0.html"> <em> GNU GENERAL PUBLIC LICENSE, Version 3, 29 June 2007 </em> </a> &rdquo;, portanto os danos ou consequ&ecirc;ncias da utiliza&ccedil;&atilde;o do plugin e/ou dos seus resultados, em qualquer ordem &eacute; de inteira responsabilidade do usu&aacute;rio final, ficando os desenvolvedores isentos de qualquer responsabilidade t&eacute;cnica ou jur&iacute;dica inerente da utiliza&ccedil;&atilde;o com ou sem inabilidade no uso do mesmo, inclusive no caso de eventual falha comprovada do plugin.</p></html>
+<p class="western" style="line-height: 100%;">Esse plugin est&aacute; sujeito aos termos da licen&ccedil;a &ldquo; <a class="western" href="https://www.gnu.org/licenses/gpl-3.0.html"> <em> GNU GENERAL PUBLIC LICENSE, Version 3, 29 June 2007 </em> </a> &rdquo;, portanto os danos ou consequ&ecirc;ncias da utiliza&ccedil;&atilde;o do plugin e/ou dos seus resultados, em qualquer ordem &eacute; de inteira responsabilidade do usu&aacute;rio final, ficando os desenvolvedores isentos de qualquer responsabilidade t&eacute;cnica ou jur&iacute;dica inerente da utiliza&ccedil;&atilde;o com ou sem inabilidade no uso do mesmo, inclusive no caso de eventual falha comprovada do plugin.</p>
