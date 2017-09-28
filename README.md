@@ -191,11 +191,11 @@ no tutorial </span><span lang="pt-BR">para
 download:</span></p>
 <ul>
 	<li/>
-<p class="western"><a class="western" href="https://github.com/jorgealmerio/QEsg/blob/master/sample/clean/shapes/Trechos.zip%3Fraw=True" target="_blank">Arquivos brutos (inicial)</a><a class="western" href="../../../.qgis2/python/plugins/QEsg/sample/sample/clean/shapes/Trechos.zip%3Fraw=True" target="_blank">l)</a>,
+<p class="western"><a class="western" href="https://github.com/jorgealmerio/QEsg/blob/master/sample/clean/shapes/Trechos.zip%raw=True" target="_blank">Arquivos brutos (inicial)</a>,
 	cont&eacute;m o shapefile da rede, composta por tr&ecirc;s
 	coletores.</p>
 	<li/>
-<p class="western"><a class="western" href="../../../.qgis2/python/plugins/QEsg/sample/sample/finished/shapes/finished_shapes.zip%3Fraw=True" target="_blank">Arquivo finalizados</a>,
+<p class="western"><a class="western" href="../../QEsg/sample/sample/finished/shapes/finished_shapes.zip%raw=True" target="_blank">Arquivo finalizados</a>,
 	cont&eacute;m os shapefile com os trechos da rede e e n&oacute;s,
 	calculados e dimensionados com a utiliza&ccedil;&atilde;o do Plugin.</p>
 </ul>
