@@ -81,7 +81,7 @@
 <p class="western">&nbsp;</p>
 <p class="western"><span lang="pt-BR"> Download of files used in this tutorial: </span></p>
 <p class="western"><a class="western" href="../master/core/sample/clean/shapes/Trechos.zip?raw=True" target="_blank">Raw file (Initial)</a>, Network Lines shapefile with 3 three sewer collectors.</p>
-<p class="western"><a class="western" href="../master/core/sample/clean/shapes/finished_shapes.zip?raw=True" target="_blank">Finished Files</a>, Network shapefile calculated with the plugin.</p>
+<p class="western"><a class="western" href="../master/core/sample/finished/shapes/finished_shapes.zip?raw=True" target="_blank">Finished Files</a>, Network shapefile calculated with the plugin.</p>
 <p class="western">&nbsp;</p>
 <p class="western">&nbsp;</p>
 <h2 class="western"><a name="__RefHeading___Toc3065_1012792670"></a> 4.3 APPLICATION EXAMPLE</h2>
