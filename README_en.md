@@ -80,8 +80,8 @@
 <h2 class="western"><a name="__RefHeading___Toc3063_1012792670"></a> 4.2 FILES USED IN THIS TUTORIAL</h2>
 <p class="western">&nbsp;</p>
 <p class="western"><span lang="pt-BR"> Download of files used in this tutorial: </span></p>
-<p class="western"><a class="western" href="../../../.qgis2/python/plugins/QEsg/sample/sample/clean/shapes/Trechos.zip%3Fraw=True" target="_blank">Raw file (Initial)</a>, Network Lines shapefile with 3 three sewer collectors.</p>
-<p class="western"><a class="western" href="../../../.qgis2/python/plugins/QEsg/sample/sample/finished/shapes/finished_shapes.zip%3Fraw=True" target="_blank">Finished Files</a>, Network shapefile calculated with the plugin.</p>
+<p class="western"><a class="western" href="../../../.qgis2/python/plugins/QEsg/sample/sample/core/clean/shapes/Trechos.zip%3Fraw=True" target="_blank">Raw file (Initial)</a>, Network Lines shapefile with 3 three sewer collectors.</p>
+<p class="western"><a class="western" href="../../../.qgis2/python/plugins/QEsg/sample/sample/core/finished/shapes/finished_shapes.zip%3Fraw=True" target="_blank">Finished Files</a>, Network shapefile calculated with the plugin.</p>
 <p class="western">&nbsp;</p>
 <p class="western">&nbsp;</p>
 <h2 class="western"><a name="__RefHeading___Toc3065_1012792670"></a> 4.3 APPLICATION EXAMPLE</h2>
