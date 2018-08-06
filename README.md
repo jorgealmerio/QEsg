@@ -98,7 +98,7 @@ apresenta&ccedil;&atilde;o final do projeto de uma rede de esgoto.</span></p>
 	COLABORADOR</a></b></p>
 	<p style="text-transform: uppercase; line-height: 100%"><b><a class="western" href="#__RefHeading___Toc3093_1012792670">8
 	NOTA DE RESPONSABILIDADE DE USO</a></b></p>	
-	<p style="text-transform: uppercase; line-height: 100%"><b><a class="western" href="#__RefHeading___Toc3093_1012792670">9 DOA&CCEDIL;&ATILDE;O</a></b></p>	
+	<p style="text-transform: uppercase; line-height: 100%"><b><a class="western" href="#__RefHeading___Toc3093_1012792670">9 DOAÇÃO</a></b></p>	
 </div>
 <p class="western"><br/>
 
@@ -1805,8 +1805,8 @@ ou jur&iacute;dica inerente da utiliza&ccedil;&atilde;o com ou sem
 inabilidade no uso do mesmo, inclusive no caso de eventual falha
 comprovada do plugin.</p>
 
- <h1 class="western"><a name="__RefHeading___Toc3093_1012792670"></a>9 DOA&CCEDIL;&ATILDE;O</h1>
- <p>Se o plugin for util para voc&ecirc;, considere fazer uma doa&ccedil;&atilde;o para o autor.</p>
+ <h1 class="western"><a name="__RefHeading___Toc3093_1012792670"></a>9 DOAÇÃO</h1>
+ <p>Se o plugin for util para você, considere fazer uma doação para o autor.</p>
  <a href="https://www.paypal.com/cgi-bin/webscr?button=donate&business=G5ERSTGG4U426&item_name=Jorge+Almerio/Qgis+QEsg+plugin&quantity=&amount=&currency_code=BRL&shipping=&tax=&notify_url=&cmd=_donations&bn=JavaScriptButton_donate&env=www" target="_blank">
  <img border="0" alt="Donate" src="https://www.paypalobjects.com/pt_BR/BR/i/btn/btn_donateCC_LG.gif">
  </a>
