@@ -1803,5 +1803,9 @@ desenvolvedores isentos de qualquer responsabilidade t&eacute;cnica
 ou jur&iacute;dica inerente da utiliza&ccedil;&atilde;o com ou sem
 inabilidade no uso do mesmo, inclusive no caso de eventual falha
 comprovada do plugin.</p>
+ <p>Se o plugin for util para voce, considere fazer uma doacao ao autor.</p>
+ <a href="https://www.paypal.com/cgi-bin/webscr?button=donate&business=G5ERSTGG4U426&item_name=Jorge+Almerio/Qgis+QEsg+plugin&quantity=&amount=&currency_code=BRL&shipping=&tax=&notify_url=&cmd=_donations&bn=JavaScriptButton_donate&env=www" target="_blank">
+ <img border="0" alt="Donate" src="https://www.paypalobjects.com/pt_BR/BR/i/btn/btn_donateCC_LG.gif">
+ </a>
 </body>
 </html>
