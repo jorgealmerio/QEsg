@@ -9,6 +9,9 @@
 <body lang="pt-BR" dir="ltr">
 <h1 class="western"><a name="__RefHeading___Toc3816_1012792670"></a><img src="images\figb6a402436fc68eb5.png" name="qesg_logo" align="bottom" width="605" height="85" border="0"/>
 </h1>
+<p>&nbsp;</p>
+<p class="western" style="text-align: right;"><a href="https://github.com/jorgealmerio/QEsg/blob/master/README_en.md">CLICK HERE FOR ENGLISH VERSION</a>&nbsp;</p>
+<p>&nbsp;</p>
 <p class="western"><br/>
 
 </p>
