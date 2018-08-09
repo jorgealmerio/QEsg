@@ -932,7 +932,7 @@
 <p class="western" align="center"><span style="font-size: small;"> 3 </span></p>
 </td>
 <td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.1cm 0.1cm 0.1cm;" width="17%">
-<p class="western" align="center"><span style="font-size: small;"> Tens&atilde;o Trativa </span></p>
+<p class="western" align="center"><span style="font-size: small;">Friction tension<br /></span></p>
 </td>
 </tr>
 <tr valign="top">
@@ -955,7 +955,7 @@
 <p class="western" align="center"><span style="font-size: small;"> 4 </span></p>
 </td>
 <td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.1cm 0.1cm 0.1cm;" width="17%">
-<p class="western" align="center"><span style="font-size: small;"> Altura da l&acirc;mina <span style="font-size: small;"> (Inicio de Plano) </span> </span></p>
+<p class="western" align="center"><span style="font-size: small;"> Water depth <span style="font-size: small;">(Initial) </span> </span></p>
 </td>
 </tr>
 <tr valign="top">
@@ -978,7 +978,7 @@
 <p class="western" align="center"><span style="font-size: small;"> 2 </span></p>
 </td>
 <td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.1cm 0.1cm 0.1cm;" width="17%">
-<p class="western" align="center"><span style="font-size: small;"> <span style="font-size: small;"> Altura da l&acirc;mina d'&aacute;gua (Fim de Plano) </span> </span></p>
+<p class="western" align="center"><span style="font-size: small;"> <span style="font-size: small;"> Water depth (Final) </span> </span></p>
 </td>
 </tr>
 <tr valign="top">
@@ -989,7 +989,7 @@
 <p class="western" align="left"><span style="font-size: small;"> LAM_MAX </span></p>
 </td>
 <td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding: 0cm 0cm 0.1cm 0.1cm;" width="17%">
-<p class="western" align="center"><span style="font-size: small;"> Adimensional </span></p>
+<p class="western" align="center"><span style="font-size: small;">Dimensionless</span></p>
 </td>
 <td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding: 0cm 0cm 0.1cm 0.1cm;" width="17%">
 <p class="western" align="center"><span style="font-size: small;"> Real </span></p>
@@ -1001,7 +1001,7 @@
 <p class="western" align="center"><span style="font-size: small;"> 2 </span></p>
 </td>
 <td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.1cm 0.1cm 0.1cm;" width="17%">
-<p class="western" align="center"><span style="font-size: small;"> Rela&ccedil;&atilde;o m&aacute;xima entre altura da l&acirc;mina d'&aacute;gua e o Di&acirc;metro </span></p>
+<p class="western" align="center"><span style="font-size: small;">Water depth/Diameter maximum relation<br /></span></p>
 </td>
 </tr>
 <tr valign="top">
@@ -1024,7 +1024,7 @@
 <p class="western" align="center"><span style="font-size: small;"> 2 </span></p>
 </td>
 <td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.1cm 0.1cm 0.1cm;" width="17%">
-<p class="western" align="center"><span style="font-size: small;"> Recobrimento m&iacute;nimo </span></p>
+<p class="western" align="center"><span style="font-size: small;">Minimum covering<br /></span></p>
 </td>
 </tr>
 <tr valign="top">
@@ -1047,7 +1047,7 @@
 <p class="western" align="center"><span style="font-size: small;"> - </span></p>
 </td>
 <td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.1cm 0.1cm 0.1cm;" width="17%">
-<p class="western" align="center"><span style="font-size: small;"> Contribui&ccedil;&atilde;o lateral (0,1 ou 2) </span></p>
+<p class="western" align="center"><span style="font-size: small;"> Lateral inflow type (0,1 or 2) </span></p>
 </td>
 </tr>
 <tr valign="top">
@@ -1070,7 +1070,7 @@
 <p class="western" align="center"><span style="font-size: small;"> - </span></p>
 </td>
 <td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.1cm 0.1cm 0.1cm;" width="17%">
-<p class="western" align="center"><span style="font-size: small;"> Etapa </span></p>
+<p class="western" align="center"><span style="font-size: small;">Stage</span></p>
 </td>
 </tr>
 <tr valign="top">
@@ -1121,37 +1121,55 @@
 </tr>
 </tbody>
 </table>
+</div>
+<div>
 <p>* MH=Manhole</p>
+</div>
+<div>
 <p>&nbsp;</p>
-<p class="western" style="line-height: 100%;"><span style="font-size: small;"> Valores permitidos </span></p>
-<p class="western" style="line-height: 100%;"><span style="font-size: small;"> <sup> (1) </sup> : Trecho sem contribui&ccedil;&atilde;o = 0, contribui&ccedil;&atilde;o unilateral = 1 e contribui&ccedil;&atilde;o bilateral = 2 </span></p>
-<p class="western" style="line-height: 100%;"><span style="font-size: small;"> <sup> (2) </sup> : Trecho existente = 0, a implantar na primeira etapa = 1, a implantar na segunda etapa = 2 </span></p>
-<p class="western" style="line-height: 100%;"><span style="font-size: small;"> <sup> (3) </sup> : &Eacute; ponta seca = S, n&atilde;o &eacute; ponta seca = N </span></p>
+</div>
+<div>
+<p class="western" style="line-height: 100%;"><span style="font-size: small;">Allowed values:<br /></span></p>
+</div>
+<div>
+<p class="western" style="line-height: 100%;"><span style="font-size: small;"> <sup> (1) </sup> : No inflow = 0, One-side inflow = 1 and Two-side = 2 </span></p>
+</div>
+<div>
+<p class="western" style="line-height: 100%;"><span style="font-size: small;"> <sup> (2) </sup> : Existing reach = 0, First stage reach = 1, Second stage reach = 2 </span></p>
+</div>
+<div>
+<p class="western" style="line-height: 100%;"><span style="font-size: small;"> <sup> (3) </sup> : Is Dead End = S, Not Dead End = N </span></p>
+</div>
+<div>
 <p class="western" style="line-height: 100%;">&nbsp;</p>
+</div>
+<div>
 <h2 class="western"><a name="__RefHeading___Toc3091_1012792670"></a> 5.3 INTERFERENCES SHAPE</h2>
+</div>
+<div>
 <table width="100%" cellspacing="0" cellpadding="4">
 <tbody>
 <tr valign="top">
 <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding: 0.1cm 0cm 0.1cm 0.1cm;" width="17%">
-<p class="western" align="center"><span style="font-size: small;"> <strong> Ordem </strong> </span></p>
+<p class="western" align="center"><span style="font-size: small;"> <strong> Order </strong> </span></p>
 </td>
 <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding: 0.1cm 0cm 0.1cm 0.1cm;" width="17%">
-<p class="western" align="center"><span style="font-size: small;"> <strong> Nome </strong> </span></p>
+<p class="western" align="center"><span style="font-size: small;"> <strong> Name </strong> </span></p>
 </td>
 <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding: 0.1cm 0cm 0.1cm 0.1cm;" width="17%">
-<p class="western" align="center"><span style="font-size: small;"> <strong> Unidade </strong> </span></p>
+<p class="western" align="center"><span style="font-size: small;"> <strong> Unit </strong> </span></p>
 </td>
 <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding: 0.1cm 0cm 0.1cm 0.1cm;" width="17%">
-<p class="western" align="center"><span style="font-size: small;"> <strong> Tipo </strong> </span></p>
+<p class="western" align="center"><span style="font-size: small;"> <strong> Type </strong> </span></p>
 </td>
 <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding: 0.1cm 0cm 0.1cm 0.1cm;" width="17%">
-<p class="western" align="center"><span style="font-size: small;"> <strong> Comprimento </strong> </span></p>
+<p class="western" align="center"><span style="font-size: small;"> <strong>Length</strong></span></p>
 </td>
 <td style="border: 1px solid #000000; padding: 0.1cm;" width="17%">
-<p class="western" align="center"><span style="font-size: small;"> <strong> Precis&atilde;o </strong> </span></p>
+<p class="western" align="center"><span style="font-size: small;"> <strong>Accuracy</strong></span></p>
 </td>
 <td style="border: 1px solid #000000; padding: 0.1cm;" width="17%">
-<p class="western" align="center"><span style="font-size: small;"> <strong> Descri&ccedil;&atilde;o </strong> </span></p>
+<p class="western" align="center"><span style="font-size: small;"> <strong>Description</strong></span></p>
 </td>
 </tr>
 <tr valign="top">
@@ -1174,7 +1192,7 @@
 <p class="western" align="center"><span style="font-size: small;"> - </span></p>
 </td>
 <td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.1cm 0.1cm 0.1cm;" width="17%">
-<p class="western" align="center"><span style="font-size: small;"> Identifica&ccedil;&atilde;o da Interfer&ecirc;ncia </span></p>
+<p class="western" align="center"><span style="font-size: small;">Inteference Identification&nbsp; </span></p>
 </td>
 </tr>
 <tr valign="top">
@@ -1197,7 +1215,7 @@
 <p class="western" align="center"><span style="font-size: small;"> - </span></p>
 </td>
 <td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.1cm 0.1cm 0.1cm;" width="17%">
-<p class="western" align="center"><span style="font-size: small;"> Tipo de Interfer&ecirc;ncia </span></p>
+<p class="western" align="center"><span style="font-size: small;">&nbsp; Inteference Type </span></p>
 </td>
 </tr>
 <tr valign="top">
@@ -1220,7 +1238,7 @@
 <p class="western" align="center"><span style="font-size: small;"> 3 </span></p>
 </td>
 <td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.1cm 0.1cm 0.1cm;" width="17%">
-<p class="western" align="center"><span style="font-size: small;"> Cota da Geratriz Superior da interfer&ecirc;ncia </span></p>
+<p class="western" align="center"><span style="font-size: small;">Upper edge elevation<br /></span></p>
 </td>
 </tr>
 <tr valign="top">
@@ -1243,28 +1261,65 @@
 <p class="western" align="center"><span style="font-size: small;"> 3 </span></p>
 </td>
 <td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.1cm 0.1cm 0.1cm;" width="17%">
-<p class="western" align="center"><span style="font-size: small;"> Cota da Geratriz Inferior da interfer&ecirc;ncia </span></p>
+<p class="western" align="center"><span style="font-size: small;">Lower edge elevation</span></p>
 </td>
 </tr>
 </tbody>
 </table>
+</div>
+<div>
 <p>&nbsp;</p>
-<p class="western" style="line-height: 100%;"><span style="font-size: small;"> Valores permitidos </span></p>
-<p class="western" style="line-height: 100%;"><span style="font-size: small;"> <sup> (1) </sup> : TN para terreno natural, qualquer outro valor (inclusive nulo) &eacute; considerada uma interfer&ecirc;ncia. </span></p>
-<p class="western" style="line-height: 100%;"><span style="font-size: small;"> Quando a interfer&ecirc;ncia for do tipo 'TN' no campo 'CS' deve ser informada a cota do Terreno natural e no campo CI deve ser informada a cota da geratriz superior m&aacute;xima desejada para a tubula&ccedil;&atilde;o projetada. </span></p>
+</div>
+<div>
+<p class="western" style="line-height: 100%;"><span style="font-size: small;">Allowed Values<br /></span></p>
+</div>
+<div>
+<p class="western" style="line-height: 100%;"><span style="font-size: small;"> <sup> (1) </sup> : TN for Ground Elevation, other for interference (including null).</span></p>
+<p class="western" style="line-height: 100%;"><span style="font-size: small;">When type is 'TN', input ground elevation in field 'CS' and maximum design pipe upper edge in field 'CI'.<br /></span></p>
+</div>
+<div>
 <p class="western" style="line-height: 100%;">&nbsp;</p>
+</div>
+<div>
 <h1 class="western"><a name="__RefHeading___Toc3820_1012792670"></a> 6 AUTHOR</h1>
+</div>
+<div>
 <p class="western">&nbsp;</p>
-<p class="western">Plugin desenvolvido por Jorge Alm&eacute;rio Sousa Moreira, Engenheiro Civil.</p>
-<p class="western">D&uacute;vidas, cr&iacute;ticas e sugest&otilde;es s&atilde;o bem vindas.</p>
+</div>
+<div>
+<p class="western">Plugin developed by Jorge Alm&eacute;rio Sousa Moreira, Civil Engineer.</p>
+<p class="western">Issues, requests and comments are welcome.</p>
+</div>
+<div>
 <p class="western">Email: <a class="western" href="mailto:jorgealmerio@yahoo.com.br"> jorgealmerio@yahoo.com.br </a></p>
+</div>
+<div>
 <p class="western">Plugin Site: <a class="western" href="https://github.com/jorgealmerio/QEsg/blob/master/README.md"> github.com/jorgealmerio/QEsg </a></p>
-<p class="western">Bugs, Falhas e solicita&ccedil;&otilde;es: <a class="western" href="https://github.com/jorgealmerio/QEsg/issues"> github.com/jorgealmerio/QEsg/issues </a></p>
+</div>
+<div>
+<p class="western">Issues and requests: <a class="western" href="https://github.com/jorgealmerio/QEsg/issues"> github.com/jorgealmerio/QEsg/issues </a></p>
+</div>
+<div>
 <p class="western" style="line-height: 100%;">&nbsp;</p>
+</div>
+<div>
 <h1 class="western"><a name="__RefHeading___Toc3822_1012792670"></a> 7 COLLABORATOR</h1>
+</div>
+<div>
 <p class="western">&nbsp;</p>
+</div>
+<div>
 <p class="western">Juan Santiago Ramseyer</p>
+</div>
+<div>
 <p class="western" style="line-height: 100%;">&nbsp;</p>
+</div>
+<div>
 <h1 class="western"><a name="__RefHeading___Toc3093_1012792670"></a> 8 DISCLAIMER OF USE</h1>
+</div>
+<div>
 <p class="western" style="line-height: 100%;">&nbsp;</p>
-<p class="western" style="line-height: 100%;">Esse plugin est&aacute; sujeito aos termos da licen&ccedil;a &ldquo; <a class="western" href="https://www.gnu.org/licenses/gpl-3.0.html"> <em> GNU GENERAL PUBLIC LICENSE, Version 3, 29 June 2007 </em> </a> &rdquo;, portanto os danos ou consequ&ecirc;ncias da utiliza&ccedil;&atilde;o do plugin e/ou dos seus resultados, em qualquer ordem &eacute; de inteira responsabilidade do usu&aacute;rio final, ficando os desenvolvedores isentos de qualquer responsabilidade t&eacute;cnica ou jur&iacute;dica inerente da utiliza&ccedil;&atilde;o com ou sem inabilidade no uso do mesmo, inclusive no caso de eventual falha comprovada do plugin.</p>
+</div>
+<div>
+<p class="western" style="line-height: 100%;">This plugin is subject to the terms of the license &ldquo; <a class="western" href="https://www.gnu.org/licenses/gpl-3.0.html"> <em> GNU GENERAL PUBLIC LICENSE, Version 3, 29 June 2007 </em> </a> &rdquo;, so any damage or consequences of using the plugin and its results in any way is full responsibility of the end user. the developers shall be exempt from any technical or legal liability inherent in the use with or without inability to use the same, even in the event of any proven failure of the plugin..</p>
+</div>
