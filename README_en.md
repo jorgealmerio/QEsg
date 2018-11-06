@@ -43,6 +43,7 @@
 <p style="text-transform: uppercase; line-height: 100%;"><strong> <a class="western" href="#__RefHeading___Toc3820_1012792670"> 6 AUTHOR </a> </strong></p>
 <p style="text-transform: uppercase; line-height: 100%;"><strong> <a class="western" href="#__RefHeading___Toc3822_1012792670"> 7 COLLABORATOR </a> </strong></p>
 <p style="text-transform: uppercase; line-height: 100%;"><strong> <a class="western" href="#__RefHeading___Toc3093_1012792670"> 8 DISCLAIMER OF USE </a> </strong></p>
+<p style="text-transform: uppercase; line-height: 100%;"><strong> <a class="western" href="#__RefHeading___Toc3094_1012792670"> 9 DONATE </a> </strong></p>	
 </div>
 <p class="western">&nbsp;</p>
 <h1 class="western">&nbsp;</h1>
@@ -1323,3 +1324,8 @@
 <div>
 <p class="western" style="line-height: 100%;">This plugin is subject to the terms of the license &ldquo; <a class="western" href="https://www.gnu.org/licenses/gpl-3.0.html"> <em> GNU GENERAL PUBLIC LICENSE, Version 3, 29 June 2007 </em> </a> &rdquo;, so any damage or consequences of using the plugin and its results in any way is full responsibility of the end user. the developers shall be exempt from any technical or legal liability inherent in the use with or without inability to use the same, even in the event of any proven failure of the plugin..</p>
 </div>
+<h1 class="western"><a name="__RefHeading___Toc3094_1012792670"></a> 9 DONATE</h1>
+ <p>If this plugin is useful for you, please consider to donate to the author.</p>
+ <a href="https://www.paypal.com/cgi-bin/webscr?button=donate&business=G5ERSTGG4U426&item_name=Jorge+Almerio/Qgis+QEsg+plugin&quantity=&amount=&currency_code=BRL&shipping=&tax=&notify_url=&cmd=_donations&bn=JavaScriptButton_donate&env=www" target="_blank">
+ <img border="0" alt="Donate" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif">
+ </a>
