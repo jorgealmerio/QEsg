@@ -1463,7 +1463,7 @@ TRECHO</h2>
 <p class="western" align="center"><span style="font-size: small;">4</span></p>
 </td>
 <td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.1cm 0.1cm 0.1cm;" width="17%">
-<p class="western" align="center"><span style="font-size: small;">Altura da l&acirc;mina <span style="font-size: small;">(Inicio de Plano)</span></span></p>
+<p class="western" align="center"><span style="font-size: small;">Relação da l&acirc;mina/Di&acirc;metro<span style="font-size: small;">(Inicio de Plano)</span></span></p>
 </td>
 </tr>
 <tr valign="top">
@@ -1486,7 +1486,7 @@ TRECHO</h2>
 <p class="western" align="center"><span style="font-size: small;">2</span></p>
 </td>
 <td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.1cm 0.1cm 0.1cm;" width="17%">
-<p class="western" align="center"><span style="font-size: small;"><span style="font-size: small;">Altura da l&acirc;mina d'&aacute;gua (Fim de Plano)</span></span></p>
+<p class="western" align="center"><span style="font-size: small;"><span style="font-size: small;">Relação da l&acirc;mina /Di&acirc;metro (Fim de Plano)</span></span></p>
 </td>
 </tr>
 <tr valign="top">
