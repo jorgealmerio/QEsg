@@ -944,7 +944,7 @@
 <p class="western" align="left"><span style="font-size: small;"> LAM_INI </span></p>
 </td>
 <td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding: 0cm 0cm 0.1cm 0.1cm;" width="17%">
-<p class="western" align="center"><span style="font-size: small;"> m </span></p>
+<p class="western" align="center"><span style="font-size: small;">Dimensionless</span></p>
 </td>
 <td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding: 0cm 0cm 0.1cm 0.1cm;" width="17%">
 <p class="western" align="center"><span style="font-size: small;"> Real </span></p>
@@ -956,7 +956,7 @@
 <p class="western" align="center"><span style="font-size: small;"> 4 </span></p>
 </td>
 <td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.1cm 0.1cm 0.1cm;" width="17%">
-<p class="western" align="center"><span style="font-size: small;"> Water depth <span style="font-size: small;">(Initial) </span> </span></p>
+<p class="western" align="center"><span style="font-size: small;"> Water depth/diameter <span style="font-size: small;">(Initial) </span> </span></p>
 </td>
 </tr>
 <tr valign="top">
@@ -967,7 +967,7 @@
 <p class="western" align="left"><span style="font-size: small;"> LAM_FIM </span></p>
 </td>
 <td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding: 0cm 0cm 0.1cm 0.1cm;" width="17%">
-<p class="western" align="center"><span style="font-size: small;"> m </span></p>
+<p class="western" align="center"><span style="font-size: small;">Dimensionless</span></p>
 </td>
 <td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding: 0cm 0cm 0.1cm 0.1cm;" width="17%">
 <p class="western" align="center"><span style="font-size: small;"> Real </span></p>
@@ -979,7 +979,7 @@
 <p class="western" align="center"><span style="font-size: small;"> 2 </span></p>
 </td>
 <td style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding: 0cm 0.1cm 0.1cm 0.1cm;" width="17%">
-<p class="western" align="center"><span style="font-size: small;"> <span style="font-size: small;"> Water depth (Final) </span> </span></p>
+<p class="western" align="center"><span style="font-size: small;"> Water depth/diameter <span style="font-size: small;">(Final) </span> </span></p>
 </td>
 </tr>
 <tr valign="top">
