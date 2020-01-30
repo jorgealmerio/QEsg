@@ -1,4 +1,4 @@
-# <a name="__RefHeading___Toc3816_1012792670"></a>![](images\figb6a402436fc68eb5.png)
+(images\figb6a402436fc68eb5.png)
 
 [CLICK HERE FOR ENGLISH VERSION](https://github.com/jorgealmerio/QEsg/blob/master/README_en.md) 
 
