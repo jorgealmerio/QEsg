@@ -1,4 +1,4 @@
-(images\figb6a402436fc68eb5.png)
+<img src="images\figb6a402436fc68eb5.png" name="qesg_logo" align="bottom" width="605" height="85" border="0"/>
 
 [CLICK HERE FOR ENGLISH VERSION](https://github.com/jorgealmerio/QEsg/blob/master/README_en.md) 
 
